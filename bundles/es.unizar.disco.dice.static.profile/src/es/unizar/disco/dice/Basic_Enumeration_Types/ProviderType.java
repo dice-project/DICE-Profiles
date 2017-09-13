@@ -36,7 +36,9 @@ public enum ProviderType implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	OPENSTACK(1, "openstack", "openstack"), /**
+	OPENSTACK(1, "openstack", "openstack"),
+
+	/**
 	 * The '<em><b>Aws</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

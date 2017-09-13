@@ -24,9 +24,9 @@ import es.unizar.disco.dice.Basic_Enumeration_Types.RefDataFormatType;
 import es.unizar.disco.dice.Basic_Enumeration_Types.RefType;
 import es.unizar.disco.dice.Basic_Enumeration_Types.Scheduling;
 import es.unizar.disco.dice.Basic_Enumeration_Types.SourceType;
-import es.unizar.disco.dice.Basic_Enumeration_Types.SparkMap;
+import es.unizar.disco.dice.Basic_Enumeration_Types.SparkAction;
 import es.unizar.disco.dice.Basic_Enumeration_Types.SparkOperation;
-import es.unizar.disco.dice.Basic_Enumeration_Types.SparkReduce;
+import es.unizar.disco.dice.Basic_Enumeration_Types.SparkTransformation;
 import es.unizar.disco.dice.Basic_Enumeration_Types.StreamPolicy;
 import es.unizar.disco.dice.Basic_Enumeration_Types.TechType;
 import es.unizar.disco.dice.Basic_Enumeration_Types.VMSize;
@@ -186,14 +186,14 @@ public class Basic_Enumeration_TypesPackageImpl extends EPackageImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EEnum sparkReduceEEnum = null;
+	private EEnum sparkActionEEnum = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EEnum sparkMapEEnum = null;
+	private EEnum sparkTransformationEEnum = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -459,8 +459,8 @@ public class Basic_Enumeration_TypesPackageImpl extends EPackageImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EEnum getSparkReduce() {
-		return sparkReduceEEnum;
+	public EEnum getSparkAction() {
+		return sparkActionEEnum;
 	}
 
 	/**
@@ -468,8 +468,8 @@ public class Basic_Enumeration_TypesPackageImpl extends EPackageImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EEnum getSparkMap() {
-		return sparkMapEEnum;
+	public EEnum getSparkTransformation() {
+		return sparkTransformationEEnum;
 	}
 
 	/**
@@ -551,8 +551,8 @@ public class Basic_Enumeration_TypesPackageImpl extends EPackageImpl implements 
 		providerTypeEEnum = createEEnum(PROVIDER_TYPE);
 		lifeCycleElementTypeEEnum = createEEnum(LIFE_CYCLE_ELEMENT_TYPE);
 		ddsMcomponentTypeEEnum = createEEnum(DDS_MCOMPONENT_TYPE);
-		sparkReduceEEnum = createEEnum(SPARK_REDUCE);
-		sparkMapEEnum = createEEnum(SPARK_MAP);
+		sparkActionEEnum = createEEnum(SPARK_ACTION);
+		sparkTransformationEEnum = createEEnum(SPARK_TRANSFORMATION);
 		sparkOperationEEnum = createEEnum(SPARK_OPERATION);
 		languageTypeEEnum = createEEnum(LANGUAGE_TYPE);
 		cassandraConsistencyLevelTypeEEnum = createEEnum(CASSANDRA_CONSISTENCY_LEVEL_TYPE);
@@ -672,28 +672,49 @@ public class Basic_Enumeration_TypesPackageImpl extends EPackageImpl implements 
 		addEEnumLiteral(ddsMcomponentTypeEEnum, DDSMcomponentType.MASTER_NODE);
 		addEEnumLiteral(ddsMcomponentTypeEEnum, DDSMcomponentType.SLAVE_NODE);
 
-		initEEnum(sparkReduceEEnum, SparkReduce.class, "SparkReduce");
-		addEEnumLiteral(sparkReduceEEnum, SparkReduce.REDUCE);
-		addEEnumLiteral(sparkReduceEEnum, SparkReduce.SAMPLE);
-		addEEnumLiteral(sparkReduceEEnum, SparkReduce.COLLECT);
-		addEEnumLiteral(sparkReduceEEnum, SparkReduce.COUNT);
-		addEEnumLiteral(sparkReduceEEnum, SparkReduce.SAVE_AS);
-		addEEnumLiteral(sparkReduceEEnum, SparkReduce.COUNT_BY_KEY);
-		addEEnumLiteral(sparkReduceEEnum, SparkReduce.FOR_EACH);
+		initEEnum(sparkActionEEnum, SparkAction.class, "SparkAction");
+		addEEnumLiteral(sparkActionEEnum, SparkAction.REDUCE);
+		addEEnumLiteral(sparkActionEEnum, SparkAction.SAMPLE);
+		addEEnumLiteral(sparkActionEEnum, SparkAction.COLLECT);
+		addEEnumLiteral(sparkActionEEnum, SparkAction.COUNT);
+		addEEnumLiteral(sparkActionEEnum, SparkAction.SAVE_AS);
+		addEEnumLiteral(sparkActionEEnum, SparkAction.COUNT_BY_KEY);
+		addEEnumLiteral(sparkActionEEnum, SparkAction.FOR_EACH);
+		addEEnumLiteral(sparkActionEEnum, SparkAction.AGGREGATE);
+		addEEnumLiteral(sparkActionEEnum, SparkAction.COLLECT_AS_MAP);
+		addEEnumLiteral(sparkActionEEnum, SparkAction.COUNT_BY_VALUE);
+		addEEnumLiteral(sparkActionEEnum, SparkAction.FOLD);
+		addEEnumLiteral(sparkActionEEnum, SparkAction.LOOKUP);
+		addEEnumLiteral(sparkActionEEnum, SparkAction.TAKE);
+		addEEnumLiteral(sparkActionEEnum, SparkAction.TOP);
 
-		initEEnum(sparkMapEEnum, SparkMap.class, "SparkMap");
-		addEEnumLiteral(sparkMapEEnum, SparkMap.MAP);
-		addEEnumLiteral(sparkMapEEnum, SparkMap.FILTER);
-		addEEnumLiteral(sparkMapEEnum, SparkMap.SAMPLE);
-		addEEnumLiteral(sparkMapEEnum, SparkMap.RDD_SET_OPERATION);
-		addEEnumLiteral(sparkMapEEnum, SparkMap.UNION);
-		addEEnumLiteral(sparkMapEEnum, SparkMap.INTERSECTION);
-		addEEnumLiteral(sparkMapEEnum, SparkMap.SUBSTRACTION);
-		addEEnumLiteral(sparkMapEEnum, SparkMap.DISTINCT);
-		addEEnumLiteral(sparkMapEEnum, SparkMap.BY_KEY);
-		addEEnumLiteral(sparkMapEEnum, SparkMap.JOIN);
-		addEEnumLiteral(sparkMapEEnum, SparkMap.CARTESIAN);
-		addEEnumLiteral(sparkMapEEnum, SparkMap.REPARTITION);
+		initEEnum(sparkTransformationEEnum, SparkTransformation.class, "SparkTransformation");
+		addEEnumLiteral(sparkTransformationEEnum, SparkTransformation.MAP);
+		addEEnumLiteral(sparkTransformationEEnum, SparkTransformation.FILTER);
+		addEEnumLiteral(sparkTransformationEEnum, SparkTransformation.SAMPLE);
+		addEEnumLiteral(sparkTransformationEEnum, SparkTransformation.RDD_SET_OPERATION);
+		addEEnumLiteral(sparkTransformationEEnum, SparkTransformation.UNION);
+		addEEnumLiteral(sparkTransformationEEnum, SparkTransformation.INTERSECTION);
+		addEEnumLiteral(sparkTransformationEEnum, SparkTransformation.SUBSTRACTION);
+		addEEnumLiteral(sparkTransformationEEnum, SparkTransformation.SUBTRACT);
+		addEEnumLiteral(sparkTransformationEEnum, SparkTransformation.DISTINCT);
+		addEEnumLiteral(sparkTransformationEEnum, SparkTransformation.BY_KEY);
+		addEEnumLiteral(sparkTransformationEEnum, SparkTransformation.COMBINE_BY_KEY);
+		addEEnumLiteral(sparkTransformationEEnum, SparkTransformation.GROUP_BY_KEY);
+		addEEnumLiteral(sparkTransformationEEnum, SparkTransformation.REDUCE_BY_KEY);
+		addEEnumLiteral(sparkTransformationEEnum, SparkTransformation.SORT_BY_KEY);
+		addEEnumLiteral(sparkTransformationEEnum, SparkTransformation.JOIN);
+		addEEnumLiteral(sparkTransformationEEnum, SparkTransformation.CARTESIAN);
+		addEEnumLiteral(sparkTransformationEEnum, SparkTransformation.REPARTITION);
+		addEEnumLiteral(sparkTransformationEEnum, SparkTransformation.COGROUP);
+		addEEnumLiteral(sparkTransformationEEnum, SparkTransformation.FLAT_MAP);
+		addEEnumLiteral(sparkTransformationEEnum, SparkTransformation.GROUP_WITH);
+		addEEnumLiteral(sparkTransformationEEnum, SparkTransformation.KEYS);
+		addEEnumLiteral(sparkTransformationEEnum, SparkTransformation.MAP_VALUES);
+		addEEnumLiteral(sparkTransformationEEnum, SparkTransformation.PARTITION_BY);
+		addEEnumLiteral(sparkTransformationEEnum, SparkTransformation.THE_VALUES);
+		addEEnumLiteral(sparkTransformationEEnum, SparkTransformation.TEXT_FILE);
+		addEEnumLiteral(sparkTransformationEEnum, SparkTransformation.PARALLELIZE);
 
 		initEEnum(sparkOperationEEnum, SparkOperation.class, "SparkOperation");
 		addEEnumLiteral(sparkOperationEEnum, SparkOperation.TRANSFORMATION);

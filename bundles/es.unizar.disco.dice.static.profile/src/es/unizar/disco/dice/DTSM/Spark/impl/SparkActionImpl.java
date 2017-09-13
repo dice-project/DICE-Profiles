@@ -2,7 +2,7 @@
  */
 package es.unizar.disco.dice.DTSM.Spark.impl;
 
-import es.unizar.disco.dice.DTSM.Spark.SparkMap;
+import es.unizar.disco.dice.DTSM.Spark.SparkAction;
 import es.unizar.disco.dice.DTSM.Spark.SparkPackage;
 
 import org.eclipse.emf.common.notify.Notification;
@@ -13,44 +13,44 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Map</b></em>'.
+ * An implementation of the model object '<em><b>Action</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link es.unizar.disco.dice.DTSM.Spark.impl.SparkMapImpl#getMapType <em>Map Type</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Spark.impl.SparkActionImpl#getReduceType <em>Reduce Type</em>}</li>
  * </ul>
  *
  * @generated
  */
-public class SparkMapImpl extends SparkOperationImpl implements SparkMap {
+public class SparkActionImpl extends SparkOperationImpl implements SparkAction {
 	/**
-	 * The default value of the '{@link #getMapType() <em>Map Type</em>}' attribute.
+	 * The default value of the '{@link #getReduceType() <em>Reduce Type</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getMapType()
+	 * @see #getReduceType()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final es.unizar.disco.dice.Basic_Enumeration_Types.SparkMap MAP_TYPE_EDEFAULT = es.unizar.disco.dice.Basic_Enumeration_Types.SparkMap.MAP;
+	protected static final es.unizar.disco.dice.Basic_Enumeration_Types.SparkAction REDUCE_TYPE_EDEFAULT = es.unizar.disco.dice.Basic_Enumeration_Types.SparkAction.REDUCE;
 
 	/**
-	 * The cached value of the '{@link #getMapType() <em>Map Type</em>}' attribute.
+	 * The cached value of the '{@link #getReduceType() <em>Reduce Type</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getMapType()
+	 * @see #getReduceType()
 	 * @generated
 	 * @ordered
 	 */
-	protected es.unizar.disco.dice.Basic_Enumeration_Types.SparkMap mapType = MAP_TYPE_EDEFAULT;
+	protected es.unizar.disco.dice.Basic_Enumeration_Types.SparkAction reduceType = REDUCE_TYPE_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected SparkMapImpl() {
+	protected SparkActionImpl() {
 		super();
 	}
 
@@ -61,7 +61,7 @@ public class SparkMapImpl extends SparkOperationImpl implements SparkMap {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return SparkPackage.Literals.SPARK_MAP;
+		return SparkPackage.Literals.SPARK_ACTION;
 	}
 
 	/**
@@ -69,8 +69,8 @@ public class SparkMapImpl extends SparkOperationImpl implements SparkMap {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public es.unizar.disco.dice.Basic_Enumeration_Types.SparkMap getMapType() {
-		return mapType;
+	public es.unizar.disco.dice.Basic_Enumeration_Types.SparkAction getReduceType() {
+		return reduceType;
 	}
 
 	/**
@@ -78,11 +78,11 @@ public class SparkMapImpl extends SparkOperationImpl implements SparkMap {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMapType(es.unizar.disco.dice.Basic_Enumeration_Types.SparkMap newMapType) {
-		es.unizar.disco.dice.Basic_Enumeration_Types.SparkMap oldMapType = mapType;
-		mapType = newMapType == null ? MAP_TYPE_EDEFAULT : newMapType;
+	public void setReduceType(es.unizar.disco.dice.Basic_Enumeration_Types.SparkAction newReduceType) {
+		es.unizar.disco.dice.Basic_Enumeration_Types.SparkAction oldReduceType = reduceType;
+		reduceType = newReduceType == null ? REDUCE_TYPE_EDEFAULT : newReduceType;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, SparkPackage.SPARK_MAP__MAP_TYPE, oldMapType, mapType));
+			eNotify(new ENotificationImpl(this, Notification.SET, SparkPackage.SPARK_ACTION__REDUCE_TYPE, oldReduceType, reduceType));
 	}
 
 	/**
@@ -93,8 +93,8 @@ public class SparkMapImpl extends SparkOperationImpl implements SparkMap {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case SparkPackage.SPARK_MAP__MAP_TYPE:
-				return getMapType();
+			case SparkPackage.SPARK_ACTION__REDUCE_TYPE:
+				return getReduceType();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -107,8 +107,8 @@ public class SparkMapImpl extends SparkOperationImpl implements SparkMap {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case SparkPackage.SPARK_MAP__MAP_TYPE:
-				setMapType((es.unizar.disco.dice.Basic_Enumeration_Types.SparkMap)newValue);
+			case SparkPackage.SPARK_ACTION__REDUCE_TYPE:
+				setReduceType((es.unizar.disco.dice.Basic_Enumeration_Types.SparkAction)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -122,8 +122,8 @@ public class SparkMapImpl extends SparkOperationImpl implements SparkMap {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case SparkPackage.SPARK_MAP__MAP_TYPE:
-				setMapType(MAP_TYPE_EDEFAULT);
+			case SparkPackage.SPARK_ACTION__REDUCE_TYPE:
+				setReduceType(REDUCE_TYPE_EDEFAULT);
 				return;
 		}
 		super.eUnset(featureID);
@@ -137,8 +137,8 @@ public class SparkMapImpl extends SparkOperationImpl implements SparkMap {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case SparkPackage.SPARK_MAP__MAP_TYPE:
-				return mapType != MAP_TYPE_EDEFAULT;
+			case SparkPackage.SPARK_ACTION__REDUCE_TYPE:
+				return reduceType != REDUCE_TYPE_EDEFAULT;
 		}
 		return super.eIsSet(featureID);
 	}
@@ -153,10 +153,10 @@ public class SparkMapImpl extends SparkOperationImpl implements SparkMap {
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (MapType: ");
-		result.append(mapType);
+		result.append(" (ReduceType: ");
+		result.append(reduceType);
 		result.append(')');
 		return result.toString();
 	}
 
-} //SparkMapImpl
+} //SparkActionImpl

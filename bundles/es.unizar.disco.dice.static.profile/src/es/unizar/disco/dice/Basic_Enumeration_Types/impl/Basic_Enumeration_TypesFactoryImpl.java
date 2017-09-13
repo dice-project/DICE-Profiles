@@ -100,10 +100,10 @@ public class Basic_Enumeration_TypesFactoryImpl extends EFactoryImpl implements 
 				return createLifeCycleElementTypeFromString(eDataType, initialValue);
 			case Basic_Enumeration_TypesPackage.DDS_MCOMPONENT_TYPE:
 				return createDDSMcomponentTypeFromString(eDataType, initialValue);
-			case Basic_Enumeration_TypesPackage.SPARK_REDUCE:
-				return createSparkReduceFromString(eDataType, initialValue);
-			case Basic_Enumeration_TypesPackage.SPARK_MAP:
-				return createSparkMapFromString(eDataType, initialValue);
+			case Basic_Enumeration_TypesPackage.SPARK_ACTION:
+				return createSparkActionFromString(eDataType, initialValue);
+			case Basic_Enumeration_TypesPackage.SPARK_TRANSFORMATION:
+				return createSparkTransformationFromString(eDataType, initialValue);
 			case Basic_Enumeration_TypesPackage.SPARK_OPERATION:
 				return createSparkOperationFromString(eDataType, initialValue);
 			case Basic_Enumeration_TypesPackage.LANGUAGE_TYPE:
@@ -155,10 +155,10 @@ public class Basic_Enumeration_TypesFactoryImpl extends EFactoryImpl implements 
 				return convertLifeCycleElementTypeToString(eDataType, instanceValue);
 			case Basic_Enumeration_TypesPackage.DDS_MCOMPONENT_TYPE:
 				return convertDDSMcomponentTypeToString(eDataType, instanceValue);
-			case Basic_Enumeration_TypesPackage.SPARK_REDUCE:
-				return convertSparkReduceToString(eDataType, instanceValue);
-			case Basic_Enumeration_TypesPackage.SPARK_MAP:
-				return convertSparkMapToString(eDataType, instanceValue);
+			case Basic_Enumeration_TypesPackage.SPARK_ACTION:
+				return convertSparkActionToString(eDataType, instanceValue);
+			case Basic_Enumeration_TypesPackage.SPARK_TRANSFORMATION:
+				return convertSparkTransformationToString(eDataType, instanceValue);
 			case Basic_Enumeration_TypesPackage.SPARK_OPERATION:
 				return convertSparkOperationToString(eDataType, instanceValue);
 			case Basic_Enumeration_TypesPackage.LANGUAGE_TYPE:
@@ -477,8 +477,8 @@ public class Basic_Enumeration_TypesFactoryImpl extends EFactoryImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SparkReduce createSparkReduceFromString(EDataType eDataType, String initialValue) {
-		SparkReduce result = SparkReduce.get(initialValue);
+	public SparkAction createSparkActionFromString(EDataType eDataType, String initialValue) {
+		SparkAction result = SparkAction.get(initialValue);
 		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
 		return result;
 	}
@@ -488,7 +488,7 @@ public class Basic_Enumeration_TypesFactoryImpl extends EFactoryImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertSparkReduceToString(EDataType eDataType, Object instanceValue) {
+	public String convertSparkActionToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 
@@ -497,8 +497,8 @@ public class Basic_Enumeration_TypesFactoryImpl extends EFactoryImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SparkMap createSparkMapFromString(EDataType eDataType, String initialValue) {
-		SparkMap result = SparkMap.get(initialValue);
+	public SparkTransformation createSparkTransformationFromString(EDataType eDataType, String initialValue) {
+		SparkTransformation result = SparkTransformation.get(initialValue);
 		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
 		return result;
 	}
@@ -508,7 +508,7 @@ public class Basic_Enumeration_TypesFactoryImpl extends EFactoryImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertSparkMapToString(EDataType eDataType, Object instanceValue) {
+	public String convertSparkTransformationToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 
