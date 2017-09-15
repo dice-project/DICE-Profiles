@@ -889,14 +889,14 @@ public interface SparkPackage extends EPackage {
 	int SPARK_OPERATION_FEATURE_COUNT = GQAMPackage.GA_STEP_FEATURE_COUNT + 2;
 
 	/**
-	 * The meta object id for the '{@link es.unizar.disco.dice.DTSM.Spark.impl.SparkReduceImpl <em>Reduce</em>}' class.
+	 * The meta object id for the '{@link es.unizar.disco.dice.DTSM.Spark.impl.SparkActionImpl <em>Action</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see es.unizar.disco.dice.DTSM.Spark.impl.SparkReduceImpl
-	 * @see es.unizar.disco.dice.DTSM.Spark.impl.SparkPackageImpl#getSparkReduce()
+	 * @see es.unizar.disco.dice.DTSM.Spark.impl.SparkActionImpl
+	 * @see es.unizar.disco.dice.DTSM.Spark.impl.SparkPackageImpl#getSparkAction()
 	 * @generated
 	 */
-	int SPARK_REDUCE = 2;
+	int SPARK_ACTION = 2;
 
 	/**
 	 * The feature id for the '<em><b>Exec Time</b></em>' attribute list.
@@ -905,7 +905,7 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_REDUCE__EXEC_TIME = SPARK_OPERATION__EXEC_TIME;
+	int SPARK_ACTION__EXEC_TIME = SPARK_OPERATION__EXEC_TIME;
 
 	/**
 	 * The feature id for the '<em><b>Allocated Memory</b></em>' attribute list.
@@ -914,7 +914,7 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_REDUCE__ALLOCATED_MEMORY = SPARK_OPERATION__ALLOCATED_MEMORY;
+	int SPARK_ACTION__ALLOCATED_MEMORY = SPARK_OPERATION__ALLOCATED_MEMORY;
 
 	/**
 	 * The feature id for the '<em><b>Used Memory</b></em>' attribute list.
@@ -923,7 +923,7 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_REDUCE__USED_MEMORY = SPARK_OPERATION__USED_MEMORY;
+	int SPARK_ACTION__USED_MEMORY = SPARK_OPERATION__USED_MEMORY;
 
 	/**
 	 * The feature id for the '<em><b>Power Peak</b></em>' attribute list.
@@ -932,7 +932,7 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_REDUCE__POWER_PEAK = SPARK_OPERATION__POWER_PEAK;
+	int SPARK_ACTION__POWER_PEAK = SPARK_OPERATION__POWER_PEAK;
 
 	/**
 	 * The feature id for the '<em><b>Energy</b></em>' attribute list.
@@ -941,7 +941,7 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_REDUCE__ENERGY = SPARK_OPERATION__ENERGY;
+	int SPARK_ACTION__ENERGY = SPARK_OPERATION__ENERGY;
 
 	/**
 	 * The feature id for the '<em><b>Base Named Element</b></em>' reference.
@@ -950,7 +950,7 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_REDUCE__BASE_NAMED_ELEMENT = SPARK_OPERATION__BASE_NAMED_ELEMENT;
+	int SPARK_ACTION__BASE_NAMED_ELEMENT = SPARK_OPERATION__BASE_NAMED_ELEMENT;
 
 	/**
 	 * The feature id for the '<em><b>Sub Usage</b></em>' reference list.
@@ -959,7 +959,7 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_REDUCE__SUB_USAGE = SPARK_OPERATION__SUB_USAGE;
+	int SPARK_ACTION__SUB_USAGE = SPARK_OPERATION__SUB_USAGE;
 
 	/**
 	 * The feature id for the '<em><b>Used Resources</b></em>' reference list.
@@ -968,7 +968,7 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_REDUCE__USED_RESOURCES = SPARK_OPERATION__USED_RESOURCES;
+	int SPARK_ACTION__USED_RESOURCES = SPARK_OPERATION__USED_RESOURCES;
 
 	/**
 	 * The feature id for the '<em><b>Msg Size</b></em>' attribute list.
@@ -977,7 +977,7 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_REDUCE__MSG_SIZE = SPARK_OPERATION__MSG_SIZE;
+	int SPARK_ACTION__MSG_SIZE = SPARK_OPERATION__MSG_SIZE;
 
 	/**
 	 * The feature id for the '<em><b>On</b></em>' reference list.
@@ -986,7 +986,7 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_REDUCE__ON = SPARK_OPERATION__ON;
+	int SPARK_ACTION__ON = SPARK_OPERATION__ON;
 
 	/**
 	 * The feature id for the '<em><b>Base Action</b></em>' reference.
@@ -995,7 +995,7 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_REDUCE__BASE_ACTION = SPARK_OPERATION__BASE_ACTION;
+	int SPARK_ACTION__BASE_ACTION = SPARK_OPERATION__BASE_ACTION;
 
 	/**
 	 * The feature id for the '<em><b>Base Behavior</b></em>' reference.
@@ -1004,7 +1004,7 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_REDUCE__BASE_BEHAVIOR = SPARK_OPERATION__BASE_BEHAVIOR;
+	int SPARK_ACTION__BASE_BEHAVIOR = SPARK_OPERATION__BASE_BEHAVIOR;
 
 	/**
 	 * The feature id for the '<em><b>Base Message</b></em>' reference.
@@ -1013,7 +1013,7 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_REDUCE__BASE_MESSAGE = SPARK_OPERATION__BASE_MESSAGE;
+	int SPARK_ACTION__BASE_MESSAGE = SPARK_OPERATION__BASE_MESSAGE;
 
 	/**
 	 * The feature id for the '<em><b>Duration</b></em>' containment reference.
@@ -1022,7 +1022,7 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_REDUCE__DURATION = SPARK_OPERATION__DURATION;
+	int SPARK_ACTION__DURATION = SPARK_OPERATION__DURATION;
 
 	/**
 	 * The feature id for the '<em><b>Start</b></em>' reference.
@@ -1031,7 +1031,7 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_REDUCE__START = SPARK_OPERATION__START;
+	int SPARK_ACTION__START = SPARK_OPERATION__START;
 
 	/**
 	 * The feature id for the '<em><b>Finish</b></em>' reference.
@@ -1040,7 +1040,7 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_REDUCE__FINISH = SPARK_OPERATION__FINISH;
+	int SPARK_ACTION__FINISH = SPARK_OPERATION__FINISH;
 
 	/**
 	 * The feature id for the '<em><b>Cause</b></em>' reference.
@@ -1049,7 +1049,7 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_REDUCE__CAUSE = SPARK_OPERATION__CAUSE;
+	int SPARK_ACTION__CAUSE = SPARK_OPERATION__CAUSE;
 
 	/**
 	 * The feature id for the '<em><b>Host Demand</b></em>' attribute list.
@@ -1058,7 +1058,7 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_REDUCE__HOST_DEMAND = SPARK_OPERATION__HOST_DEMAND;
+	int SPARK_ACTION__HOST_DEMAND = SPARK_OPERATION__HOST_DEMAND;
 
 	/**
 	 * The feature id for the '<em><b>Host Demand Ops</b></em>' attribute list.
@@ -1067,7 +1067,7 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_REDUCE__HOST_DEMAND_OPS = SPARK_OPERATION__HOST_DEMAND_OPS;
+	int SPARK_ACTION__HOST_DEMAND_OPS = SPARK_OPERATION__HOST_DEMAND_OPS;
 
 	/**
 	 * The feature id for the '<em><b>Inter Occ T</b></em>' attribute list.
@@ -1076,7 +1076,7 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_REDUCE__INTER_OCC_T = SPARK_OPERATION__INTER_OCC_T;
+	int SPARK_ACTION__INTER_OCC_T = SPARK_OPERATION__INTER_OCC_T;
 
 	/**
 	 * The feature id for the '<em><b>Throughput</b></em>' attribute list.
@@ -1085,7 +1085,7 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_REDUCE__THROUGHPUT = SPARK_OPERATION__THROUGHPUT;
+	int SPARK_ACTION__THROUGHPUT = SPARK_OPERATION__THROUGHPUT;
 
 	/**
 	 * The feature id for the '<em><b>Resp T</b></em>' attribute list.
@@ -1094,7 +1094,7 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_REDUCE__RESP_T = SPARK_OPERATION__RESP_T;
+	int SPARK_ACTION__RESP_T = SPARK_OPERATION__RESP_T;
 
 	/**
 	 * The feature id for the '<em><b>Utilization</b></em>' attribute list.
@@ -1103,7 +1103,7 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_REDUCE__UTILIZATION = SPARK_OPERATION__UTILIZATION;
+	int SPARK_ACTION__UTILIZATION = SPARK_OPERATION__UTILIZATION;
 
 	/**
 	 * The feature id for the '<em><b>Utilization On Host</b></em>' attribute list.
@@ -1112,7 +1112,7 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_REDUCE__UTILIZATION_ON_HOST = SPARK_OPERATION__UTILIZATION_ON_HOST;
+	int SPARK_ACTION__UTILIZATION_ON_HOST = SPARK_OPERATION__UTILIZATION_ON_HOST;
 
 	/**
 	 * The feature id for the '<em><b>Root</b></em>' reference.
@@ -1121,7 +1121,7 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_REDUCE__ROOT = SPARK_OPERATION__ROOT;
+	int SPARK_ACTION__ROOT = SPARK_OPERATION__ROOT;
 
 	/**
 	 * The feature id for the '<em><b>Steps</b></em>' reference list.
@@ -1130,7 +1130,7 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_REDUCE__STEPS = SPARK_OPERATION__STEPS;
+	int SPARK_ACTION__STEPS = SPARK_OPERATION__STEPS;
 
 	/**
 	 * The feature id for the '<em><b>Parent Step</b></em>' reference list.
@@ -1139,7 +1139,7 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_REDUCE__PARENT_STEP = SPARK_OPERATION__PARENT_STEP;
+	int SPARK_ACTION__PARENT_STEP = SPARK_OPERATION__PARENT_STEP;
 
 	/**
 	 * The feature id for the '<em><b>Timing</b></em>' reference list.
@@ -1148,7 +1148,7 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_REDUCE__TIMING = SPARK_OPERATION__TIMING;
+	int SPARK_ACTION__TIMING = SPARK_OPERATION__TIMING;
 
 	/**
 	 * The feature id for the '<em><b>Is Atomic</b></em>' attribute.
@@ -1157,7 +1157,7 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_REDUCE__IS_ATOMIC = SPARK_OPERATION__IS_ATOMIC;
+	int SPARK_ACTION__IS_ATOMIC = SPARK_OPERATION__IS_ATOMIC;
 
 	/**
 	 * The feature id for the '<em><b>Block T</b></em>' attribute.
@@ -1166,7 +1166,7 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_REDUCE__BLOCK_T = SPARK_OPERATION__BLOCK_T;
+	int SPARK_ACTION__BLOCK_T = SPARK_OPERATION__BLOCK_T;
 
 	/**
 	 * The feature id for the '<em><b>Rep</b></em>' attribute.
@@ -1175,7 +1175,7 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_REDUCE__REP = SPARK_OPERATION__REP;
+	int SPARK_ACTION__REP = SPARK_OPERATION__REP;
 
 	/**
 	 * The feature id for the '<em><b>Prob</b></em>' attribute.
@@ -1184,7 +1184,7 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_REDUCE__PROB = SPARK_OPERATION__PROB;
+	int SPARK_ACTION__PROB = SPARK_OPERATION__PROB;
 
 	/**
 	 * The feature id for the '<em><b>Priority</b></em>' attribute.
@@ -1193,7 +1193,7 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_REDUCE__PRIORITY = SPARK_OPERATION__PRIORITY;
+	int SPARK_ACTION__PRIORITY = SPARK_OPERATION__PRIORITY;
 
 	/**
 	 * The feature id for the '<em><b>Concur Res</b></em>' reference.
@@ -1202,7 +1202,7 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_REDUCE__CONCUR_RES = SPARK_OPERATION__CONCUR_RES;
+	int SPARK_ACTION__CONCUR_RES = SPARK_OPERATION__CONCUR_RES;
 
 	/**
 	 * The feature id for the '<em><b>Host</b></em>' reference.
@@ -1211,7 +1211,7 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_REDUCE__HOST = SPARK_OPERATION__HOST;
+	int SPARK_ACTION__HOST = SPARK_OPERATION__HOST;
 
 	/**
 	 * The feature id for the '<em><b>Serv Demand</b></em>' reference list.
@@ -1220,7 +1220,7 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_REDUCE__SERV_DEMAND = SPARK_OPERATION__SERV_DEMAND;
+	int SPARK_ACTION__SERV_DEMAND = SPARK_OPERATION__SERV_DEMAND;
 
 	/**
 	 * The feature id for the '<em><b>Serv Count</b></em>' attribute list.
@@ -1229,7 +1229,7 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_REDUCE__SERV_COUNT = SPARK_OPERATION__SERV_COUNT;
+	int SPARK_ACTION__SERV_COUNT = SPARK_OPERATION__SERV_COUNT;
 
 	/**
 	 * The feature id for the '<em><b>Self Delay</b></em>' attribute.
@@ -1238,7 +1238,7 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_REDUCE__SELF_DELAY = SPARK_OPERATION__SELF_DELAY;
+	int SPARK_ACTION__SELF_DELAY = SPARK_OPERATION__SELF_DELAY;
 
 	/**
 	 * The feature id for the '<em><b>Scenario</b></em>' reference.
@@ -1247,7 +1247,7 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_REDUCE__SCENARIO = SPARK_OPERATION__SCENARIO;
+	int SPARK_ACTION__SCENARIO = SPARK_OPERATION__SCENARIO;
 
 	/**
 	 * The feature id for the '<em><b>Child Scenario</b></em>' reference.
@@ -1256,7 +1256,7 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_REDUCE__CHILD_SCENARIO = SPARK_OPERATION__CHILD_SCENARIO;
+	int SPARK_ACTION__CHILD_SCENARIO = SPARK_OPERATION__CHILD_SCENARIO;
 
 	/**
 	 * The feature id for the '<em><b>Num Tasks</b></em>' attribute.
@@ -1265,7 +1265,7 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_REDUCE__NUM_TASKS = SPARK_OPERATION__NUM_TASKS;
+	int SPARK_ACTION__NUM_TASKS = SPARK_OPERATION__NUM_TASKS;
 
 	/**
 	 * The feature id for the '<em><b>Op Type</b></em>' attribute.
@@ -1274,7 +1274,7 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_REDUCE__OP_TYPE = SPARK_OPERATION__OP_TYPE;
+	int SPARK_ACTION__OP_TYPE = SPARK_OPERATION__OP_TYPE;
 
 	/**
 	 * The feature id for the '<em><b>Reduce Type</b></em>' attribute.
@@ -1283,26 +1283,26 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_REDUCE__REDUCE_TYPE = SPARK_OPERATION_FEATURE_COUNT + 0;
+	int SPARK_ACTION__REDUCE_TYPE = SPARK_OPERATION_FEATURE_COUNT + 0;
 
 	/**
-	 * The number of structural features of the '<em>Reduce</em>' class.
+	 * The number of structural features of the '<em>Action</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_REDUCE_FEATURE_COUNT = SPARK_OPERATION_FEATURE_COUNT + 1;
+	int SPARK_ACTION_FEATURE_COUNT = SPARK_OPERATION_FEATURE_COUNT + 1;
 
 	/**
-	 * The meta object id for the '{@link es.unizar.disco.dice.DTSM.Spark.impl.SparkMapImpl <em>Map</em>}' class.
+	 * The meta object id for the '{@link es.unizar.disco.dice.DTSM.Spark.impl.SparkTransformationImpl <em>Transformation</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see es.unizar.disco.dice.DTSM.Spark.impl.SparkMapImpl
-	 * @see es.unizar.disco.dice.DTSM.Spark.impl.SparkPackageImpl#getSparkMap()
+	 * @see es.unizar.disco.dice.DTSM.Spark.impl.SparkTransformationImpl
+	 * @see es.unizar.disco.dice.DTSM.Spark.impl.SparkPackageImpl#getSparkTransformation()
 	 * @generated
 	 */
-	int SPARK_MAP = 3;
+	int SPARK_TRANSFORMATION = 3;
 
 	/**
 	 * The feature id for the '<em><b>Exec Time</b></em>' attribute list.
@@ -1311,7 +1311,7 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_MAP__EXEC_TIME = SPARK_OPERATION__EXEC_TIME;
+	int SPARK_TRANSFORMATION__EXEC_TIME = SPARK_OPERATION__EXEC_TIME;
 
 	/**
 	 * The feature id for the '<em><b>Allocated Memory</b></em>' attribute list.
@@ -1320,7 +1320,7 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_MAP__ALLOCATED_MEMORY = SPARK_OPERATION__ALLOCATED_MEMORY;
+	int SPARK_TRANSFORMATION__ALLOCATED_MEMORY = SPARK_OPERATION__ALLOCATED_MEMORY;
 
 	/**
 	 * The feature id for the '<em><b>Used Memory</b></em>' attribute list.
@@ -1329,7 +1329,7 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_MAP__USED_MEMORY = SPARK_OPERATION__USED_MEMORY;
+	int SPARK_TRANSFORMATION__USED_MEMORY = SPARK_OPERATION__USED_MEMORY;
 
 	/**
 	 * The feature id for the '<em><b>Power Peak</b></em>' attribute list.
@@ -1338,7 +1338,7 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_MAP__POWER_PEAK = SPARK_OPERATION__POWER_PEAK;
+	int SPARK_TRANSFORMATION__POWER_PEAK = SPARK_OPERATION__POWER_PEAK;
 
 	/**
 	 * The feature id for the '<em><b>Energy</b></em>' attribute list.
@@ -1347,7 +1347,7 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_MAP__ENERGY = SPARK_OPERATION__ENERGY;
+	int SPARK_TRANSFORMATION__ENERGY = SPARK_OPERATION__ENERGY;
 
 	/**
 	 * The feature id for the '<em><b>Base Named Element</b></em>' reference.
@@ -1356,7 +1356,7 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_MAP__BASE_NAMED_ELEMENT = SPARK_OPERATION__BASE_NAMED_ELEMENT;
+	int SPARK_TRANSFORMATION__BASE_NAMED_ELEMENT = SPARK_OPERATION__BASE_NAMED_ELEMENT;
 
 	/**
 	 * The feature id for the '<em><b>Sub Usage</b></em>' reference list.
@@ -1365,7 +1365,7 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_MAP__SUB_USAGE = SPARK_OPERATION__SUB_USAGE;
+	int SPARK_TRANSFORMATION__SUB_USAGE = SPARK_OPERATION__SUB_USAGE;
 
 	/**
 	 * The feature id for the '<em><b>Used Resources</b></em>' reference list.
@@ -1374,7 +1374,7 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_MAP__USED_RESOURCES = SPARK_OPERATION__USED_RESOURCES;
+	int SPARK_TRANSFORMATION__USED_RESOURCES = SPARK_OPERATION__USED_RESOURCES;
 
 	/**
 	 * The feature id for the '<em><b>Msg Size</b></em>' attribute list.
@@ -1383,7 +1383,7 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_MAP__MSG_SIZE = SPARK_OPERATION__MSG_SIZE;
+	int SPARK_TRANSFORMATION__MSG_SIZE = SPARK_OPERATION__MSG_SIZE;
 
 	/**
 	 * The feature id for the '<em><b>On</b></em>' reference list.
@@ -1392,7 +1392,7 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_MAP__ON = SPARK_OPERATION__ON;
+	int SPARK_TRANSFORMATION__ON = SPARK_OPERATION__ON;
 
 	/**
 	 * The feature id for the '<em><b>Base Action</b></em>' reference.
@@ -1401,7 +1401,7 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_MAP__BASE_ACTION = SPARK_OPERATION__BASE_ACTION;
+	int SPARK_TRANSFORMATION__BASE_ACTION = SPARK_OPERATION__BASE_ACTION;
 
 	/**
 	 * The feature id for the '<em><b>Base Behavior</b></em>' reference.
@@ -1410,7 +1410,7 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_MAP__BASE_BEHAVIOR = SPARK_OPERATION__BASE_BEHAVIOR;
+	int SPARK_TRANSFORMATION__BASE_BEHAVIOR = SPARK_OPERATION__BASE_BEHAVIOR;
 
 	/**
 	 * The feature id for the '<em><b>Base Message</b></em>' reference.
@@ -1419,7 +1419,7 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_MAP__BASE_MESSAGE = SPARK_OPERATION__BASE_MESSAGE;
+	int SPARK_TRANSFORMATION__BASE_MESSAGE = SPARK_OPERATION__BASE_MESSAGE;
 
 	/**
 	 * The feature id for the '<em><b>Duration</b></em>' containment reference.
@@ -1428,7 +1428,7 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_MAP__DURATION = SPARK_OPERATION__DURATION;
+	int SPARK_TRANSFORMATION__DURATION = SPARK_OPERATION__DURATION;
 
 	/**
 	 * The feature id for the '<em><b>Start</b></em>' reference.
@@ -1437,7 +1437,7 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_MAP__START = SPARK_OPERATION__START;
+	int SPARK_TRANSFORMATION__START = SPARK_OPERATION__START;
 
 	/**
 	 * The feature id for the '<em><b>Finish</b></em>' reference.
@@ -1446,7 +1446,7 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_MAP__FINISH = SPARK_OPERATION__FINISH;
+	int SPARK_TRANSFORMATION__FINISH = SPARK_OPERATION__FINISH;
 
 	/**
 	 * The feature id for the '<em><b>Cause</b></em>' reference.
@@ -1455,7 +1455,7 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_MAP__CAUSE = SPARK_OPERATION__CAUSE;
+	int SPARK_TRANSFORMATION__CAUSE = SPARK_OPERATION__CAUSE;
 
 	/**
 	 * The feature id for the '<em><b>Host Demand</b></em>' attribute list.
@@ -1464,7 +1464,7 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_MAP__HOST_DEMAND = SPARK_OPERATION__HOST_DEMAND;
+	int SPARK_TRANSFORMATION__HOST_DEMAND = SPARK_OPERATION__HOST_DEMAND;
 
 	/**
 	 * The feature id for the '<em><b>Host Demand Ops</b></em>' attribute list.
@@ -1473,7 +1473,7 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_MAP__HOST_DEMAND_OPS = SPARK_OPERATION__HOST_DEMAND_OPS;
+	int SPARK_TRANSFORMATION__HOST_DEMAND_OPS = SPARK_OPERATION__HOST_DEMAND_OPS;
 
 	/**
 	 * The feature id for the '<em><b>Inter Occ T</b></em>' attribute list.
@@ -1482,7 +1482,7 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_MAP__INTER_OCC_T = SPARK_OPERATION__INTER_OCC_T;
+	int SPARK_TRANSFORMATION__INTER_OCC_T = SPARK_OPERATION__INTER_OCC_T;
 
 	/**
 	 * The feature id for the '<em><b>Throughput</b></em>' attribute list.
@@ -1491,7 +1491,7 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_MAP__THROUGHPUT = SPARK_OPERATION__THROUGHPUT;
+	int SPARK_TRANSFORMATION__THROUGHPUT = SPARK_OPERATION__THROUGHPUT;
 
 	/**
 	 * The feature id for the '<em><b>Resp T</b></em>' attribute list.
@@ -1500,7 +1500,7 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_MAP__RESP_T = SPARK_OPERATION__RESP_T;
+	int SPARK_TRANSFORMATION__RESP_T = SPARK_OPERATION__RESP_T;
 
 	/**
 	 * The feature id for the '<em><b>Utilization</b></em>' attribute list.
@@ -1509,7 +1509,7 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_MAP__UTILIZATION = SPARK_OPERATION__UTILIZATION;
+	int SPARK_TRANSFORMATION__UTILIZATION = SPARK_OPERATION__UTILIZATION;
 
 	/**
 	 * The feature id for the '<em><b>Utilization On Host</b></em>' attribute list.
@@ -1518,7 +1518,7 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_MAP__UTILIZATION_ON_HOST = SPARK_OPERATION__UTILIZATION_ON_HOST;
+	int SPARK_TRANSFORMATION__UTILIZATION_ON_HOST = SPARK_OPERATION__UTILIZATION_ON_HOST;
 
 	/**
 	 * The feature id for the '<em><b>Root</b></em>' reference.
@@ -1527,7 +1527,7 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_MAP__ROOT = SPARK_OPERATION__ROOT;
+	int SPARK_TRANSFORMATION__ROOT = SPARK_OPERATION__ROOT;
 
 	/**
 	 * The feature id for the '<em><b>Steps</b></em>' reference list.
@@ -1536,7 +1536,7 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_MAP__STEPS = SPARK_OPERATION__STEPS;
+	int SPARK_TRANSFORMATION__STEPS = SPARK_OPERATION__STEPS;
 
 	/**
 	 * The feature id for the '<em><b>Parent Step</b></em>' reference list.
@@ -1545,7 +1545,7 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_MAP__PARENT_STEP = SPARK_OPERATION__PARENT_STEP;
+	int SPARK_TRANSFORMATION__PARENT_STEP = SPARK_OPERATION__PARENT_STEP;
 
 	/**
 	 * The feature id for the '<em><b>Timing</b></em>' reference list.
@@ -1554,7 +1554,7 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_MAP__TIMING = SPARK_OPERATION__TIMING;
+	int SPARK_TRANSFORMATION__TIMING = SPARK_OPERATION__TIMING;
 
 	/**
 	 * The feature id for the '<em><b>Is Atomic</b></em>' attribute.
@@ -1563,7 +1563,7 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_MAP__IS_ATOMIC = SPARK_OPERATION__IS_ATOMIC;
+	int SPARK_TRANSFORMATION__IS_ATOMIC = SPARK_OPERATION__IS_ATOMIC;
 
 	/**
 	 * The feature id for the '<em><b>Block T</b></em>' attribute.
@@ -1572,7 +1572,7 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_MAP__BLOCK_T = SPARK_OPERATION__BLOCK_T;
+	int SPARK_TRANSFORMATION__BLOCK_T = SPARK_OPERATION__BLOCK_T;
 
 	/**
 	 * The feature id for the '<em><b>Rep</b></em>' attribute.
@@ -1581,7 +1581,7 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_MAP__REP = SPARK_OPERATION__REP;
+	int SPARK_TRANSFORMATION__REP = SPARK_OPERATION__REP;
 
 	/**
 	 * The feature id for the '<em><b>Prob</b></em>' attribute.
@@ -1590,7 +1590,7 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_MAP__PROB = SPARK_OPERATION__PROB;
+	int SPARK_TRANSFORMATION__PROB = SPARK_OPERATION__PROB;
 
 	/**
 	 * The feature id for the '<em><b>Priority</b></em>' attribute.
@@ -1599,7 +1599,7 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_MAP__PRIORITY = SPARK_OPERATION__PRIORITY;
+	int SPARK_TRANSFORMATION__PRIORITY = SPARK_OPERATION__PRIORITY;
 
 	/**
 	 * The feature id for the '<em><b>Concur Res</b></em>' reference.
@@ -1608,7 +1608,7 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_MAP__CONCUR_RES = SPARK_OPERATION__CONCUR_RES;
+	int SPARK_TRANSFORMATION__CONCUR_RES = SPARK_OPERATION__CONCUR_RES;
 
 	/**
 	 * The feature id for the '<em><b>Host</b></em>' reference.
@@ -1617,7 +1617,7 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_MAP__HOST = SPARK_OPERATION__HOST;
+	int SPARK_TRANSFORMATION__HOST = SPARK_OPERATION__HOST;
 
 	/**
 	 * The feature id for the '<em><b>Serv Demand</b></em>' reference list.
@@ -1626,7 +1626,7 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_MAP__SERV_DEMAND = SPARK_OPERATION__SERV_DEMAND;
+	int SPARK_TRANSFORMATION__SERV_DEMAND = SPARK_OPERATION__SERV_DEMAND;
 
 	/**
 	 * The feature id for the '<em><b>Serv Count</b></em>' attribute list.
@@ -1635,7 +1635,7 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_MAP__SERV_COUNT = SPARK_OPERATION__SERV_COUNT;
+	int SPARK_TRANSFORMATION__SERV_COUNT = SPARK_OPERATION__SERV_COUNT;
 
 	/**
 	 * The feature id for the '<em><b>Self Delay</b></em>' attribute.
@@ -1644,7 +1644,7 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_MAP__SELF_DELAY = SPARK_OPERATION__SELF_DELAY;
+	int SPARK_TRANSFORMATION__SELF_DELAY = SPARK_OPERATION__SELF_DELAY;
 
 	/**
 	 * The feature id for the '<em><b>Scenario</b></em>' reference.
@@ -1653,7 +1653,7 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_MAP__SCENARIO = SPARK_OPERATION__SCENARIO;
+	int SPARK_TRANSFORMATION__SCENARIO = SPARK_OPERATION__SCENARIO;
 
 	/**
 	 * The feature id for the '<em><b>Child Scenario</b></em>' reference.
@@ -1662,7 +1662,7 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_MAP__CHILD_SCENARIO = SPARK_OPERATION__CHILD_SCENARIO;
+	int SPARK_TRANSFORMATION__CHILD_SCENARIO = SPARK_OPERATION__CHILD_SCENARIO;
 
 	/**
 	 * The feature id for the '<em><b>Num Tasks</b></em>' attribute.
@@ -1671,7 +1671,7 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_MAP__NUM_TASKS = SPARK_OPERATION__NUM_TASKS;
+	int SPARK_TRANSFORMATION__NUM_TASKS = SPARK_OPERATION__NUM_TASKS;
 
 	/**
 	 * The feature id for the '<em><b>Op Type</b></em>' attribute.
@@ -1680,7 +1680,7 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_MAP__OP_TYPE = SPARK_OPERATION__OP_TYPE;
+	int SPARK_TRANSFORMATION__OP_TYPE = SPARK_OPERATION__OP_TYPE;
 
 	/**
 	 * The feature id for the '<em><b>Map Type</b></em>' attribute.
@@ -1689,16 +1689,16 @@ public interface SparkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_MAP__MAP_TYPE = SPARK_OPERATION_FEATURE_COUNT + 0;
+	int SPARK_TRANSFORMATION__MAP_TYPE = SPARK_OPERATION_FEATURE_COUNT + 0;
 
 	/**
-	 * The number of structural features of the '<em>Map</em>' class.
+	 * The number of structural features of the '<em>Transformation</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_MAP_FEATURE_COUNT = SPARK_OPERATION_FEATURE_COUNT + 1;
+	int SPARK_TRANSFORMATION_FEATURE_COUNT = SPARK_OPERATION_FEATURE_COUNT + 1;
 
 	/**
 	 * The meta object id for the '{@link es.unizar.disco.dice.DTSM.Spark.impl.SparkNodeImpl <em>Node</em>}' class.
@@ -2463,46 +2463,46 @@ public interface SparkPackage extends EPackage {
 	EAttribute getSparkOperation_OpType();
 
 	/**
-	 * Returns the meta object for class '{@link es.unizar.disco.dice.DTSM.Spark.SparkReduce <em>Reduce</em>}'.
+	 * Returns the meta object for class '{@link es.unizar.disco.dice.DTSM.Spark.SparkAction <em>Action</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Reduce</em>'.
-	 * @see es.unizar.disco.dice.DTSM.Spark.SparkReduce
+	 * @return the meta object for class '<em>Action</em>'.
+	 * @see es.unizar.disco.dice.DTSM.Spark.SparkAction
 	 * @generated
 	 */
-	EClass getSparkReduce();
+	EClass getSparkAction();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DTSM.Spark.SparkReduce#getReduceType <em>Reduce Type</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DTSM.Spark.SparkAction#getReduceType <em>Reduce Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Reduce Type</em>'.
-	 * @see es.unizar.disco.dice.DTSM.Spark.SparkReduce#getReduceType()
-	 * @see #getSparkReduce()
+	 * @see es.unizar.disco.dice.DTSM.Spark.SparkAction#getReduceType()
+	 * @see #getSparkAction()
 	 * @generated
 	 */
-	EAttribute getSparkReduce_ReduceType();
+	EAttribute getSparkAction_ReduceType();
 
 	/**
-	 * Returns the meta object for class '{@link es.unizar.disco.dice.DTSM.Spark.SparkMap <em>Map</em>}'.
+	 * Returns the meta object for class '{@link es.unizar.disco.dice.DTSM.Spark.SparkTransformation <em>Transformation</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Map</em>'.
-	 * @see es.unizar.disco.dice.DTSM.Spark.SparkMap
+	 * @return the meta object for class '<em>Transformation</em>'.
+	 * @see es.unizar.disco.dice.DTSM.Spark.SparkTransformation
 	 * @generated
 	 */
-	EClass getSparkMap();
+	EClass getSparkTransformation();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DTSM.Spark.SparkMap#getMapType <em>Map Type</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DTSM.Spark.SparkTransformation#getMapType <em>Map Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Map Type</em>'.
-	 * @see es.unizar.disco.dice.DTSM.Spark.SparkMap#getMapType()
-	 * @see #getSparkMap()
+	 * @see es.unizar.disco.dice.DTSM.Spark.SparkTransformation#getMapType()
+	 * @see #getSparkTransformation()
 	 * @generated
 	 */
-	EAttribute getSparkMap_MapType();
+	EAttribute getSparkTransformation_MapType();
 
 	/**
 	 * Returns the meta object for class '{@link es.unizar.disco.dice.DTSM.Spark.SparkNode <em>Node</em>}'.
@@ -2651,14 +2651,14 @@ public interface SparkPackage extends EPackage {
 		EAttribute SPARK_OPERATION__OP_TYPE = eINSTANCE.getSparkOperation_OpType();
 
 		/**
-		 * The meta object literal for the '{@link es.unizar.disco.dice.DTSM.Spark.impl.SparkReduceImpl <em>Reduce</em>}' class.
+		 * The meta object literal for the '{@link es.unizar.disco.dice.DTSM.Spark.impl.SparkActionImpl <em>Action</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see es.unizar.disco.dice.DTSM.Spark.impl.SparkReduceImpl
-		 * @see es.unizar.disco.dice.DTSM.Spark.impl.SparkPackageImpl#getSparkReduce()
+		 * @see es.unizar.disco.dice.DTSM.Spark.impl.SparkActionImpl
+		 * @see es.unizar.disco.dice.DTSM.Spark.impl.SparkPackageImpl#getSparkAction()
 		 * @generated
 		 */
-		EClass SPARK_REDUCE = eINSTANCE.getSparkReduce();
+		EClass SPARK_ACTION = eINSTANCE.getSparkAction();
 
 		/**
 		 * The meta object literal for the '<em><b>Reduce Type</b></em>' attribute feature.
@@ -2666,17 +2666,17 @@ public interface SparkPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute SPARK_REDUCE__REDUCE_TYPE = eINSTANCE.getSparkReduce_ReduceType();
+		EAttribute SPARK_ACTION__REDUCE_TYPE = eINSTANCE.getSparkAction_ReduceType();
 
 		/**
-		 * The meta object literal for the '{@link es.unizar.disco.dice.DTSM.Spark.impl.SparkMapImpl <em>Map</em>}' class.
+		 * The meta object literal for the '{@link es.unizar.disco.dice.DTSM.Spark.impl.SparkTransformationImpl <em>Transformation</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see es.unizar.disco.dice.DTSM.Spark.impl.SparkMapImpl
-		 * @see es.unizar.disco.dice.DTSM.Spark.impl.SparkPackageImpl#getSparkMap()
+		 * @see es.unizar.disco.dice.DTSM.Spark.impl.SparkTransformationImpl
+		 * @see es.unizar.disco.dice.DTSM.Spark.impl.SparkPackageImpl#getSparkTransformation()
 		 * @generated
 		 */
-		EClass SPARK_MAP = eINSTANCE.getSparkMap();
+		EClass SPARK_TRANSFORMATION = eINSTANCE.getSparkTransformation();
 
 		/**
 		 * The meta object literal for the '<em><b>Map Type</b></em>' attribute feature.
@@ -2684,7 +2684,7 @@ public interface SparkPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute SPARK_MAP__MAP_TYPE = eINSTANCE.getSparkMap_MapType();
+		EAttribute SPARK_TRANSFORMATION__MAP_TYPE = eINSTANCE.getSparkTransformation_MapType();
 
 		/**
 		 * The meta object literal for the '{@link es.unizar.disco.dice.DTSM.Spark.impl.SparkNodeImpl <em>Node</em>}' class.

@@ -111,7 +111,7 @@
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_XTA5EIlxEeaFpJw9Inr05g" name="MasterNode"/>
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_anapEIlxEeaFpJw9Inr05g" name="SlaveNode"/>
         </packagedElement>
-        <packagedElement xmi:type="uml:Enumeration" xmi:id="_zfUr4PdQEeauAqwbCM80KA" name="SparkReduce">
+        <packagedElement xmi:type="uml:Enumeration" xmi:id="_zfUr4PdQEeauAqwbCM80KA" name="SparkAction">
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_zfUr4fdQEeauAqwbCM80KA" name="Reduce"/>
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_zfUr4vdQEeauAqwbCM80KA" name="Sample"/>
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_kdifcDF_Eee885La5W44QQ" name="Collect"/>
@@ -119,8 +119,15 @@
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_elAl0DF_Eee885La5W44QQ" name="SaveAs"/>
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_gnv5oDF_Eee885La5W44QQ" name="CountByKey"/>
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_iCojQDF_Eee885La5W44QQ" name="ForEach"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_6z2XkJewEeeUPJpYaOXMoA" name="Aggregate"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_CdjT4JexEeeUPJpYaOXMoA" name="CollectAsMap"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_E4ByQJexEeeUPJpYaOXMoA" name="CountByValue"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_IG6wIJexEeeUPJpYaOXMoA" name="Fold"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_LeqvEJexEeeUPJpYaOXMoA" name="Lookup"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_P6y8IJexEeeUPJpYaOXMoA" name="Take"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_UGLXcJexEeeUPJpYaOXMoA" name="Top"/>
         </packagedElement>
-        <packagedElement xmi:type="uml:Enumeration" xmi:id="_zfVS8PdQEeauAqwbCM80KA" name="SparkMap">
+        <packagedElement xmi:type="uml:Enumeration" xmi:id="_zfVS8PdQEeauAqwbCM80KA" name="SparkTransformation">
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_zfVS8fdQEeauAqwbCM80KA" name="Map"/>
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_zfVS8vdQEeauAqwbCM80KA" name="Filter"/>
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_zfVS8_dQEeauAqwbCM80KA" name="Sample"/>
@@ -128,11 +135,25 @@
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_FyLlYDF_Eee885La5W44QQ" name="Union"/>
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_IfKwEDF_Eee885La5W44QQ" name="Intersection"/>
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_JjM_8DF_Eee885La5W44QQ" name="Substraction"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_39WWcJeuEeeUPJpYaOXMoA" name="Subtract"/>
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_kSlk8DGFEee885La5W44QQ" name="Distinct"/>
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_zfVS9PdQEeauAqwbCM80KA" name="ByKey"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_O58OAJevEeeUPJpYaOXMoA" name="CombineByKey"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_hkwHUJevEeeUPJpYaOXMoA" name="GroupByKey"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_0Wr8UJevEeeUPJpYaOXMoA" name="ReduceByKey"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_4f9e0JevEeeUPJpYaOXMoA" name="SortByKey"/>
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_MJV7wDF_Eee885La5W44QQ" name="Join"/>
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_K33FwDF_Eee885La5W44QQ" name="Cartesian"/>
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_AhVW0DF_Eee885La5W44QQ" name="Repartition"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_IOMuwJevEeeUPJpYaOXMoA" name="Cogroup"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_Wp0q0JevEeeUPJpYaOXMoA" name="FlatMap"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_jQw9MJevEeeUPJpYaOXMoA" name="GroupWith"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_mGbiwJevEeeUPJpYaOXMoA" name="Keys"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_n7CT8JevEeeUPJpYaOXMoA" name="MapValues"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_tzq7QJevEeeUPJpYaOXMoA" name="PartitionBy"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_9jpbIJevEeeUPJpYaOXMoA" name="theValues"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_X1mUoJhjEeeUPJpYaOXMoA" name="TextFile"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_Zys6gJhjEeeUPJpYaOXMoA" name="Parallelize"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Enumeration" xmi:id="_CC_MYP8iEeae0ceaALtJ7Q" name="SparkOperation">
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_CC_MYf8iEeae0ceaALtJ7Q" name="Transformation"/>

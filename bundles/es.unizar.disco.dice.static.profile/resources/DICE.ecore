@@ -273,13 +273,13 @@
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="OpType" ordered="false"
               lowerBound="1" eType="ecore:EEnum DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/SparkOperation"/>
         </eClassifiers>
-        <eClassifiers xsi:type="ecore:EClass" name="SparkReduce" eSuperTypes="#//DICE_UML_Extensions/DTSM/Spark/SparkOperation">
+        <eClassifiers xsi:type="ecore:EClass" name="SparkAction" eSuperTypes="#//DICE_UML_Extensions/DTSM/Spark/SparkOperation">
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="ReduceType" ordered="false"
-              lowerBound="1" eType="ecore:EEnum DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/SparkReduce"/>
+              lowerBound="1" eType="ecore:EEnum DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/SparkAction"/>
         </eClassifiers>
-        <eClassifiers xsi:type="ecore:EClass" name="SparkMap" eSuperTypes="#//DICE_UML_Extensions/DTSM/Spark/SparkOperation">
+        <eClassifiers xsi:type="ecore:EClass" name="SparkTransformation" eSuperTypes="#//DICE_UML_Extensions/DTSM/Spark/SparkOperation">
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="MapType" ordered="false"
-              lowerBound="1" eType="ecore:EEnum DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/SparkMap"/>
+              lowerBound="1" eType="ecore:EEnum DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/SparkTransformation"/>
         </eClassifiers>
         <eClassifiers xsi:type="ecore:EClass" name="SparkNode" eSuperTypes="#//DICE_UML_Extensions/DTSM/Core/CoreComputationNode ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE.ecore#//MARTE_AnalysisModel/GQAM/GaScenario">
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="nCores" ordered="false"

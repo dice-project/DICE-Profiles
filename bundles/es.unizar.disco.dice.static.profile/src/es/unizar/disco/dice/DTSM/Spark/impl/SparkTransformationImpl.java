@@ -3,7 +3,7 @@
 package es.unizar.disco.dice.DTSM.Spark.impl;
 
 import es.unizar.disco.dice.DTSM.Spark.SparkPackage;
-import es.unizar.disco.dice.DTSM.Spark.SparkReduce;
+import es.unizar.disco.dice.DTSM.Spark.SparkTransformation;
 
 import org.eclipse.emf.common.notify.Notification;
 
@@ -13,44 +13,44 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Reduce</b></em>'.
+ * An implementation of the model object '<em><b>Transformation</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link es.unizar.disco.dice.DTSM.Spark.impl.SparkReduceImpl#getReduceType <em>Reduce Type</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Spark.impl.SparkTransformationImpl#getMapType <em>Map Type</em>}</li>
  * </ul>
  *
  * @generated
  */
-public class SparkReduceImpl extends SparkOperationImpl implements SparkReduce {
+public class SparkTransformationImpl extends SparkOperationImpl implements SparkTransformation {
 	/**
-	 * The default value of the '{@link #getReduceType() <em>Reduce Type</em>}' attribute.
+	 * The default value of the '{@link #getMapType() <em>Map Type</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getReduceType()
+	 * @see #getMapType()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final es.unizar.disco.dice.Basic_Enumeration_Types.SparkReduce REDUCE_TYPE_EDEFAULT = es.unizar.disco.dice.Basic_Enumeration_Types.SparkReduce.REDUCE;
+	protected static final es.unizar.disco.dice.Basic_Enumeration_Types.SparkTransformation MAP_TYPE_EDEFAULT = es.unizar.disco.dice.Basic_Enumeration_Types.SparkTransformation.MAP;
 
 	/**
-	 * The cached value of the '{@link #getReduceType() <em>Reduce Type</em>}' attribute.
+	 * The cached value of the '{@link #getMapType() <em>Map Type</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getReduceType()
+	 * @see #getMapType()
 	 * @generated
 	 * @ordered
 	 */
-	protected es.unizar.disco.dice.Basic_Enumeration_Types.SparkReduce reduceType = REDUCE_TYPE_EDEFAULT;
+	protected es.unizar.disco.dice.Basic_Enumeration_Types.SparkTransformation mapType = MAP_TYPE_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected SparkReduceImpl() {
+	protected SparkTransformationImpl() {
 		super();
 	}
 
@@ -61,7 +61,7 @@ public class SparkReduceImpl extends SparkOperationImpl implements SparkReduce {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return SparkPackage.Literals.SPARK_REDUCE;
+		return SparkPackage.Literals.SPARK_TRANSFORMATION;
 	}
 
 	/**
@@ -69,8 +69,8 @@ public class SparkReduceImpl extends SparkOperationImpl implements SparkReduce {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public es.unizar.disco.dice.Basic_Enumeration_Types.SparkReduce getReduceType() {
-		return reduceType;
+	public es.unizar.disco.dice.Basic_Enumeration_Types.SparkTransformation getMapType() {
+		return mapType;
 	}
 
 	/**
@@ -78,11 +78,11 @@ public class SparkReduceImpl extends SparkOperationImpl implements SparkReduce {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setReduceType(es.unizar.disco.dice.Basic_Enumeration_Types.SparkReduce newReduceType) {
-		es.unizar.disco.dice.Basic_Enumeration_Types.SparkReduce oldReduceType = reduceType;
-		reduceType = newReduceType == null ? REDUCE_TYPE_EDEFAULT : newReduceType;
+	public void setMapType(es.unizar.disco.dice.Basic_Enumeration_Types.SparkTransformation newMapType) {
+		es.unizar.disco.dice.Basic_Enumeration_Types.SparkTransformation oldMapType = mapType;
+		mapType = newMapType == null ? MAP_TYPE_EDEFAULT : newMapType;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, SparkPackage.SPARK_REDUCE__REDUCE_TYPE, oldReduceType, reduceType));
+			eNotify(new ENotificationImpl(this, Notification.SET, SparkPackage.SPARK_TRANSFORMATION__MAP_TYPE, oldMapType, mapType));
 	}
 
 	/**
@@ -93,8 +93,8 @@ public class SparkReduceImpl extends SparkOperationImpl implements SparkReduce {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case SparkPackage.SPARK_REDUCE__REDUCE_TYPE:
-				return getReduceType();
+			case SparkPackage.SPARK_TRANSFORMATION__MAP_TYPE:
+				return getMapType();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -107,8 +107,8 @@ public class SparkReduceImpl extends SparkOperationImpl implements SparkReduce {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case SparkPackage.SPARK_REDUCE__REDUCE_TYPE:
-				setReduceType((es.unizar.disco.dice.Basic_Enumeration_Types.SparkReduce)newValue);
+			case SparkPackage.SPARK_TRANSFORMATION__MAP_TYPE:
+				setMapType((es.unizar.disco.dice.Basic_Enumeration_Types.SparkTransformation)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -122,8 +122,8 @@ public class SparkReduceImpl extends SparkOperationImpl implements SparkReduce {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case SparkPackage.SPARK_REDUCE__REDUCE_TYPE:
-				setReduceType(REDUCE_TYPE_EDEFAULT);
+			case SparkPackage.SPARK_TRANSFORMATION__MAP_TYPE:
+				setMapType(MAP_TYPE_EDEFAULT);
 				return;
 		}
 		super.eUnset(featureID);
@@ -137,8 +137,8 @@ public class SparkReduceImpl extends SparkOperationImpl implements SparkReduce {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case SparkPackage.SPARK_REDUCE__REDUCE_TYPE:
-				return reduceType != REDUCE_TYPE_EDEFAULT;
+			case SparkPackage.SPARK_TRANSFORMATION__MAP_TYPE:
+				return mapType != MAP_TYPE_EDEFAULT;
 		}
 		return super.eIsSet(featureID);
 	}
@@ -153,10 +153,10 @@ public class SparkReduceImpl extends SparkOperationImpl implements SparkReduce {
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (ReduceType: ");
-		result.append(reduceType);
+		result.append(" (MapType: ");
+		result.append(mapType);
 		result.append(')');
 		return result.toString();
 	}
 
-} //SparkReduceImpl
+} //SparkTransformationImpl
