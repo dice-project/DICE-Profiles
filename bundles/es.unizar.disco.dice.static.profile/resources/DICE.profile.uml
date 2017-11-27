@@ -1266,7 +1266,10 @@
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
             <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_eI4LwNNXEeeaspqhclZI9g" value="1"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_xuujQNNSEeeaspqhclZI9g" name="num_executors"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_xuujQNNSEeeaspqhclZI9g" name="num_executors">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_LggzkNOFEeeK2Pr_4Ko7iA" value="1"/>
+          </ownedAttribute>
         </packagedElement>
         <packagedElement xmi:type="uml:Stereotype" xmi:id="_3DR0EC8lEeeKwIxvoTP_kA" name="DdsmMongoDBCluster">
           <generalization xmi:type="uml:Generalization" xmi:id="_CRmtsC8mEeeKwIxvoTP_kA" general="_SIP7oP5lEeastMYiWd95zQ"/>
