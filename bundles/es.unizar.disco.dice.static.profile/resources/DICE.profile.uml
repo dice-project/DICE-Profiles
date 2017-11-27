@@ -1242,6 +1242,31 @@
         </packagedElement>
         <packagedElement xmi:type="uml:Stereotype" xmi:id="_QSJKIAKNEeeo9amVjAoIhA" name="DdsmSparkCluster">
           <generalization xmi:type="uml:Generalization" xmi:id="_SWr0wAKNEeeo9amVjAoIhA" general="_Q1XXcP5lEeastMYiWd95zQ"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_YEZ6INNSEeeaspqhclZI9g" name="driver_memory">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_0raaANNWEeeaspqhclZI9g" value="5"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_m1aQUNNSEeeaspqhclZI9g" name="driver_cores">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_G8vcUNNXEeeaspqhclZI9g" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_oJg8gNNSEeeaspqhclZI9g" name="max_result_size">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_LXZpwNNXEeeaspqhclZI9g" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_qBiOENNSEeeaspqhclZI9g" name="ui_port">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_RmEygNNXEeeaspqhclZI9g" value="4040"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_rcDEQNNSEeeaspqhclZI9g" name="executor_memory">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_XjzVMNNXEeeaspqhclZI9g" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_uKpYgNNSEeeaspqhclZI9g" name="executor_cores">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_eI4LwNNXEeeaspqhclZI9g" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_xuujQNNSEeeaspqhclZI9g" name="num_executors"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Stereotype" xmi:id="_3DR0EC8lEeeKwIxvoTP_kA" name="DdsmMongoDBCluster">
           <generalization xmi:type="uml:Generalization" xmi:id="_CRmtsC8mEeeKwIxvoTP_kA" general="_SIP7oP5lEeastMYiWd95zQ"/>
