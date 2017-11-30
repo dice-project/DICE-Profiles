@@ -6,7 +6,7 @@
     </packageImport>
     <packagedElement xmi:type="uml:Activity" xmi:id="_fhMfgBXCEeaO9pVQNhbfJw" name="Topology" node="_LNmCcBXNEeaO9pVQNhbfJw _M66f4BXNEeaO9pVQNhbfJw _lloGIBXNEeaO9pVQNhbfJw _INX9QBXOEeaO9pVQNhbfJw _VDniQDnxEeaBQNKHvmh8mQ _svru8DnxEeaBQNKHvmh8mQ _w_mtgDPGEeax3OqdhCztQw _TEcG0DOxEeax3OqdhCztQw _Ll1YwBXMEeaO9pVQNhbfJw _CRMkoBXMEeaO9pVQNhbfJw _Jw8CwBXDEeaO9pVQNhbfJw" group="_UD_Q0BXMEeaO9pVQNhbfJw _jbq2oGqpEeadLpmgngveUw">
       <ownedComment xmi:type="uml:Comment" xmi:id="_XzbEAIlcEeai5cR0zDah1g" annotatedElement="_fhMfgBXCEeaO9pVQNhbfJw">
-        <body>{utilization= (expr=$use, unit=%, statQ=mean, source=calc)}
+        <body>{utilization= (expr=$use, statQ=mean, source=calc)}
 </body>
       </ownedComment>
       <edge xmi:type="uml:ControlFlow" xmi:id="_BP6fEBXSEeaO9pVQNhbfJw" target="_INX9QBXOEeaO9pVQNhbfJw" source="_lloGIBXNEeaO9pVQNhbfJw"/>
