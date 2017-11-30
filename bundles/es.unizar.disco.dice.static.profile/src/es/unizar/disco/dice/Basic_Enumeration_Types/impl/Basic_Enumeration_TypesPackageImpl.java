@@ -37,8 +37,8 @@ import es.unizar.disco.dice.Complex_Data_Types.impl.Complex_Data_TypesPackageImp
 import es.unizar.disco.dice.DDSM.DDSMPackage;
 
 import es.unizar.disco.dice.DDSM.impl.DDSMPackageImpl;
-import es.unizar.disco.dice.DICE_UML_Extensions.DICE_UML_ExtensionsPackage;
-import es.unizar.disco.dice.DICE_UML_Extensions.impl.DICE_UML_ExtensionsPackageImpl;
+import es.unizar.disco.dice.DICE.DICEPackage;
+import es.unizar.disco.dice.DICE.impl.DICEPackageImpl;
 import es.unizar.disco.dice.DPIM.DPIMPackage;
 
 import es.unizar.disco.dice.DPIM.impl.DPIMPackageImpl;
@@ -273,7 +273,7 @@ public class Basic_Enumeration_TypesPackageImpl extends EPackageImpl implements 
 		com.masdes.dam.Basic_Enumeration_Types.Basic_Enumeration_TypesPackage.eINSTANCE.eClass();
 
 		// Obtain or create and register interdependencies
-		DICE_UML_ExtensionsPackageImpl theDICE_UML_ExtensionsPackage = (DICE_UML_ExtensionsPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(DICE_UML_ExtensionsPackage.eNS_URI) instanceof DICE_UML_ExtensionsPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(DICE_UML_ExtensionsPackage.eNS_URI) : DICE_UML_ExtensionsPackage.eINSTANCE);
+		DICEPackageImpl theDICEPackage = (DICEPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(DICEPackage.eNS_URI) instanceof DICEPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(DICEPackage.eNS_URI) : DICEPackage.eINSTANCE);
 		DPIMPackageImpl theDPIMPackage = (DPIMPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(DPIMPackage.eNS_URI) instanceof DPIMPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(DPIMPackage.eNS_URI) : DPIMPackage.eINSTANCE);
 		CorePackageImpl theCorePackage = (CorePackageImpl)(EPackage.Registry.INSTANCE.getEPackage(CorePackage.eNS_URI) instanceof CorePackageImpl ? EPackage.Registry.INSTANCE.getEPackage(CorePackage.eNS_URI) : CorePackage.eINSTANCE);
 		StormPackageImpl theStormPackage = (StormPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(StormPackage.eNS_URI) instanceof StormPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(StormPackage.eNS_URI) : StormPackage.eINSTANCE);
@@ -285,7 +285,7 @@ public class Basic_Enumeration_TypesPackageImpl extends EPackageImpl implements 
 
 		// Create package meta-data objects
 		theBasic_Enumeration_TypesPackage.createPackageContents();
-		theDICE_UML_ExtensionsPackage.createPackageContents();
+		theDICEPackage.createPackageContents();
 		theDPIMPackage.createPackageContents();
 		theCorePackage.createPackageContents();
 		theStormPackage.createPackageContents();
@@ -297,7 +297,7 @@ public class Basic_Enumeration_TypesPackageImpl extends EPackageImpl implements 
 
 		// Initialize created meta-data
 		theBasic_Enumeration_TypesPackage.initializePackageContents();
-		theDICE_UML_ExtensionsPackage.initializePackageContents();
+		theDICEPackage.initializePackageContents();
 		theDPIMPackage.initializePackageContents();
 		theCorePackage.initializePackageContents();
 		theStormPackage.initializePackageContents();
