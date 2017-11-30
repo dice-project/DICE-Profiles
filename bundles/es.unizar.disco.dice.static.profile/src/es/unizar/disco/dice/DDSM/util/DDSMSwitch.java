@@ -236,6 +236,24 @@ public class DDSMSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case DDSMPackage.DDSM_DOCKER_HOST: {
+				DdsmDockerHost ddsmDockerHost = (DdsmDockerHost)theEObject;
+				T result = caseDdsmDockerHost(ddsmDockerHost);
+				if (result == null) result = caseDdsmInternalComponent(ddsmDockerHost);
+				if (result == null) result = caseDdsmComponent(ddsmDockerHost);
+				if (result == null) result = caseDdsmCloudElement(ddsmDockerHost);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case DDSMPackage.DDSM_DOCKER_CONTAINER: {
+				DdsmDockerContainer ddsmDockerContainer = (DdsmDockerContainer)theEObject;
+				T result = caseDdsmDockerContainer(ddsmDockerContainer);
+				if (result == null) result = caseDdsmInternalComponent(ddsmDockerContainer);
+				if (result == null) result = caseDdsmComponent(ddsmDockerContainer);
+				if (result == null) result = caseDdsmCloudElement(ddsmDockerContainer);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			default: return defaultCase(theEObject);
 		}
 	}
@@ -537,6 +555,36 @@ public class DDSMSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseDdsmMongoDBCluster(DdsmMongoDBCluster object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Ddsm Docker Host</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Ddsm Docker Host</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseDdsmDockerHost(DdsmDockerHost object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Ddsm Docker Container</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Ddsm Docker Container</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseDdsmDockerContainer(DdsmDockerContainer object) {
 		return null;
 	}
 

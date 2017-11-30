@@ -17,11 +17,8 @@ import es.unizar.disco.dice.Complex_Data_Types.impl.Complex_Data_TypesPackageImp
 import es.unizar.disco.dice.DDSM.DDSMPackage;
 
 import es.unizar.disco.dice.DDSM.impl.DDSMPackageImpl;
-
-import es.unizar.disco.dice.DICE.DICEPackage;
-
-import es.unizar.disco.dice.DICE.impl.DICEPackageImpl;
-
+import es.unizar.disco.dice.DICE_UML_Extensions.DICE_UML_ExtensionsPackage;
+import es.unizar.disco.dice.DICE_UML_Extensions.impl.DICE_UML_ExtensionsPackageImpl;
 import es.unizar.disco.dice.DPIM.DPIMFactory;
 import es.unizar.disco.dice.DPIM.DPIMPackage;
 import es.unizar.disco.dice.DPIM.DpimChannel;
@@ -172,7 +169,7 @@ public class DPIMPackageImpl extends EPackageImpl implements DPIMPackage {
 		Basic_Enumeration_TypesPackage.eINSTANCE.eClass();
 
 		// Obtain or create and register interdependencies
-		DICEPackageImpl theDICEPackage = (DICEPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(DICEPackage.eNS_URI) instanceof DICEPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(DICEPackage.eNS_URI) : DICEPackage.eINSTANCE);
+		DICE_UML_ExtensionsPackageImpl theDICE_UML_ExtensionsPackage = (DICE_UML_ExtensionsPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(DICE_UML_ExtensionsPackage.eNS_URI) instanceof DICE_UML_ExtensionsPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(DICE_UML_ExtensionsPackage.eNS_URI) : DICE_UML_ExtensionsPackage.eINSTANCE);
 		CorePackageImpl theCorePackage = (CorePackageImpl)(EPackage.Registry.INSTANCE.getEPackage(CorePackage.eNS_URI) instanceof CorePackageImpl ? EPackage.Registry.INSTANCE.getEPackage(CorePackage.eNS_URI) : CorePackage.eINSTANCE);
 		StormPackageImpl theStormPackage = (StormPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(StormPackage.eNS_URI) instanceof StormPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(StormPackage.eNS_URI) : StormPackage.eINSTANCE);
 		HadoopPackageImpl theHadoopPackage = (HadoopPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(HadoopPackage.eNS_URI) instanceof HadoopPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(HadoopPackage.eNS_URI) : HadoopPackage.eINSTANCE);
@@ -184,7 +181,7 @@ public class DPIMPackageImpl extends EPackageImpl implements DPIMPackage {
 
 		// Create package meta-data objects
 		theDPIMPackage.createPackageContents();
-		theDICEPackage.createPackageContents();
+		theDICE_UML_ExtensionsPackage.createPackageContents();
 		theCorePackage.createPackageContents();
 		theStormPackage.createPackageContents();
 		theHadoopPackage.createPackageContents();
@@ -196,7 +193,7 @@ public class DPIMPackageImpl extends EPackageImpl implements DPIMPackage {
 
 		// Initialize created meta-data
 		theDPIMPackage.initializePackageContents();
-		theDICEPackage.initializePackageContents();
+		theDICE_UML_ExtensionsPackage.initializePackageContents();
 		theCorePackage.initializePackageContents();
 		theStormPackage.initializePackageContents();
 		theHadoopPackage.initializePackageContents();

@@ -148,6 +148,14 @@ public class DDSMAdapterFactory extends AdapterFactoryImpl {
 				return createDdsmMongoDBClusterAdapter();
 			}
 			@Override
+			public Adapter caseDdsmDockerHost(DdsmDockerHost object) {
+				return createDdsmDockerHostAdapter();
+			}
+			@Override
+			public Adapter caseDdsmDockerContainer(DdsmDockerContainer object) {
+				return createDdsmDockerContainerAdapter();
+			}
+			@Override
 			public Adapter defaultCase(EObject object) {
 				return createEObjectAdapter();
 			}
@@ -444,6 +452,34 @@ public class DDSMAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createDdsmMongoDBClusterAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.DDSM.DdsmDockerHost <em>Ddsm Docker Host</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see es.unizar.disco.dice.DDSM.DdsmDockerHost
+	 * @generated
+	 */
+	public Adapter createDdsmDockerHostAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.DDSM.DdsmDockerContainer <em>Ddsm Docker Container</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see es.unizar.disco.dice.DDSM.DdsmDockerContainer
+	 * @generated
+	 */
+	public Adapter createDdsmDockerContainerAdapter() {
 		return null;
 	}
 

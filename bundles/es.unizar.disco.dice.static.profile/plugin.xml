@@ -9,8 +9,8 @@
    <extension point="org.eclipse.emf.ecore.generated_package">
       <!-- @generated DICE -->
       <package
-            uri="http://es.unizar.disco.dice/profiles/DICE/1.0"
-            class="es.unizar.disco.dice.DICE.DICEPackage"
+            uri="http://es.unizar.disco.dice/profiles/DICE_UML_Extensions/1.0"
+            class="es.unizar.disco.dice.DICE_UML_Extensions.DICE_UML_ExtensionsPackage"
             genModel="resources/DICE.genmodel"/>
    </extension>
 
