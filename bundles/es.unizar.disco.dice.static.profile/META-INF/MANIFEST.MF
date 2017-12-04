@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: %pluginName
 Bundle-SymbolicName: es.unizar.disco.dice.static.profile;singleton:=true
-Bundle-Version: 0.12.4.qualifier
+Bundle-Version: 0.12.8.qualifier
 Bundle-ClassPath: .
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
@@ -15,11 +15,16 @@ Export-Package: es.unizar.disco.dice.Basic_Enumeration_Types,
  es.unizar.disco.dice.DDSM,
  es.unizar.disco.dice.DDSM.impl,
  es.unizar.disco.dice.DDSM.util,
+ es.unizar.disco.dice.DICE_UML_Extensions,
+ es.unizar.disco.dice.DICE_UML_Extensions.impl,
  es.unizar.disco.dice.DICE,
  es.unizar.disco.dice.DICE.impl,
  es.unizar.disco.dice.DPIM,
  es.unizar.disco.dice.DPIM.impl,
  es.unizar.disco.dice.DPIM.util,
+ es.unizar.disco.dice.DTSM.Cassandra,
+ es.unizar.disco.dice.DTSM.Cassandra.impl,
+ es.unizar.disco.dice.DTSM.Cassandra.util,
  es.unizar.disco.dice.DTSM.Core,
  es.unizar.disco.dice.DTSM.Core.impl,
  es.unizar.disco.dice.DTSM.Core.util,

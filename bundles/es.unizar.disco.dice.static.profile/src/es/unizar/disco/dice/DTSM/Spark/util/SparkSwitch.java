@@ -105,27 +105,27 @@ public class SparkSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case SparkPackage.SPARK_REDUCE: {
-				SparkReduce sparkReduce = (SparkReduce)theEObject;
-				T result = caseSparkReduce(sparkReduce);
-				if (result == null) result = caseSparkOperation(sparkReduce);
-				if (result == null) result = caseGaStep(sparkReduce);
-				if (result == null) result = caseGaScenario(sparkReduce);
-				if (result == null) result = caseResourceUsage(sparkReduce);
-				if (result == null) result = caseTimedProcessing(sparkReduce);
-				if (result == null) result = caseTimedElement(sparkReduce);
+			case SparkPackage.SPARK_ACTION: {
+				SparkAction sparkAction = (SparkAction)theEObject;
+				T result = caseSparkAction(sparkAction);
+				if (result == null) result = caseSparkOperation(sparkAction);
+				if (result == null) result = caseGaStep(sparkAction);
+				if (result == null) result = caseGaScenario(sparkAction);
+				if (result == null) result = caseResourceUsage(sparkAction);
+				if (result == null) result = caseTimedProcessing(sparkAction);
+				if (result == null) result = caseTimedElement(sparkAction);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case SparkPackage.SPARK_MAP: {
-				SparkMap sparkMap = (SparkMap)theEObject;
-				T result = caseSparkMap(sparkMap);
-				if (result == null) result = caseSparkOperation(sparkMap);
-				if (result == null) result = caseGaStep(sparkMap);
-				if (result == null) result = caseGaScenario(sparkMap);
-				if (result == null) result = caseResourceUsage(sparkMap);
-				if (result == null) result = caseTimedProcessing(sparkMap);
-				if (result == null) result = caseTimedElement(sparkMap);
+			case SparkPackage.SPARK_TRANSFORMATION: {
+				SparkTransformation sparkTransformation = (SparkTransformation)theEObject;
+				T result = caseSparkTransformation(sparkTransformation);
+				if (result == null) result = caseSparkOperation(sparkTransformation);
+				if (result == null) result = caseGaStep(sparkTransformation);
+				if (result == null) result = caseGaScenario(sparkTransformation);
+				if (result == null) result = caseResourceUsage(sparkTransformation);
+				if (result == null) result = caseTimedProcessing(sparkTransformation);
+				if (result == null) result = caseTimedElement(sparkTransformation);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -185,32 +185,32 @@ public class SparkSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Reduce</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Action</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Reduce</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Action</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseSparkReduce(SparkReduce object) {
+	public T caseSparkAction(SparkAction object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Map</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Transformation</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Map</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Transformation</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseSparkMap(SparkMap object) {
+	public T caseSparkTransformation(SparkTransformation object) {
 		return null;
 	}
 

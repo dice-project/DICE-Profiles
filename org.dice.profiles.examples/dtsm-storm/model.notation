@@ -592,7 +592,7 @@
         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fhOUwRXCEeaO9pVQNhbfJw"/>
       </children>
       <element xmi:type="uml:Activity" href="model.uml#_fhMfgBXCEeaO9pVQNhbfJw"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fhOUwhXCEeaO9pVQNhbfJw" x="310" y="18" width="1047" height="711"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fhOUwhXCEeaO9pVQNhbfJw" x="310" y="18" width="1064" height="541"/>
     </children>
     <children xmi:type="notation:Shape" xmi:id="_xOBX8DnwEeaBQNKHvmh8mQ" type="StereotypeComment">
       <styles xmi:type="notation:TitleStyle" xmi:id="_xOBX8TnwEeaBQNKHvmh8mQ" showTitle="true"/>

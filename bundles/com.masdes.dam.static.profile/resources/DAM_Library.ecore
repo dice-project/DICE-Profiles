@@ -11,9 +11,9 @@
       </eAnnotations>
       <eClassifiers xsi:type="ecore:EClass" name="DaError">
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="latency" ordered="false"
-            upperBound="-1" eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Duration"/>
+            upperBound="-1" eType="ecore:EDataType ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Duration"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="probability" ordered="false"
-            upperBound="-1" eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Real"/>
+            upperBound="-1" eType="ecore:EDataType ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Real"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="cause" ordered="false"
             upperBound="-1" eType="#//Complex_DA_Types/Complex_Data_Types/DaFault"
             containment="true"/>
@@ -28,15 +28,15 @@
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="occurrenceRate" ordered="false"
             upperBound="-1" eType="#//Basic_DA_Types/Basic_Data_Types/DaFrequency"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="latency" ordered="false"
-            upperBound="-1" eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Duration"/>
+            upperBound="-1" eType="ecore:EDataType ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Duration"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="occurrenceProb" ordered="false"
-            upperBound="-1" eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Real"/>
+            upperBound="-1" eType="ecore:EDataType ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Real"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="occurrenceDist" ordered="false"
-            upperBound="-1" eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_CommonType"/>
+            upperBound="-1" eType="ecore:EDataType ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_CommonType"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="persistency" ordered="false"
             eType="#//Basic_DA_Types/Basic_Enumeration_Types/Persistency"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="duration" ordered="false"
-            upperBound="-1" eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Duration"/>
+            upperBound="-1" eType="ecore:EDataType ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Duration"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="effectE" ordered="false"
             upperBound="-1" eType="#//Complex_DA_Types/Complex_Data_Types/DaError"
             containment="true"/>
@@ -65,13 +65,13 @@
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="occurrenceRate" ordered="false"
             upperBound="-1" eType="#//Basic_DA_Types/Basic_Data_Types/DaFrequency"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="MTTF" ordered="false"
-            upperBound="-1" eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Duration"/>
+            upperBound="-1" eType="ecore:EDataType ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Duration"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="MTBF" ordered="false"
-            upperBound="-1" eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Duration"/>
+            upperBound="-1" eType="ecore:EDataType ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Duration"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="occurrenceProb" ordered="false"
-            upperBound="-1" eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Real"/>
+            upperBound="-1" eType="ecore:EDataType ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Real"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="occurrenceDist" ordered="false"
-            upperBound="-1" eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_CommonType"/>
+            upperBound="-1" eType="ecore:EDataType ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_CommonType"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="domain" ordered="false"
             eType="#//Basic_DA_Types/Basic_Enumeration_Types/Domain"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="consistency" ordered="false"
@@ -79,7 +79,7 @@
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="consequence" ordered="false"
             upperBound="-1" eType="#//Basic_DA_Types/Basic_Data_Types/DaCriticalLevel"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="risk" ordered="false"
-            upperBound="-1" eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Real"/>
+            upperBound="-1" eType="ecore:EDataType ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Real"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="cost" ordered="false"
             upperBound="-1" eType="#//Basic_DA_Types/Basic_Data_Types/DaCurrency"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="condition" ordered="false"
@@ -101,17 +101,17 @@
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="severity" ordered="false"
             upperBound="-1" eType="#//Basic_DA_Types/Basic_Data_Types/DaCriticalLevel"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="occurrenceProb" ordered="false"
-            upperBound="-1" eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Real"/>
+            upperBound="-1" eType="ecore:EDataType ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Real"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="likelihood" ordered="false"
             upperBound="-1" eType="#//Basic_DA_Types/Basic_Data_Types/DaLikelihood"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="level" ordered="false"
-            upperBound="-1" eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Real"/>
+            upperBound="-1" eType="ecore:EDataType ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Real"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="latency" ordered="false"
-            upperBound="-1" eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Duration"/>
+            upperBound="-1" eType="ecore:EDataType ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Duration"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="accidentLikelihood"
             ordered="false" upperBound="-1" eType="#//Basic_DA_Types/Basic_Data_Types/DaLikelihood"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="risk" ordered="false"
-            upperBound="-1" eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Real"/>
+            upperBound="-1" eType="ecore:EDataType ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Real"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="cost" ordered="false"
             upperBound="-1" eType="#//Basic_DA_Types/Basic_Data_Types/DaCurrency"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="guideword" ordered="false"
@@ -129,7 +129,7 @@
       </eClassifiers>
       <eClassifiers xsi:type="ecore:EClass" name="DaErrorPropagation">
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="probability" ordered="false"
-            upperBound="-1" eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Real"/>
+            upperBound="-1" eType="ecore:EDataType ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Real"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="from" ordered="false"
             eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="to" ordered="false"
@@ -143,25 +143,25 @@
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="rate" ordered="false"
             upperBound="-1" eType="#//Basic_DA_Types/Basic_Data_Types/DaFrequency"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="duration" ordered="false"
-            upperBound="-1" eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Duration"/>
+            upperBound="-1" eType="ecore:EDataType ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Duration"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="distribution" ordered="false"
-            upperBound="-1" eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_CommonType"/>
+            upperBound="-1" eType="ecore:EDataType ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_CommonType"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="coverageFactor" ordered="false"
-            upperBound="-1" eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Real"/>
+            upperBound="-1" eType="ecore:EDataType ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Real"/>
       </eClassifiers>
       <eClassifiers xsi:type="ecore:EClass" name="DaRepair">
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="rate" ordered="false"
             upperBound="-1" eType="#//Basic_DA_Types/Basic_Data_Types/DaFrequency"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="MTTR" ordered="false"
-            upperBound="-1" eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Duration"/>
+            upperBound="-1" eType="ecore:EDataType ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Duration"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="distribution" ordered="false"
-            upperBound="-1" eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_CommonType"/>
+            upperBound="-1" eType="ecore:EDataType ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_CommonType"/>
       </eClassifiers>
       <eClassifiers xsi:type="ecore:EClass" name="DaSurvivability">
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="metric" ordered="false"
             lowerBound="1" eType="#//Basic_DA_Types/Basic_Enumeration_Types/MetricName"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" ordered="false"
-            upperBound="-1" eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_CommonType"/>
+            upperBound="-1" eType="ecore:EDataType ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_CommonType"/>
       </eClassifiers>
     </eSubpackages>
   </eSubpackages>

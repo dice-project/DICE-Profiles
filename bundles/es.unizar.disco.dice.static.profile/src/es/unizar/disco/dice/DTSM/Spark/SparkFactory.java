@@ -40,22 +40,22 @@ public interface SparkFactory extends EFactory {
 	SparkOperation createSparkOperation();
 
 	/**
-	 * Returns a new object of class '<em>Reduce</em>'.
+	 * Returns a new object of class '<em>Action</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Reduce</em>'.
+	 * @return a new object of class '<em>Action</em>'.
 	 * @generated
 	 */
-	SparkReduce createSparkReduce();
+	SparkAction createSparkAction();
 
 	/**
-	 * Returns a new object of class '<em>Map</em>'.
+	 * Returns a new object of class '<em>Transformation</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Map</em>'.
+	 * @return a new object of class '<em>Transformation</em>'.
 	 * @generated
 	 */
-	SparkMap createSparkMap();
+	SparkTransformation createSparkTransformation();
 
 	/**
 	 * Returns a new object of class '<em>Node</em>'.

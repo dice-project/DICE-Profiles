@@ -13,17 +13,17 @@
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="origin" ordered="false"
               eType="ecore:EEnum DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/Origin"/>
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="failureCoverage"
-              ordered="false" upperBound="-1" eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Percentage"/>
+              ordered="false" upperBound="-1" eType="ecore:EDataType ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Percentage"/>
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="percPermFault" ordered="false"
-              upperBound="-1" eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Percentage"/>
+              upperBound="-1" eType="ecore:EDataType ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Percentage"/>
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="ssAvail" ordered="false"
-              upperBound="-1" eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Percentage"/>
+              upperBound="-1" eType="ecore:EDataType ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Percentage"/>
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="unreliability" ordered="false"
-              upperBound="-1" eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_CommonType"/>
+              upperBound="-1" eType="ecore:EDataType ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_CommonType"/>
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="reliability" ordered="false"
-              upperBound="-1" eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_CommonType"/>
+              upperBound="-1" eType="ecore:EDataType ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_CommonType"/>
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="missionTime" ordered="false"
-              upperBound="-1" eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_CommonType"/>
+              upperBound="-1" eType="ecore:EDataType ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_CommonType"/>
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="availLevel" ordered="false"
               upperBound="-1" eType="ecore:EDataType DAM_Library.ecore#//Basic_DA_Types/Basic_Data_Types/DaLevel"/>
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="reliabilityLevel"
@@ -31,7 +31,7 @@
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="safetyLevel" ordered="false"
               upperBound="-1" eType="ecore:EDataType DAM_Library.ecore#//Basic_DA_Types/Basic_Data_Types/DaLevel"/>
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="complexity" ordered="false"
-              upperBound="-1" eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Real"/>
+              upperBound="-1" eType="ecore:EDataType ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Real"/>
           <eStructuralFeatures xsi:type="ecore:EReference" name="fault" ordered="false"
               upperBound="-1" eType="ecore:EClass DAM_Library.ecore#//Complex_DA_Types/Complex_Data_Types/DaFault"
               containment="true"/>
@@ -52,17 +52,17 @@
         </eClassifiers>
         <eClassifiers xsi:type="ecore:EClass" name="DaService" eSuperTypes="../../org.eclipse.papyrus.marte.static.profile/resources/MARTE.ecore#//MARTE_AnalysisModel/GQAM/GaScenario">
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="execProb" ordered="false"
-              upperBound="-1" eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Real"/>
+              upperBound="-1" eType="ecore:EDataType ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Real"/>
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="ssAvail" ordered="false"
-              upperBound="-1" eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Percentage"/>
+              upperBound="-1" eType="ecore:EDataType ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Percentage"/>
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="instAvail" ordered="false"
-              upperBound="-1" eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_CommonType"/>
+              upperBound="-1" eType="ecore:EDataType ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_CommonType"/>
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="unreliability" ordered="false"
-              upperBound="-1" eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_CommonType"/>
+              upperBound="-1" eType="ecore:EDataType ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_CommonType"/>
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="reliability" ordered="false"
-              upperBound="-1" eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_CommonType"/>
+              upperBound="-1" eType="ecore:EDataType ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_CommonType"/>
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="missionTime" ordered="false"
-              upperBound="-1" eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_CommonType"/>
+              upperBound="-1" eType="ecore:EDataType ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_CommonType"/>
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="availLevel" ordered="false"
               upperBound="-1" eType="ecore:EDataType DAM_Library.ecore#//Basic_DA_Types/Basic_Data_Types/DaLevel"/>
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="reliabLevel" ordered="false"
@@ -70,7 +70,7 @@
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="safetyLevel" ordered="false"
               upperBound="-1" eType="ecore:EDataType DAM_Library.ecore#//Basic_DA_Types/Basic_Data_Types/DaLevel"/>
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="complexity" ordered="false"
-              upperBound="-1" eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Real"/>
+              upperBound="-1" eType="ecore:EDataType ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Real"/>
           <eStructuralFeatures xsi:type="ecore:EReference" name="failure" ordered="false"
               upperBound="-1" eType="ecore:EClass DAM_Library.ecore#//Complex_DA_Types/Complex_Data_Types/DaFailure"
               containment="true"/>
@@ -97,7 +97,7 @@
         </eClassifiers>
         <eClassifiers xsi:type="ecore:EClass" name="DaResistance" eSuperTypes="#//DAM_UML_Extensions/System/Core/DaService">
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="coverage" ordered="false"
-              eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Percentage"/>
+              eType="ecore:EDataType ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Percentage"/>
         </eClassifiers>
         <eClassifiers xsi:type="ecore:EClass" name="DaRecognition" eSuperTypes="#//DAM_UML_Extensions/System/Core/DaService"/>
         <eClassifiers xsi:type="ecore:EClass" name="DaRecovery" eSuperTypes="#//DAM_UML_Extensions/System/Core/DaService"/>
@@ -108,7 +108,7 @@
               eType="ecore:EClass DAM_Library.ecore#//Complex_DA_Types/Complex_Data_Types/DaSurvivability"
               containment="true"/>
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="prob" ordered="false"
-              eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Percentage"/>
+              eType="ecore:EDataType ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Percentage"/>
           <eStructuralFeatures xsi:type="ecore:EReference" name="base_State" ordered="false"
               lowerBound="1" eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//State"/>
         </eClassifiers>
@@ -133,9 +133,9 @@
             </eParameters>
           </eOperations>
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="accessProb" ordered="false"
-              upperBound="-1" eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Real"/>
+              upperBound="-1" eType="ecore:EDataType ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Real"/>
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="serviceProb" upperBound="-1"
-              eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Real"/>
+              eType="ecore:EDataType ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Real"/>
           <eStructuralFeatures xsi:type="ecore:EReference" name="request" unique="false"
               upperBound="-1" eType="#//DAM_UML_Extensions/System/Core/DaService"/>
           <eStructuralFeatures xsi:type="ecore:EReference" name="base_Classifier"
@@ -149,7 +149,7 @@
         </eClassifiers>
         <eClassifiers xsi:type="ecore:EClass" name="DaConnector">
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="coupling" ordered="false"
-              upperBound="-1" eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Real"/>
+              upperBound="-1" eType="ecore:EDataType ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Real"/>
           <eStructuralFeatures xsi:type="ecore:EReference" name="errorProp" ordered="false"
               upperBound="-1" eType="ecore:EClass DAM_Library.ecore#//Complex_DA_Types/Complex_Data_Types/DaErrorPropagation"
               containment="true"/>
@@ -193,7 +193,7 @@
         <eClassifiers xsi:type="ecore:EClass" name="DaVariant" eSuperTypes="#//DAM_UML_Extensions/System/Core/DaComponent"/>
         <eClassifiers xsi:type="ecore:EClass" name="DaAdjudicator" eSuperTypes="#//DAM_UML_Extensions/System/Core/DaComponent">
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="errorDetecCoverage"
-              ordered="false" upperBound="-1" eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Percentage"/>
+              ordered="false" upperBound="-1" eType="ecore:EDataType ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Percentage"/>
         </eClassifiers>
         <eClassifiers xsi:type="ecore:EClass" name="DaRedundantStructure">
           <eOperations name="packageSize" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
@@ -248,7 +248,7 @@
             </eParameters>
           </eOperations>
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="dormancyFactor" ordered="false"
-              upperBound="-1" eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Real"/>
+              upperBound="-1" eType="ecore:EDataType ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Real"/>
           <eStructuralFeatures xsi:type="ecore:EReference" name="substituteFor" ordered="false"
               unique="false" upperBound="-1" eType="#//DAM_UML_Extensions/System/Core/DaComponent"/>
         </eClassifiers>
@@ -268,7 +268,7 @@
       </eClassifiers>
       <eClassifiers xsi:type="ecore:EClass" name="DaFaultGenerator" eSuperTypes="../../org.eclipse.papyrus.marte.static.profile/resources/MARTE.ecore#//MARTE_AnalysisModel/GQAM/GaWorkloadGenerator">
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="numberOfFaults" ordered="false"
-            upperBound="-1" eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Integer"/>
+            upperBound="-1" eType="ecore:EDataType ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Integer"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="fault" ordered="false"
             eType="ecore:EClass DAM_Library.ecore#//Complex_DA_Types/Complex_Data_Types/DaFault"
             containment="true"/>
@@ -337,9 +337,9 @@
             lowerBound="1" eType="ecore:EEnum DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/StepKind"
             defaultValueLiteral="activation"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="prio" ordered="false"
-            eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Integer"/>
+            eType="ecore:EDataType ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Integer"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="preemption" ordered="false"
-            eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Boolean"/>
+            eType="ecore:EDataType ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Boolean"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="failCause" ordered="false"
             upperBound="-1" eType="#//DAM_UML_Extensions/System/Core/DaStep"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="agents" ordered="false"
@@ -350,9 +350,9 @@
             lowerBound="1" eType="ecore:EEnum DAM_Library.ecore#//Basic_DA_Types/Basic_Enumeration_Types/SkillType"
             defaultValueLiteral="hwTechnician"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="correctness" ordered="false"
-            upperBound="-1" eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Real"/>
+            upperBound="-1" eType="ecore:EDataType ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Real"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="agentNumber" ordered="false"
-            upperBound="-1" eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Integer"/>
+            upperBound="-1" eType="ecore:EDataType ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Integer"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="base_Classifier" ordered="false"
             lowerBound="1" eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//Classifier"/>
       </eClassifiers>

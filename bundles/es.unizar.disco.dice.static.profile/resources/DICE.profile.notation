@@ -3497,7 +3497,7 @@
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yRc8MUqiEeexLMFFcxluzQ" id="(0.4727272727272727,1.0)"/>
     </edges>
   </notation:Diagram>
-    <notation:Diagram xmi:id="_PSOA0GY7EeeWJ7BBNSdFOw" type="PapyrusUMLProfileDiagram" name="DTSM::Cassandra" measurementUnit="Pixel">
+  <notation:Diagram xmi:id="_PSOA0GY7EeeWJ7BBNSdFOw" type="PapyrusUMLProfileDiagram" name="DTSM::Cassandra" measurementUnit="Pixel">
     <children xmi:type="notation:Shape" xmi:id="_YO-gcGY7EeeWJ7BBNSdFOw" type="Stereotype_Shape">
       <children xmi:type="notation:DecorationNode" xmi:id="_YO-gcmY7EeeWJ7BBNSdFOw" type="Stereotype_NameLabel"/>
       <children xmi:type="notation:BasicCompartment" xmi:id="_YO-gc2Y7EeeWJ7BBNSdFOw" type="Stereotype_AttributeCompartment">

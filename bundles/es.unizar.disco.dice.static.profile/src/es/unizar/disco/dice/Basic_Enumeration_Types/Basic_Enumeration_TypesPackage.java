@@ -205,24 +205,24 @@ public interface Basic_Enumeration_TypesPackage extends EPackage {
 	int DDS_MCOMPONENT_TYPE = 14;
 
 	/**
-	 * The meta object id for the '{@link es.unizar.disco.dice.Basic_Enumeration_Types.SparkReduce <em>Spark Reduce</em>}' enum.
+	 * The meta object id for the '{@link es.unizar.disco.dice.Basic_Enumeration_Types.SparkAction <em>Spark Action</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see es.unizar.disco.dice.Basic_Enumeration_Types.SparkReduce
-	 * @see es.unizar.disco.dice.Basic_Enumeration_Types.impl.Basic_Enumeration_TypesPackageImpl#getSparkReduce()
+	 * @see es.unizar.disco.dice.Basic_Enumeration_Types.SparkAction
+	 * @see es.unizar.disco.dice.Basic_Enumeration_Types.impl.Basic_Enumeration_TypesPackageImpl#getSparkAction()
 	 * @generated
 	 */
-	int SPARK_REDUCE = 15;
+	int SPARK_ACTION = 15;
 
 	/**
-	 * The meta object id for the '{@link es.unizar.disco.dice.Basic_Enumeration_Types.SparkMap <em>Spark Map</em>}' enum.
+	 * The meta object id for the '{@link es.unizar.disco.dice.Basic_Enumeration_Types.SparkTransformation <em>Spark Transformation</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see es.unizar.disco.dice.Basic_Enumeration_Types.SparkMap
-	 * @see es.unizar.disco.dice.Basic_Enumeration_Types.impl.Basic_Enumeration_TypesPackageImpl#getSparkMap()
+	 * @see es.unizar.disco.dice.Basic_Enumeration_Types.SparkTransformation
+	 * @see es.unizar.disco.dice.Basic_Enumeration_Types.impl.Basic_Enumeration_TypesPackageImpl#getSparkTransformation()
 	 * @generated
 	 */
-	int SPARK_MAP = 16;
+	int SPARK_TRANSFORMATION = 16;
 
 	/**
 	 * The meta object id for the '{@link es.unizar.disco.dice.Basic_Enumeration_Types.SparkOperation <em>Spark Operation</em>}' enum.
@@ -252,7 +252,17 @@ public interface Basic_Enumeration_TypesPackage extends EPackage {
 	 * @see es.unizar.disco.dice.Basic_Enumeration_Types.impl.Basic_Enumeration_TypesPackageImpl#getDataMovementType()
 	 * @generated
 	 */
-	int DATA_MOVEMENT_TYPE = 19;
+	int DATA_MOVEMENT_TYPE = 21;
+
+  /**
+	 * The meta object id for the '{@link es.unizar.disco.dice.Basic_Enumeration_Types.CassandraConsistencyLevelType <em>Cassandra Consistency Level Type</em>}' enum.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see es.unizar.disco.dice.Basic_Enumeration_Types.CassandraConsistencyLevelType
+	 * @see es.unizar.disco.dice.Basic_Enumeration_Types.impl.Basic_Enumeration_TypesPackageImpl#getCassandraConsistencyLevelType()
+	 * @generated
+	 */
+	int CASSANDRA_CONSISTENCY_LEVEL_TYPE = 19;
 
 	/**
 	 * The meta object id for the '{@link es.unizar.disco.dice.Basic_Enumeration_Types.ComputationType <em>Computation Type</em>}' enum.
@@ -416,24 +426,24 @@ public interface Basic_Enumeration_TypesPackage extends EPackage {
 	EEnum getDDSMcomponentType();
 
 	/**
-	 * Returns the meta object for enum '{@link es.unizar.disco.dice.Basic_Enumeration_Types.SparkReduce <em>Spark Reduce</em>}'.
+	 * Returns the meta object for enum '{@link es.unizar.disco.dice.Basic_Enumeration_Types.SparkAction <em>Spark Action</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for enum '<em>Spark Reduce</em>'.
-	 * @see es.unizar.disco.dice.Basic_Enumeration_Types.SparkReduce
+	 * @return the meta object for enum '<em>Spark Action</em>'.
+	 * @see es.unizar.disco.dice.Basic_Enumeration_Types.SparkAction
 	 * @generated
 	 */
-	EEnum getSparkReduce();
+	EEnum getSparkAction();
 
 	/**
-	 * Returns the meta object for enum '{@link es.unizar.disco.dice.Basic_Enumeration_Types.SparkMap <em>Spark Map</em>}'.
+	 * Returns the meta object for enum '{@link es.unizar.disco.dice.Basic_Enumeration_Types.SparkTransformation <em>Spark Transformation</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for enum '<em>Spark Map</em>'.
-	 * @see es.unizar.disco.dice.Basic_Enumeration_Types.SparkMap
+	 * @return the meta object for enum '<em>Spark Transformation</em>'.
+	 * @see es.unizar.disco.dice.Basic_Enumeration_Types.SparkTransformation
 	 * @generated
 	 */
-	EEnum getSparkMap();
+	EEnum getSparkTransformation();
 
 	/**
 	 * Returns the meta object for enum '{@link es.unizar.disco.dice.Basic_Enumeration_Types.SparkOperation <em>Spark Operation</em>}'.
@@ -464,6 +474,16 @@ public interface Basic_Enumeration_TypesPackage extends EPackage {
 	 * @generated
 	 */
 	EEnum getDataMovementType();
+
+  /**
+	 * Returns the meta object for enum '{@link es.unizar.disco.dice.Basic_Enumeration_Types.CassandraConsistencyLevelType <em>Cassandra Consistency Level Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for enum '<em>Cassandra Consistency Level Type</em>'.
+	 * @see es.unizar.disco.dice.Basic_Enumeration_Types.CassandraConsistencyLevelType
+	 * @generated
+	 */
+	EEnum getCassandraConsistencyLevelType();
 
 	/**
 	 * Returns the meta object for enum '{@link es.unizar.disco.dice.Basic_Enumeration_Types.ComputationType <em>Computation Type</em>}'.
@@ -648,24 +668,24 @@ public interface Basic_Enumeration_TypesPackage extends EPackage {
 		EEnum DDS_MCOMPONENT_TYPE = eINSTANCE.getDDSMcomponentType();
 
 		/**
-		 * The meta object literal for the '{@link es.unizar.disco.dice.Basic_Enumeration_Types.SparkReduce <em>Spark Reduce</em>}' enum.
+		 * The meta object literal for the '{@link es.unizar.disco.dice.Basic_Enumeration_Types.SparkAction <em>Spark Action</em>}' enum.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see es.unizar.disco.dice.Basic_Enumeration_Types.SparkReduce
-		 * @see es.unizar.disco.dice.Basic_Enumeration_Types.impl.Basic_Enumeration_TypesPackageImpl#getSparkReduce()
+		 * @see es.unizar.disco.dice.Basic_Enumeration_Types.SparkAction
+		 * @see es.unizar.disco.dice.Basic_Enumeration_Types.impl.Basic_Enumeration_TypesPackageImpl#getSparkAction()
 		 * @generated
 		 */
-		EEnum SPARK_REDUCE = eINSTANCE.getSparkReduce();
+		EEnum SPARK_ACTION = eINSTANCE.getSparkAction();
 
 		/**
-		 * The meta object literal for the '{@link es.unizar.disco.dice.Basic_Enumeration_Types.SparkMap <em>Spark Map</em>}' enum.
+		 * The meta object literal for the '{@link es.unizar.disco.dice.Basic_Enumeration_Types.SparkTransformation <em>Spark Transformation</em>}' enum.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see es.unizar.disco.dice.Basic_Enumeration_Types.SparkMap
-		 * @see es.unizar.disco.dice.Basic_Enumeration_Types.impl.Basic_Enumeration_TypesPackageImpl#getSparkMap()
+		 * @see es.unizar.disco.dice.Basic_Enumeration_Types.SparkTransformation
+		 * @see es.unizar.disco.dice.Basic_Enumeration_Types.impl.Basic_Enumeration_TypesPackageImpl#getSparkTransformation()
 		 * @generated
 		 */
-		EEnum SPARK_MAP = eINSTANCE.getSparkMap();
+		EEnum SPARK_TRANSFORMATION = eINSTANCE.getSparkTransformation();
 
 		/**
 		 * The meta object literal for the '{@link es.unizar.disco.dice.Basic_Enumeration_Types.SparkOperation <em>Spark Operation</em>}' enum.
@@ -696,6 +716,16 @@ public interface Basic_Enumeration_TypesPackage extends EPackage {
 		 * @generated
 		 */
 		EEnum DATA_MOVEMENT_TYPE = eINSTANCE.getDataMovementType();
+
+    /**
+		 * The meta object literal for the '{@link es.unizar.disco.dice.Basic_Enumeration_Types.CassandraConsistencyLevelType <em>Cassandra Consistency Level Type</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see es.unizar.disco.dice.Basic_Enumeration_Types.CassandraConsistencyLevelType
+		 * @see es.unizar.disco.dice.Basic_Enumeration_Types.impl.Basic_Enumeration_TypesPackageImpl#getCassandraConsistencyLevelType()
+		 * @generated
+		 */
+		EEnum CASSANDRA_CONSISTENCY_LEVEL_TYPE = eINSTANCE.getCassandraConsistencyLevelType();
 
 		/**
 		 * The meta object literal for the '{@link es.unizar.disco.dice.Basic_Enumeration_Types.ComputationType <em>Computation Type</em>}' enum.

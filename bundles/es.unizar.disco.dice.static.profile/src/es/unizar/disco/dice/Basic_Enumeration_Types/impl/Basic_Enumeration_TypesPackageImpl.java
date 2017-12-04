@@ -10,6 +10,7 @@ import com.masdes.dam.DAM.DAMPackage;
 
 import es.unizar.disco.dice.Basic_Enumeration_Types.Basic_Enumeration_TypesFactory;
 import es.unizar.disco.dice.Basic_Enumeration_Types.Basic_Enumeration_TypesPackage;
+import es.unizar.disco.dice.Basic_Enumeration_Types.CassandraConsistencyLevelType;
 import es.unizar.disco.dice.Basic_Enumeration_Types.ComputationType;
 import es.unizar.disco.dice.Basic_Enumeration_Types.ConstraintType;
 import es.unizar.disco.dice.Basic_Enumeration_Types.DDSMcomponentType;
@@ -24,9 +25,9 @@ import es.unizar.disco.dice.Basic_Enumeration_Types.RefDataFormatType;
 import es.unizar.disco.dice.Basic_Enumeration_Types.RefType;
 import es.unizar.disco.dice.Basic_Enumeration_Types.Scheduling;
 import es.unizar.disco.dice.Basic_Enumeration_Types.SourceType;
-import es.unizar.disco.dice.Basic_Enumeration_Types.SparkMap;
+import es.unizar.disco.dice.Basic_Enumeration_Types.SparkAction;
 import es.unizar.disco.dice.Basic_Enumeration_Types.SparkOperation;
-import es.unizar.disco.dice.Basic_Enumeration_Types.SparkReduce;
+import es.unizar.disco.dice.Basic_Enumeration_Types.SparkTransformation;
 import es.unizar.disco.dice.Basic_Enumeration_Types.StreamPolicy;
 import es.unizar.disco.dice.Basic_Enumeration_Types.TechType;
 import es.unizar.disco.dice.Basic_Enumeration_Types.VMSize;
@@ -37,10 +38,14 @@ import es.unizar.disco.dice.Complex_Data_Types.impl.Complex_Data_TypesPackageImp
 import es.unizar.disco.dice.DDSM.DDSMPackage;
 
 import es.unizar.disco.dice.DDSM.impl.DDSMPackageImpl;
+import es.unizar.disco.dice.DICE.DICEPackage;
+import es.unizar.disco.dice.DICE.impl.DICEPackageImpl;
 import es.unizar.disco.dice.DPIM.DPIMPackage;
 
 import es.unizar.disco.dice.DPIM.impl.DPIMPackageImpl;
 
+import es.unizar.disco.dice.DTSM.Cassandra.CassandraPackage;
+import es.unizar.disco.dice.DTSM.Cassandra.impl.CassandraPackageImpl;
 import es.unizar.disco.dice.DTSM.Core.CorePackage;
 
 import es.unizar.disco.dice.DTSM.Core.impl.CorePackageImpl;
@@ -181,14 +186,14 @@ public class Basic_Enumeration_TypesPackageImpl extends EPackageImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EEnum sparkReduceEEnum = null;
+	private EEnum sparkActionEEnum = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EEnum sparkMapEEnum = null;
+	private EEnum sparkTransformationEEnum = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -210,6 +215,13 @@ public class Basic_Enumeration_TypesPackageImpl extends EPackageImpl implements 
 	 * @generated
 	 */
 	private EEnum dataMovementTypeEEnum = null;
+
+  /**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum cassandraConsistencyLevelTypeEEnum = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -277,6 +289,7 @@ public class Basic_Enumeration_TypesPackageImpl extends EPackageImpl implements 
 		HadoopPackageImpl theHadoopPackage = (HadoopPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(HadoopPackage.eNS_URI) instanceof HadoopPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(HadoopPackage.eNS_URI) : HadoopPackage.eINSTANCE);
 		SparkPackageImpl theSparkPackage = (SparkPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(SparkPackage.eNS_URI) instanceof SparkPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(SparkPackage.eNS_URI) : SparkPackage.eINSTANCE);
 		TezPackageImpl theTezPackage = (TezPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(TezPackage.eNS_URI) instanceof TezPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(TezPackage.eNS_URI) : TezPackage.eINSTANCE);
+		CassandraPackageImpl theCassandraPackage = (CassandraPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(CassandraPackage.eNS_URI) instanceof CassandraPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(CassandraPackage.eNS_URI) : CassandraPackage.eINSTANCE);
 		DDSMPackageImpl theDDSMPackage = (DDSMPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(DDSMPackage.eNS_URI) instanceof DDSMPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(DDSMPackage.eNS_URI) : DDSMPackage.eINSTANCE);
 		Complex_Data_TypesPackageImpl theComplex_Data_TypesPackage_1 = (Complex_Data_TypesPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(es.unizar.disco.dice.Complex_Data_Types.Complex_Data_TypesPackage.eNS_URI) instanceof Complex_Data_TypesPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(es.unizar.disco.dice.Complex_Data_Types.Complex_Data_TypesPackage.eNS_URI) : es.unizar.disco.dice.Complex_Data_Types.Complex_Data_TypesPackage.eINSTANCE);
 
@@ -288,6 +301,7 @@ public class Basic_Enumeration_TypesPackageImpl extends EPackageImpl implements 
 		theHadoopPackage.createPackageContents();
 		theSparkPackage.createPackageContents();
 		theTezPackage.createPackageContents();
+		theCassandraPackage.createPackageContents();
 		theDDSMPackage.createPackageContents();
 		theComplex_Data_TypesPackage_1.createPackageContents();
 
@@ -299,6 +313,7 @@ public class Basic_Enumeration_TypesPackageImpl extends EPackageImpl implements 
 		theHadoopPackage.initializePackageContents();
 		theSparkPackage.initializePackageContents();
 		theTezPackage.initializePackageContents();
+		theCassandraPackage.initializePackageContents();
 		theDDSMPackage.initializePackageContents();
 		theComplex_Data_TypesPackage_1.initializePackageContents();
 
@@ -451,8 +466,8 @@ public class Basic_Enumeration_TypesPackageImpl extends EPackageImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EEnum getSparkReduce() {
-		return sparkReduceEEnum;
+	public EEnum getSparkAction() {
+		return sparkActionEEnum;
 	}
 
 	/**
@@ -460,8 +475,8 @@ public class Basic_Enumeration_TypesPackageImpl extends EPackageImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EEnum getSparkMap() {
-		return sparkMapEEnum;
+	public EEnum getSparkTransformation() {
+		return sparkTransformationEEnum;
 	}
 
 	/**
@@ -489,6 +504,15 @@ public class Basic_Enumeration_TypesPackageImpl extends EPackageImpl implements 
 	 */
 	public EEnum getDataMovementType() {
 		return dataMovementTypeEEnum;
+  }
+  
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+  public EEnum getCassandraConsistencyLevelType() {
+		return cassandraConsistencyLevelTypeEEnum;
 	}
 
 	/**
@@ -543,11 +567,12 @@ public class Basic_Enumeration_TypesPackageImpl extends EPackageImpl implements 
 		providerTypeEEnum = createEEnum(PROVIDER_TYPE);
 		lifeCycleElementTypeEEnum = createEEnum(LIFE_CYCLE_ELEMENT_TYPE);
 		ddsMcomponentTypeEEnum = createEEnum(DDS_MCOMPONENT_TYPE);
-		sparkReduceEEnum = createEEnum(SPARK_REDUCE);
-		sparkMapEEnum = createEEnum(SPARK_MAP);
+		sparkActionEEnum = createEEnum(SPARK_ACTION);
+		sparkTransformationEEnum = createEEnum(SPARK_TRANSFORMATION);
 		sparkOperationEEnum = createEEnum(SPARK_OPERATION);
 		languageTypeEEnum = createEEnum(LANGUAGE_TYPE);
 		dataMovementTypeEEnum = createEEnum(DATA_MOVEMENT_TYPE);
+		cassandraConsistencyLevelTypeEEnum = createEEnum(CASSANDRA_CONSISTENCY_LEVEL_TYPE);
 		computationTypeEEnum = createEEnum(COMPUTATION_TYPE);
 	}
 
@@ -645,6 +670,7 @@ public class Basic_Enumeration_TypesPackageImpl extends EPackageImpl implements 
 		initEEnum(providerTypeEEnum, ProviderType.class, "ProviderType");
 		addEEnumLiteral(providerTypeEEnum, ProviderType.FCO);
 		addEEnumLiteral(providerTypeEEnum, ProviderType.OPENSTACK);
+		addEEnumLiteral(providerTypeEEnum, ProviderType.AWS);
 
 		initEEnum(lifeCycleElementTypeEEnum, LifeCycleElementType.class, "LifeCycleElementType");
 		addEEnumLiteral(lifeCycleElementTypeEEnum, LifeCycleElementType.START);
@@ -663,28 +689,49 @@ public class Basic_Enumeration_TypesPackageImpl extends EPackageImpl implements 
 		addEEnumLiteral(ddsMcomponentTypeEEnum, DDSMcomponentType.MASTER_NODE);
 		addEEnumLiteral(ddsMcomponentTypeEEnum, DDSMcomponentType.SLAVE_NODE);
 
-		initEEnum(sparkReduceEEnum, SparkReduce.class, "SparkReduce");
-		addEEnumLiteral(sparkReduceEEnum, SparkReduce.REDUCE);
-		addEEnumLiteral(sparkReduceEEnum, SparkReduce.SAMPLE);
-		addEEnumLiteral(sparkReduceEEnum, SparkReduce.COLLECT);
-		addEEnumLiteral(sparkReduceEEnum, SparkReduce.COUNT);
-		addEEnumLiteral(sparkReduceEEnum, SparkReduce.SAVE_AS);
-		addEEnumLiteral(sparkReduceEEnum, SparkReduce.COUNT_BY_KEY);
-		addEEnumLiteral(sparkReduceEEnum, SparkReduce.FOR_EACH);
+		initEEnum(sparkActionEEnum, SparkAction.class, "SparkAction");
+		addEEnumLiteral(sparkActionEEnum, SparkAction.REDUCE);
+		addEEnumLiteral(sparkActionEEnum, SparkAction.SAMPLE);
+		addEEnumLiteral(sparkActionEEnum, SparkAction.COLLECT);
+		addEEnumLiteral(sparkActionEEnum, SparkAction.COUNT);
+		addEEnumLiteral(sparkActionEEnum, SparkAction.SAVE_AS);
+		addEEnumLiteral(sparkActionEEnum, SparkAction.COUNT_BY_KEY);
+		addEEnumLiteral(sparkActionEEnum, SparkAction.FOR_EACH);
+		addEEnumLiteral(sparkActionEEnum, SparkAction.AGGREGATE);
+		addEEnumLiteral(sparkActionEEnum, SparkAction.COLLECT_AS_MAP);
+		addEEnumLiteral(sparkActionEEnum, SparkAction.COUNT_BY_VALUE);
+		addEEnumLiteral(sparkActionEEnum, SparkAction.FOLD);
+		addEEnumLiteral(sparkActionEEnum, SparkAction.LOOKUP);
+		addEEnumLiteral(sparkActionEEnum, SparkAction.TAKE);
+		addEEnumLiteral(sparkActionEEnum, SparkAction.TOP);
 
-		initEEnum(sparkMapEEnum, SparkMap.class, "SparkMap");
-		addEEnumLiteral(sparkMapEEnum, SparkMap.MAP);
-		addEEnumLiteral(sparkMapEEnum, SparkMap.FILTER);
-		addEEnumLiteral(sparkMapEEnum, SparkMap.SAMPLE);
-		addEEnumLiteral(sparkMapEEnum, SparkMap.RDD_SET_OPERATION);
-		addEEnumLiteral(sparkMapEEnum, SparkMap.UNION);
-		addEEnumLiteral(sparkMapEEnum, SparkMap.INTERSECTION);
-		addEEnumLiteral(sparkMapEEnum, SparkMap.SUBSTRACTION);
-		addEEnumLiteral(sparkMapEEnum, SparkMap.DISTINCT);
-		addEEnumLiteral(sparkMapEEnum, SparkMap.BY_KEY);
-		addEEnumLiteral(sparkMapEEnum, SparkMap.JOIN);
-		addEEnumLiteral(sparkMapEEnum, SparkMap.CARTESIAN);
-		addEEnumLiteral(sparkMapEEnum, SparkMap.REPARTITION);
+		initEEnum(sparkTransformationEEnum, SparkTransformation.class, "SparkTransformation");
+		addEEnumLiteral(sparkTransformationEEnum, SparkTransformation.MAP);
+		addEEnumLiteral(sparkTransformationEEnum, SparkTransformation.FILTER);
+		addEEnumLiteral(sparkTransformationEEnum, SparkTransformation.SAMPLE);
+		addEEnumLiteral(sparkTransformationEEnum, SparkTransformation.RDD_SET_OPERATION);
+		addEEnumLiteral(sparkTransformationEEnum, SparkTransformation.UNION);
+		addEEnumLiteral(sparkTransformationEEnum, SparkTransformation.INTERSECTION);
+		addEEnumLiteral(sparkTransformationEEnum, SparkTransformation.SUBSTRACTION);
+		addEEnumLiteral(sparkTransformationEEnum, SparkTransformation.SUBTRACT);
+		addEEnumLiteral(sparkTransformationEEnum, SparkTransformation.DISTINCT);
+		addEEnumLiteral(sparkTransformationEEnum, SparkTransformation.BY_KEY);
+		addEEnumLiteral(sparkTransformationEEnum, SparkTransformation.COMBINE_BY_KEY);
+		addEEnumLiteral(sparkTransformationEEnum, SparkTransformation.GROUP_BY_KEY);
+		addEEnumLiteral(sparkTransformationEEnum, SparkTransformation.REDUCE_BY_KEY);
+		addEEnumLiteral(sparkTransformationEEnum, SparkTransformation.SORT_BY_KEY);
+		addEEnumLiteral(sparkTransformationEEnum, SparkTransformation.JOIN);
+		addEEnumLiteral(sparkTransformationEEnum, SparkTransformation.CARTESIAN);
+		addEEnumLiteral(sparkTransformationEEnum, SparkTransformation.REPARTITION);
+		addEEnumLiteral(sparkTransformationEEnum, SparkTransformation.COGROUP);
+		addEEnumLiteral(sparkTransformationEEnum, SparkTransformation.FLAT_MAP);
+		addEEnumLiteral(sparkTransformationEEnum, SparkTransformation.GROUP_WITH);
+		addEEnumLiteral(sparkTransformationEEnum, SparkTransformation.KEYS);
+		addEEnumLiteral(sparkTransformationEEnum, SparkTransformation.MAP_VALUES);
+		addEEnumLiteral(sparkTransformationEEnum, SparkTransformation.PARTITION_BY);
+		addEEnumLiteral(sparkTransformationEEnum, SparkTransformation.THE_VALUES);
+		addEEnumLiteral(sparkTransformationEEnum, SparkTransformation.TEXT_FILE);
+		addEEnumLiteral(sparkTransformationEEnum, SparkTransformation.PARALLELIZE);
 
 		initEEnum(sparkOperationEEnum, SparkOperation.class, "SparkOperation");
 		addEEnumLiteral(sparkOperationEEnum, SparkOperation.TRANSFORMATION);
@@ -701,6 +748,11 @@ public class Basic_Enumeration_TypesPackageImpl extends EPackageImpl implements 
 		addEEnumLiteral(dataMovementTypeEEnum, DataMovementType.ONE_TO_ONE);
 		addEEnumLiteral(dataMovementTypeEEnum, DataMovementType.SCATTER_GATHER);
 		addEEnumLiteral(dataMovementTypeEEnum, DataMovementType.BROADCAST);
+
+		initEEnum(cassandraConsistencyLevelTypeEEnum, CassandraConsistencyLevelType.class, "CassandraConsistencyLevelType");
+		addEEnumLiteral(cassandraConsistencyLevelTypeEEnum, CassandraConsistencyLevelType.ONE);
+		addEEnumLiteral(cassandraConsistencyLevelTypeEEnum, CassandraConsistencyLevelType.QUORUM);
+		addEEnumLiteral(cassandraConsistencyLevelTypeEEnum, CassandraConsistencyLevelType.ALL);
 
 		initEEnum(computationTypeEEnum, ComputationType.class, "ComputationType");
 		addEEnumLiteral(computationTypeEEnum, ComputationType.DISTRIBUTED);

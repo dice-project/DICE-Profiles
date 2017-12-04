@@ -2964,13 +2964,76 @@ public interface DDSMPackage extends EPackage {
 	int DDSM_SPARK_CLUSTER__MASTER_HOST = DDSM_MASTER_SLAVE_PLATFORM__MASTER_HOST;
 
 	/**
+	 * The feature id for the '<em><b>Driver memory</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_SPARK_CLUSTER__DRIVER_MEMORY = DDSM_MASTER_SLAVE_PLATFORM_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Driver cores</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_SPARK_CLUSTER__DRIVER_CORES = DDSM_MASTER_SLAVE_PLATFORM_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Max result size</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_SPARK_CLUSTER__MAX_RESULT_SIZE = DDSM_MASTER_SLAVE_PLATFORM_FEATURE_COUNT + 2;
+
+	/**
+	 * The feature id for the '<em><b>Ui port</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_SPARK_CLUSTER__UI_PORT = DDSM_MASTER_SLAVE_PLATFORM_FEATURE_COUNT + 3;
+
+	/**
+	 * The feature id for the '<em><b>Executor memory</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_SPARK_CLUSTER__EXECUTOR_MEMORY = DDSM_MASTER_SLAVE_PLATFORM_FEATURE_COUNT + 4;
+
+	/**
+	 * The feature id for the '<em><b>Executor cores</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_SPARK_CLUSTER__EXECUTOR_CORES = DDSM_MASTER_SLAVE_PLATFORM_FEATURE_COUNT + 5;
+
+	/**
+	 * The feature id for the '<em><b>Num executors</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_SPARK_CLUSTER__NUM_EXECUTORS = DDSM_MASTER_SLAVE_PLATFORM_FEATURE_COUNT + 6;
+
+	/**
 	 * The number of structural features of the '<em>Ddsm Spark Cluster</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_SPARK_CLUSTER_FEATURE_COUNT = DDSM_MASTER_SLAVE_PLATFORM_FEATURE_COUNT + 0;
+	int DDSM_SPARK_CLUSTER_FEATURE_COUNT = DDSM_MASTER_SLAVE_PLATFORM_FEATURE_COUNT + 7;
 
 	/**
 	 * The meta object id for the '{@link es.unizar.disco.dice.DDSM.impl.DdsmMongoDBClusterImpl <em>Ddsm Mongo DB Cluster</em>}' class.
@@ -3152,6 +3215,333 @@ public interface DDSMPackage extends EPackage {
 	 * @ordered
 	 */
 	int DDSM_MONGO_DB_CLUSTER_FEATURE_COUNT = DDSM_PEER_TO_PEER_PLATFORM_FEATURE_COUNT + 3;
+
+
+	/**
+	 * The meta object id for the '{@link es.unizar.disco.dice.DDSM.impl.DdsmDockerHostImpl <em>Ddsm Docker Host</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see es.unizar.disco.dice.DDSM.impl.DdsmDockerHostImpl
+	 * @see es.unizar.disco.dice.DDSM.impl.DDSMPackageImpl#getDdsmDockerHost()
+	 * @generated
+	 */
+	int DDSM_DOCKER_HOST = 20;
+
+	/**
+	 * The feature id for the '<em><b>Description</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_DOCKER_HOST__DESCRIPTION = DDSM_INTERNAL_COMPONENT__DESCRIPTION;
+
+	/**
+	 * The feature id for the '<em><b>Properties List</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_DOCKER_HOST__PROPERTIES_LIST = DDSM_INTERNAL_COMPONENT__PROPERTIES_LIST;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_DOCKER_HOST__ID = DDSM_INTERNAL_COMPONENT__ID;
+
+	/**
+	 * The feature id for the '<em><b>Provided Ports List</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_DOCKER_HOST__PROVIDED_PORTS_LIST = DDSM_INTERNAL_COMPONENT__PROVIDED_PORTS_LIST;
+
+	/**
+	 * The feature id for the '<em><b>Monitored</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_DOCKER_HOST__MONITORED = DDSM_INTERNAL_COMPONENT__MONITORED;
+
+	/**
+	 * The feature id for the '<em><b>Monitoring Roles</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_DOCKER_HOST__MONITORING_ROLES = DDSM_INTERNAL_COMPONENT__MONITORING_ROLES;
+
+	/**
+	 * The feature id for the '<em><b>Required Port</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_DOCKER_HOST__REQUIRED_PORT = DDSM_INTERNAL_COMPONENT__REQUIRED_PORT;
+
+	/**
+	 * The feature id for the '<em><b>Is Front End</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_DOCKER_HOST__IS_FRONT_END = DDSM_INTERNAL_COMPONENT__IS_FRONT_END;
+
+	/**
+	 * The feature id for the '<em><b>Component Type</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_DOCKER_HOST__COMPONENT_TYPE = DDSM_INTERNAL_COMPONENT__COMPONENT_TYPE;
+
+	/**
+	 * The feature id for the '<em><b>Base Node</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_DOCKER_HOST__BASE_NODE = DDSM_INTERNAL_COMPONENT__BASE_NODE;
+
+	/**
+	 * The feature id for the '<em><b>Protected</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_DOCKER_HOST__PROTECTED = DDSM_INTERNAL_COMPONENT__PROTECTED;
+
+	/**
+	 * The feature id for the '<em><b>Launch script</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_DOCKER_HOST__LAUNCH_SCRIPT = DDSM_INTERNAL_COMPONENT__LAUNCH_SCRIPT;
+
+	/**
+	 * The feature id for the '<em><b>Language</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_DOCKER_HOST__LANGUAGE = DDSM_INTERNAL_COMPONENT__LANGUAGE;
+
+	/**
+	 * The feature id for the '<em><b>Firewall Rules</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_DOCKER_HOST__FIREWALL_RULES = DDSM_INTERNAL_COMPONENT__FIREWALL_RULES;
+
+	/**
+	 * The feature id for the '<em><b>Required Attributes</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_DOCKER_HOST__REQUIRED_ATTRIBUTES = DDSM_INTERNAL_COMPONENT__REQUIRED_ATTRIBUTES;
+
+	/**
+	 * The number of structural features of the '<em>Ddsm Docker Host</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_DOCKER_HOST_FEATURE_COUNT = DDSM_INTERNAL_COMPONENT_FEATURE_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link es.unizar.disco.dice.DDSM.impl.DdsmDockerContainerImpl <em>Ddsm Docker Container</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see es.unizar.disco.dice.DDSM.impl.DdsmDockerContainerImpl
+	 * @see es.unizar.disco.dice.DDSM.impl.DDSMPackageImpl#getDdsmDockerContainer()
+	 * @generated
+	 */
+	int DDSM_DOCKER_CONTAINER = 21;
+
+	/**
+	 * The feature id for the '<em><b>Description</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_DOCKER_CONTAINER__DESCRIPTION = DDSM_INTERNAL_COMPONENT__DESCRIPTION;
+
+	/**
+	 * The feature id for the '<em><b>Properties List</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_DOCKER_CONTAINER__PROPERTIES_LIST = DDSM_INTERNAL_COMPONENT__PROPERTIES_LIST;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_DOCKER_CONTAINER__ID = DDSM_INTERNAL_COMPONENT__ID;
+
+	/**
+	 * The feature id for the '<em><b>Provided Ports List</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_DOCKER_CONTAINER__PROVIDED_PORTS_LIST = DDSM_INTERNAL_COMPONENT__PROVIDED_PORTS_LIST;
+
+	/**
+	 * The feature id for the '<em><b>Monitored</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_DOCKER_CONTAINER__MONITORED = DDSM_INTERNAL_COMPONENT__MONITORED;
+
+	/**
+	 * The feature id for the '<em><b>Monitoring Roles</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_DOCKER_CONTAINER__MONITORING_ROLES = DDSM_INTERNAL_COMPONENT__MONITORING_ROLES;
+
+	/**
+	 * The feature id for the '<em><b>Required Port</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_DOCKER_CONTAINER__REQUIRED_PORT = DDSM_INTERNAL_COMPONENT__REQUIRED_PORT;
+
+	/**
+	 * The feature id for the '<em><b>Is Front End</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_DOCKER_CONTAINER__IS_FRONT_END = DDSM_INTERNAL_COMPONENT__IS_FRONT_END;
+
+	/**
+	 * The feature id for the '<em><b>Component Type</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_DOCKER_CONTAINER__COMPONENT_TYPE = DDSM_INTERNAL_COMPONENT__COMPONENT_TYPE;
+
+	/**
+	 * The feature id for the '<em><b>Base Node</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_DOCKER_CONTAINER__BASE_NODE = DDSM_INTERNAL_COMPONENT__BASE_NODE;
+
+	/**
+	 * The feature id for the '<em><b>Protected</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_DOCKER_CONTAINER__PROTECTED = DDSM_INTERNAL_COMPONENT__PROTECTED;
+
+	/**
+	 * The feature id for the '<em><b>Launch script</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_DOCKER_CONTAINER__LAUNCH_SCRIPT = DDSM_INTERNAL_COMPONENT__LAUNCH_SCRIPT;
+
+	/**
+	 * The feature id for the '<em><b>Language</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_DOCKER_CONTAINER__LANGUAGE = DDSM_INTERNAL_COMPONENT__LANGUAGE;
+
+	/**
+	 * The feature id for the '<em><b>Firewall Rules</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_DOCKER_CONTAINER__FIREWALL_RULES = DDSM_INTERNAL_COMPONENT__FIREWALL_RULES;
+
+	/**
+	 * The feature id for the '<em><b>Required Attributes</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_DOCKER_CONTAINER__REQUIRED_ATTRIBUTES = DDSM_INTERNAL_COMPONENT__REQUIRED_ATTRIBUTES;
+
+	/**
+	 * The feature id for the '<em><b>Image</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_DOCKER_CONTAINER__IMAGE = DDSM_INTERNAL_COMPONENT_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Tag</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_DOCKER_CONTAINER__TAG = DDSM_INTERNAL_COMPONENT_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of structural features of the '<em>Ddsm Docker Container</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_DOCKER_CONTAINER_FEATURE_COUNT = DDSM_INTERNAL_COMPONENT_FEATURE_COUNT + 2;
 
 
 	/**
@@ -4456,6 +4846,83 @@ public interface DDSMPackage extends EPackage {
 	EClass getDdsmSparkCluster();
 
 	/**
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmSparkCluster#getDriver_memory <em>Driver memory</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Driver memory</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmSparkCluster#getDriver_memory()
+	 * @see #getDdsmSparkCluster()
+	 * @generated
+	 */
+	EAttribute getDdsmSparkCluster_Driver_memory();
+
+	/**
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmSparkCluster#getDriver_cores <em>Driver cores</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Driver cores</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmSparkCluster#getDriver_cores()
+	 * @see #getDdsmSparkCluster()
+	 * @generated
+	 */
+	EAttribute getDdsmSparkCluster_Driver_cores();
+
+	/**
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmSparkCluster#getMax_result_size <em>Max result size</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Max result size</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmSparkCluster#getMax_result_size()
+	 * @see #getDdsmSparkCluster()
+	 * @generated
+	 */
+	EAttribute getDdsmSparkCluster_Max_result_size();
+
+	/**
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmSparkCluster#getUi_port <em>Ui port</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Ui port</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmSparkCluster#getUi_port()
+	 * @see #getDdsmSparkCluster()
+	 * @generated
+	 */
+	EAttribute getDdsmSparkCluster_Ui_port();
+
+	/**
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmSparkCluster#getExecutor_memory <em>Executor memory</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Executor memory</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmSparkCluster#getExecutor_memory()
+	 * @see #getDdsmSparkCluster()
+	 * @generated
+	 */
+	EAttribute getDdsmSparkCluster_Executor_memory();
+
+	/**
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmSparkCluster#getExecutor_cores <em>Executor cores</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Executor cores</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmSparkCluster#getExecutor_cores()
+	 * @see #getDdsmSparkCluster()
+	 * @generated
+	 */
+	EAttribute getDdsmSparkCluster_Executor_cores();
+
+	/**
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmSparkCluster#getNum_executors <em>Num executors</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Num executors</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmSparkCluster#getNum_executors()
+	 * @see #getDdsmSparkCluster()
+	 * @generated
+	 */
+	EAttribute getDdsmSparkCluster_Num_executors();
+
+	/**
 	 * Returns the meta object for class '{@link es.unizar.disco.dice.DDSM.DdsmMongoDBCluster <em>Ddsm Mongo DB Cluster</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -4497,6 +4964,48 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getDdsmMongoDBCluster_Shards();
+
+	/**
+	 * Returns the meta object for class '{@link es.unizar.disco.dice.DDSM.DdsmDockerHost <em>Ddsm Docker Host</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Ddsm Docker Host</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmDockerHost
+	 * @generated
+	 */
+	EClass getDdsmDockerHost();
+
+	/**
+	 * Returns the meta object for class '{@link es.unizar.disco.dice.DDSM.DdsmDockerContainer <em>Ddsm Docker Container</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Ddsm Docker Container</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmDockerContainer
+	 * @generated
+	 */
+	EClass getDdsmDockerContainer();
+
+	/**
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmDockerContainer#getImage <em>Image</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Image</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmDockerContainer#getImage()
+	 * @see #getDdsmDockerContainer()
+	 * @generated
+	 */
+	EAttribute getDdsmDockerContainer_Image();
+
+	/**
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmDockerContainer#getTag <em>Tag</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Tag</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmDockerContainer#getTag()
+	 * @see #getDdsmDockerContainer()
+	 * @generated
+	 */
+	EAttribute getDdsmDockerContainer_Tag();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -5519,6 +6028,62 @@ public interface DDSMPackage extends EPackage {
 		EClass DDSM_SPARK_CLUSTER = eINSTANCE.getDdsmSparkCluster();
 
 		/**
+		 * The meta object literal for the '<em><b>Driver memory</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DDSM_SPARK_CLUSTER__DRIVER_MEMORY = eINSTANCE.getDdsmSparkCluster_Driver_memory();
+
+		/**
+		 * The meta object literal for the '<em><b>Driver cores</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DDSM_SPARK_CLUSTER__DRIVER_CORES = eINSTANCE.getDdsmSparkCluster_Driver_cores();
+
+		/**
+		 * The meta object literal for the '<em><b>Max result size</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DDSM_SPARK_CLUSTER__MAX_RESULT_SIZE = eINSTANCE.getDdsmSparkCluster_Max_result_size();
+
+		/**
+		 * The meta object literal for the '<em><b>Ui port</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DDSM_SPARK_CLUSTER__UI_PORT = eINSTANCE.getDdsmSparkCluster_Ui_port();
+
+		/**
+		 * The meta object literal for the '<em><b>Executor memory</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DDSM_SPARK_CLUSTER__EXECUTOR_MEMORY = eINSTANCE.getDdsmSparkCluster_Executor_memory();
+
+		/**
+		 * The meta object literal for the '<em><b>Executor cores</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DDSM_SPARK_CLUSTER__EXECUTOR_CORES = eINSTANCE.getDdsmSparkCluster_Executor_cores();
+
+		/**
+		 * The meta object literal for the '<em><b>Num executors</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DDSM_SPARK_CLUSTER__NUM_EXECUTORS = eINSTANCE.getDdsmSparkCluster_Num_executors();
+
+		/**
 		 * The meta object literal for the '{@link es.unizar.disco.dice.DDSM.impl.DdsmMongoDBClusterImpl <em>Ddsm Mongo DB Cluster</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -5551,6 +6116,42 @@ public interface DDSMPackage extends EPackage {
 		 * @generated
 		 */
 		EReference DDSM_MONGO_DB_CLUSTER__SHARDS = eINSTANCE.getDdsmMongoDBCluster_Shards();
+
+		/**
+		 * The meta object literal for the '{@link es.unizar.disco.dice.DDSM.impl.DdsmDockerHostImpl <em>Ddsm Docker Host</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see es.unizar.disco.dice.DDSM.impl.DdsmDockerHostImpl
+		 * @see es.unizar.disco.dice.DDSM.impl.DDSMPackageImpl#getDdsmDockerHost()
+		 * @generated
+		 */
+		EClass DDSM_DOCKER_HOST = eINSTANCE.getDdsmDockerHost();
+
+		/**
+		 * The meta object literal for the '{@link es.unizar.disco.dice.DDSM.impl.DdsmDockerContainerImpl <em>Ddsm Docker Container</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see es.unizar.disco.dice.DDSM.impl.DdsmDockerContainerImpl
+		 * @see es.unizar.disco.dice.DDSM.impl.DDSMPackageImpl#getDdsmDockerContainer()
+		 * @generated
+		 */
+		EClass DDSM_DOCKER_CONTAINER = eINSTANCE.getDdsmDockerContainer();
+
+		/**
+		 * The meta object literal for the '<em><b>Image</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DDSM_DOCKER_CONTAINER__IMAGE = eINSTANCE.getDdsmDockerContainer_Image();
+
+		/**
+		 * The meta object literal for the '<em><b>Tag</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DDSM_DOCKER_CONTAINER__TAG = eINSTANCE.getDdsmDockerContainer_Tag();
 
 	}
 

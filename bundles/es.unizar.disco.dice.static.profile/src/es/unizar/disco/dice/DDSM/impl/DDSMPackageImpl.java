@@ -20,6 +20,8 @@ import es.unizar.disco.dice.DDSM.DdsmBigDataJob;
 import es.unizar.disco.dice.DDSM.DdsmCassandraCluster;
 import es.unizar.disco.dice.DDSM.DdsmCloudElement;
 import es.unizar.disco.dice.DDSM.DdsmComponent;
+import es.unizar.disco.dice.DDSM.DdsmDockerContainer;
+import es.unizar.disco.dice.DDSM.DdsmDockerHost;
 import es.unizar.disco.dice.DDSM.DdsmExternalComponent;
 import es.unizar.disco.dice.DDSM.DdsmHdfsCluster;
 import es.unizar.disco.dice.DDSM.DdsmHeterogeneousCluster;
@@ -36,10 +38,14 @@ import es.unizar.disco.dice.DDSM.DdsmStormCluster;
 import es.unizar.disco.dice.DDSM.DdsmVMsCluster;
 import es.unizar.disco.dice.DDSM.DdsmYarnCluster;
 import es.unizar.disco.dice.DDSM.DdsmZookeeperCluster;
+import es.unizar.disco.dice.DICE.DICEPackage;
+import es.unizar.disco.dice.DICE.impl.DICEPackageImpl;
 import es.unizar.disco.dice.DPIM.DPIMPackage;
 
 import es.unizar.disco.dice.DPIM.impl.DPIMPackageImpl;
 
+import es.unizar.disco.dice.DTSM.Cassandra.CassandraPackage;
+import es.unizar.disco.dice.DTSM.Cassandra.impl.CassandraPackageImpl;
 import es.unizar.disco.dice.DTSM.Core.CorePackage;
 
 import es.unizar.disco.dice.DTSM.Core.impl.CorePackageImpl;
@@ -217,6 +223,20 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 	private EClass ddsmMongoDBClusterEClass = null;
 
 	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass ddsmDockerHostEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass ddsmDockerContainerEClass = null;
+
+	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
 	 * {@link org.eclipse.emf.ecore.EPackage.Registry EPackage.Registry} by the package
 	 * package URI value.
@@ -275,6 +295,7 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 		HadoopPackageImpl theHadoopPackage = (HadoopPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(HadoopPackage.eNS_URI) instanceof HadoopPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(HadoopPackage.eNS_URI) : HadoopPackage.eINSTANCE);
 		SparkPackageImpl theSparkPackage = (SparkPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(SparkPackage.eNS_URI) instanceof SparkPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(SparkPackage.eNS_URI) : SparkPackage.eINSTANCE);
 		TezPackageImpl theTezPackage = (TezPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(TezPackage.eNS_URI) instanceof TezPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(TezPackage.eNS_URI) : TezPackage.eINSTANCE);
+		CassandraPackageImpl theCassandraPackage = (CassandraPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(CassandraPackage.eNS_URI) instanceof CassandraPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(CassandraPackage.eNS_URI) : CassandraPackage.eINSTANCE);
 		Complex_Data_TypesPackageImpl theComplex_Data_TypesPackage_1 = (Complex_Data_TypesPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(es.unizar.disco.dice.Complex_Data_Types.Complex_Data_TypesPackage.eNS_URI) instanceof Complex_Data_TypesPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(es.unizar.disco.dice.Complex_Data_Types.Complex_Data_TypesPackage.eNS_URI) : es.unizar.disco.dice.Complex_Data_Types.Complex_Data_TypesPackage.eINSTANCE);
 		Basic_Enumeration_TypesPackageImpl theBasic_Enumeration_TypesPackage_1 = (Basic_Enumeration_TypesPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(es.unizar.disco.dice.Basic_Enumeration_Types.Basic_Enumeration_TypesPackage.eNS_URI) instanceof Basic_Enumeration_TypesPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(es.unizar.disco.dice.Basic_Enumeration_Types.Basic_Enumeration_TypesPackage.eNS_URI) : es.unizar.disco.dice.Basic_Enumeration_Types.Basic_Enumeration_TypesPackage.eINSTANCE);
 
@@ -286,6 +307,7 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 		theHadoopPackage.createPackageContents();
 		theSparkPackage.createPackageContents();
 		theTezPackage.createPackageContents();
+		theCassandraPackage.createPackageContents();
 		theComplex_Data_TypesPackage_1.createPackageContents();
 		theBasic_Enumeration_TypesPackage_1.createPackageContents();
 
@@ -297,6 +319,7 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 		theHadoopPackage.initializePackageContents();
 		theSparkPackage.initializePackageContents();
 		theTezPackage.initializePackageContents();
+		theCassandraPackage.initializePackageContents();
 		theComplex_Data_TypesPackage_1.initializePackageContents();
 		theBasic_Enumeration_TypesPackage_1.initializePackageContents();
 
@@ -1394,6 +1417,69 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EAttribute getDdsmSparkCluster_Driver_memory() {
+		return (EAttribute)ddsmSparkClusterEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getDdsmSparkCluster_Driver_cores() {
+		return (EAttribute)ddsmSparkClusterEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getDdsmSparkCluster_Max_result_size() {
+		return (EAttribute)ddsmSparkClusterEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getDdsmSparkCluster_Ui_port() {
+		return (EAttribute)ddsmSparkClusterEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getDdsmSparkCluster_Executor_memory() {
+		return (EAttribute)ddsmSparkClusterEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getDdsmSparkCluster_Executor_cores() {
+		return (EAttribute)ddsmSparkClusterEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getDdsmSparkCluster_Num_executors() {
+		return (EAttribute)ddsmSparkClusterEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getDdsmMongoDBCluster() {
 		return ddsmMongoDBClusterEClass;
 	}
@@ -1423,6 +1509,42 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 	 */
 	public EReference getDdsmMongoDBCluster_Shards() {
 		return (EReference)ddsmMongoDBClusterEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getDdsmDockerHost() {
+		return ddsmDockerHostEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getDdsmDockerContainer() {
+		return ddsmDockerContainerEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getDdsmDockerContainer_Image() {
+		return (EAttribute)ddsmDockerContainerEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getDdsmDockerContainer_Tag() {
+		return (EAttribute)ddsmDockerContainerEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -1591,11 +1713,24 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 		createEAttribute(ddsmCassandraClusterEClass, DDSM_CASSANDRA_CLUSTER__PERMISSION_VALIDITY_IN_MS);
 
 		ddsmSparkClusterEClass = createEClass(DDSM_SPARK_CLUSTER);
+		createEAttribute(ddsmSparkClusterEClass, DDSM_SPARK_CLUSTER__DRIVER_MEMORY);
+		createEAttribute(ddsmSparkClusterEClass, DDSM_SPARK_CLUSTER__DRIVER_CORES);
+		createEAttribute(ddsmSparkClusterEClass, DDSM_SPARK_CLUSTER__MAX_RESULT_SIZE);
+		createEAttribute(ddsmSparkClusterEClass, DDSM_SPARK_CLUSTER__UI_PORT);
+		createEAttribute(ddsmSparkClusterEClass, DDSM_SPARK_CLUSTER__EXECUTOR_MEMORY);
+		createEAttribute(ddsmSparkClusterEClass, DDSM_SPARK_CLUSTER__EXECUTOR_CORES);
+		createEAttribute(ddsmSparkClusterEClass, DDSM_SPARK_CLUSTER__NUM_EXECUTORS);
 
 		ddsmMongoDBClusterEClass = createEClass(DDSM_MONGO_DB_CLUSTER);
 		createEAttribute(ddsmMongoDBClusterEClass, DDSM_MONGO_DB_CLUSTER__SHARDING_MODE);
 		createEReference(ddsmMongoDBClusterEClass, DDSM_MONGO_DB_CLUSTER__ROUTER_SERVER_HOST);
 		createEReference(ddsmMongoDBClusterEClass, DDSM_MONGO_DB_CLUSTER__SHARDS);
+
+		ddsmDockerHostEClass = createEClass(DDSM_DOCKER_HOST);
+
+		ddsmDockerContainerEClass = createEClass(DDSM_DOCKER_CONTAINER);
+		createEAttribute(ddsmDockerContainerEClass, DDSM_DOCKER_CONTAINER__IMAGE);
+		createEAttribute(ddsmDockerContainerEClass, DDSM_DOCKER_CONTAINER__TAG);
 	}
 
 	/**
@@ -1648,6 +1783,8 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 		ddsmCassandraClusterEClass.getESuperTypes().add(this.getDdsmPeerToPeerPlatform());
 		ddsmSparkClusterEClass.getESuperTypes().add(this.getDdsmMasterSlavePlatform());
 		ddsmMongoDBClusterEClass.getESuperTypes().add(this.getDdsmPeerToPeerPlatform());
+		ddsmDockerHostEClass.getESuperTypes().add(this.getDdsmInternalComponent());
+		ddsmDockerContainerEClass.getESuperTypes().add(this.getDdsmInternalComponent());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(ddsmExternalComponentEClass, DdsmExternalComponent.class, "DdsmExternalComponent", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -1788,14 +1925,27 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 		initEAttribute(getDdsmCassandraCluster_Permission_validity_in_ms(), theTypesPackage.getInteger(), "permission_validity_in_ms", null, 0, 1, DdsmCassandraCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(ddsmSparkClusterEClass, DdsmSparkCluster.class, "DdsmSparkCluster", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getDdsmSparkCluster_Driver_memory(), theTypesPackage.getInteger(), "driver_memory", "5", 1, 1, DdsmSparkCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmSparkCluster_Driver_cores(), theTypesPackage.getInteger(), "driver_cores", "1", 1, 1, DdsmSparkCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmSparkCluster_Max_result_size(), theTypesPackage.getInteger(), "max_result_size", "1", 1, 1, DdsmSparkCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmSparkCluster_Ui_port(), theTypesPackage.getInteger(), "ui_port", "4040", 1, 1, DdsmSparkCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmSparkCluster_Executor_memory(), theTypesPackage.getInteger(), "executor_memory", "1", 1, 1, DdsmSparkCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmSparkCluster_Executor_cores(), theTypesPackage.getInteger(), "executor_cores", "1", 1, 1, DdsmSparkCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmSparkCluster_Num_executors(), theTypesPackage.getInteger(), "num_executors", "1", 1, 1, DdsmSparkCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(ddsmMongoDBClusterEClass, DdsmMongoDBCluster.class, "DdsmMongoDBCluster", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getDdsmMongoDBCluster_ShardingMode(), theTypesPackage.getBoolean(), "shardingMode", "false", 0, 1, DdsmMongoDBCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getDdsmMongoDBCluster_RouterServerHost(), this.getDdsmVMsCluster(), null, "routerServerHost", null, 0, 1, DdsmMongoDBCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getDdsmMongoDBCluster_Shards(), theComplex_Data_TypesPackage_1.getMongoDBShard(), null, "shards", null, 0, -1, DdsmMongoDBCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
-		// Create resource
-		createResource(eNS_URI);
+		initEClass(ddsmDockerHostEClass, DdsmDockerHost.class, "DdsmDockerHost", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(ddsmDockerContainerEClass, DdsmDockerContainer.class, "DdsmDockerContainer", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getDdsmDockerContainer_Image(), theTypesPackage.getString(), "image", null, 1, 1, DdsmDockerContainer.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmDockerContainer_Tag(), theTypesPackage.getString(), "tag", null, 1, 1, DdsmDockerContainer.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+
+    // Create resource
+		// createResource(eNS_URI);
 	}
 
 } //DDSMPackageImpl

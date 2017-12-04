@@ -10,14 +10,14 @@ import org.eclipse.emf.common.util.Enumerator;
 
 /**
  * <!-- begin-user-doc -->
- * A representation of the literals of the enumeration '<em><b>Spark Reduce</b></em>',
+ * A representation of the literals of the enumeration '<em><b>Spark Action</b></em>',
  * and utility methods for working with them.
  * <!-- end-user-doc -->
- * @see es.unizar.disco.dice.Basic_Enumeration_Types.Basic_Enumeration_TypesPackage#getSparkReduce()
+ * @see es.unizar.disco.dice.Basic_Enumeration_Types.Basic_Enumeration_TypesPackage#getSparkAction()
  * @model
  * @generated
  */
-public enum SparkReduce implements Enumerator {
+public enum SparkAction implements Enumerator {
 	/**
 	 * The '<em><b>Reduce</b></em>' literal object.
 	 * <!-- begin-user-doc -->
@@ -86,7 +86,77 @@ public enum SparkReduce implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	FOR_EACH(6, "ForEach", "ForEach");
+	FOR_EACH(6, "ForEach", "ForEach"),
+
+	/**
+	 * The '<em><b>Aggregate</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #AGGREGATE_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	AGGREGATE(7, "Aggregate", "Aggregate"),
+
+	/**
+	 * The '<em><b>Collect As Map</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #COLLECT_AS_MAP_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	COLLECT_AS_MAP(8, "CollectAsMap", "CollectAsMap"),
+
+	/**
+	 * The '<em><b>Count By Value</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #COUNT_BY_VALUE_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	COUNT_BY_VALUE(9, "CountByValue", "CountByValue"),
+
+	/**
+	 * The '<em><b>Fold</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #FOLD_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	FOLD(10, "Fold", "Fold"),
+
+	/**
+	 * The '<em><b>Lookup</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #LOOKUP_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	LOOKUP(11, "Lookup", "Lookup"),
+
+	/**
+	 * The '<em><b>Take</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #TAKE_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	TAKE(12, "Take", "Take"),
+
+	/**
+	 * The '<em><b>Top</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #TOP_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	TOP(13, "Top", "Top");
 
 	/**
 	 * The '<em><b>Reduce</b></em>' literal value.
@@ -194,13 +264,118 @@ public enum SparkReduce implements Enumerator {
 	public static final int FOR_EACH_VALUE = 6;
 
 	/**
-	 * An array of all the '<em><b>Spark Reduce</b></em>' enumerators.
+	 * The '<em><b>Aggregate</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of '<em><b>Aggregate</b></em>' literal object isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @see #AGGREGATE
+	 * @model name="Aggregate"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int AGGREGATE_VALUE = 7;
+
+	/**
+	 * The '<em><b>Collect As Map</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of '<em><b>Collect As Map</b></em>' literal object isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @see #COLLECT_AS_MAP
+	 * @model name="CollectAsMap"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int COLLECT_AS_MAP_VALUE = 8;
+
+	/**
+	 * The '<em><b>Count By Value</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of '<em><b>Count By Value</b></em>' literal object isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @see #COUNT_BY_VALUE
+	 * @model name="CountByValue"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int COUNT_BY_VALUE_VALUE = 9;
+
+	/**
+	 * The '<em><b>Fold</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of '<em><b>Fold</b></em>' literal object isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @see #FOLD
+	 * @model name="Fold"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int FOLD_VALUE = 10;
+
+	/**
+	 * The '<em><b>Lookup</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of '<em><b>Lookup</b></em>' literal object isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @see #LOOKUP
+	 * @model name="Lookup"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int LOOKUP_VALUE = 11;
+
+	/**
+	 * The '<em><b>Take</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of '<em><b>Take</b></em>' literal object isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @see #TAKE
+	 * @model name="Take"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int TAKE_VALUE = 12;
+
+	/**
+	 * The '<em><b>Top</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of '<em><b>Top</b></em>' literal object isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @see #TOP
+	 * @model name="Top"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int TOP_VALUE = 13;
+
+	/**
+	 * An array of all the '<em><b>Spark Action</b></em>' enumerators.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private static final SparkReduce[] VALUES_ARRAY =
-		new SparkReduce[] {
+	private static final SparkAction[] VALUES_ARRAY =
+		new SparkAction[] {
 			REDUCE,
 			SAMPLE,
 			COLLECT,
@@ -208,27 +383,34 @@ public enum SparkReduce implements Enumerator {
 			SAVE_AS,
 			COUNT_BY_KEY,
 			FOR_EACH,
+			AGGREGATE,
+			COLLECT_AS_MAP,
+			COUNT_BY_VALUE,
+			FOLD,
+			LOOKUP,
+			TAKE,
+			TOP,
 		};
 
 	/**
-	 * A public read-only list of all the '<em><b>Spark Reduce</b></em>' enumerators.
+	 * A public read-only list of all the '<em><b>Spark Action</b></em>' enumerators.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final List<SparkReduce> VALUES = Collections.unmodifiableList(Arrays.asList(VALUES_ARRAY));
+	public static final List<SparkAction> VALUES = Collections.unmodifiableList(Arrays.asList(VALUES_ARRAY));
 
 	/**
-	 * Returns the '<em><b>Spark Reduce</b></em>' literal with the specified literal value.
+	 * Returns the '<em><b>Spark Action</b></em>' literal with the specified literal value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param literal the literal.
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
-	public static SparkReduce get(String literal) {
+	public static SparkAction get(String literal) {
 		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
-			SparkReduce result = VALUES_ARRAY[i];
+			SparkAction result = VALUES_ARRAY[i];
 			if (result.toString().equals(literal)) {
 				return result;
 			}
@@ -237,16 +419,16 @@ public enum SparkReduce implements Enumerator {
 	}
 
 	/**
-	 * Returns the '<em><b>Spark Reduce</b></em>' literal with the specified name.
+	 * Returns the '<em><b>Spark Action</b></em>' literal with the specified name.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param name the name.
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
-	public static SparkReduce getByName(String name) {
+	public static SparkAction getByName(String name) {
 		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
-			SparkReduce result = VALUES_ARRAY[i];
+			SparkAction result = VALUES_ARRAY[i];
 			if (result.getName().equals(name)) {
 				return result;
 			}
@@ -255,14 +437,14 @@ public enum SparkReduce implements Enumerator {
 	}
 
 	/**
-	 * Returns the '<em><b>Spark Reduce</b></em>' literal with the specified integer value.
+	 * Returns the '<em><b>Spark Action</b></em>' literal with the specified integer value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the integer value.
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
-	public static SparkReduce get(int value) {
+	public static SparkAction get(int value) {
 		switch (value) {
 			case REDUCE_VALUE: return REDUCE;
 			case SAMPLE_VALUE: return SAMPLE;
@@ -271,6 +453,13 @@ public enum SparkReduce implements Enumerator {
 			case SAVE_AS_VALUE: return SAVE_AS;
 			case COUNT_BY_KEY_VALUE: return COUNT_BY_KEY;
 			case FOR_EACH_VALUE: return FOR_EACH;
+			case AGGREGATE_VALUE: return AGGREGATE;
+			case COLLECT_AS_MAP_VALUE: return COLLECT_AS_MAP;
+			case COUNT_BY_VALUE_VALUE: return COUNT_BY_VALUE;
+			case FOLD_VALUE: return FOLD;
+			case LOOKUP_VALUE: return LOOKUP;
+			case TAKE_VALUE: return TAKE;
+			case TOP_VALUE: return TOP;
 		}
 		return null;
 	}
@@ -302,7 +491,7 @@ public enum SparkReduce implements Enumerator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private SparkReduce(int value, String name, String literal) {
+	private SparkAction(int value, String name, String literal) {
 		this.value = value;
 		this.name = name;
 		this.literal = literal;
@@ -346,4 +535,4 @@ public enum SparkReduce implements Enumerator {
 		return literal;
 	}
 	
-} //SparkReduce
+} //SparkAction

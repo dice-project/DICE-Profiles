@@ -184,6 +184,24 @@ public interface DDSMFactory extends EFactory {
 	DdsmMongoDBCluster createDdsmMongoDBCluster();
 
 	/**
+	 * Returns a new object of class '<em>Ddsm Docker Host</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Ddsm Docker Host</em>'.
+	 * @generated
+	 */
+	DdsmDockerHost createDdsmDockerHost();
+
+	/**
+	 * Returns a new object of class '<em>Ddsm Docker Container</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Ddsm Docker Container</em>'.
+	 * @generated
+	 */
+	DdsmDockerContainer createDdsmDockerContainer();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
