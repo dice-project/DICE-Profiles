@@ -171,6 +171,7 @@ public class DPIMPackageImpl extends EPackageImpl implements DPIMPackage {
 		Basic_Enumeration_TypesPackage.eINSTANCE.eClass();
 
 		// Obtain or create and register interdependencies
+		DICEPackageImpl theDICEPackage = (DICEPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(DICEPackage.eNS_URI) instanceof DICEPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(DICEPackage.eNS_URI) : DICEPackage.eINSTANCE);
 		CorePackageImpl theCorePackage = (CorePackageImpl)(EPackage.Registry.INSTANCE.getEPackage(CorePackage.eNS_URI) instanceof CorePackageImpl ? EPackage.Registry.INSTANCE.getEPackage(CorePackage.eNS_URI) : CorePackage.eINSTANCE);
 		StormPackageImpl theStormPackage = (StormPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(StormPackage.eNS_URI) instanceof StormPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(StormPackage.eNS_URI) : StormPackage.eINSTANCE);
 		HadoopPackageImpl theHadoopPackage = (HadoopPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(HadoopPackage.eNS_URI) instanceof HadoopPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(HadoopPackage.eNS_URI) : HadoopPackage.eINSTANCE);
@@ -183,6 +184,7 @@ public class DPIMPackageImpl extends EPackageImpl implements DPIMPackage {
 
 		// Create package meta-data objects
 		theDPIMPackage.createPackageContents();
+		theDICEPackage.createPackageContents();
 		theCorePackage.createPackageContents();
 		theStormPackage.createPackageContents();
 		theHadoopPackage.createPackageContents();
@@ -195,6 +197,7 @@ public class DPIMPackageImpl extends EPackageImpl implements DPIMPackage {
 
 		// Initialize created meta-data
 		theDPIMPackage.initializePackageContents();
+		theDICEPackage.initializePackageContents();
 		theCorePackage.initializePackageContents();
 		theStormPackage.initializePackageContents();
 		theHadoopPackage.initializePackageContents();
@@ -545,7 +548,7 @@ public class DPIMPackageImpl extends EPackageImpl implements DPIMPackage {
 		initEClass(dpimScenarioEClass, DpimScenario.class, "DpimScenario", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		// Create resource
-		createResource(eNS_URI);
+		// createResource(eNS_URI);
 	}
 
 } //DPIMPackageImpl

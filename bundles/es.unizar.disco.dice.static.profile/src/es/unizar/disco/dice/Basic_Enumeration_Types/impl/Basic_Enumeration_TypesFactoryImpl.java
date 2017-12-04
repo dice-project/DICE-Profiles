@@ -563,7 +563,7 @@ public class Basic_Enumeration_TypesFactoryImpl extends EFactoryImpl implements 
 	 */
 	public DataMovementType createDataMovementTypeFromString(EDataType eDataType, String initialValue) {
 		DataMovementType result = DataMovementType.get(initialValue);
-  	if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
 		return result;
 	}
 
