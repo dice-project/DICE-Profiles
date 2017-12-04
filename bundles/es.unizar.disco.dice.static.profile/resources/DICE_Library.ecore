@@ -11,13 +11,13 @@
       </eAnnotations>
       <eClassifiers xsi:type="ecore:EClass" name="DiceDataVolume">
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="volume" ordered="false"
-            eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_DataSize"/>
+            eType="ecore:EDataType ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_DataSize"/>
       </eClassifiers>
       <eClassifiers xsi:type="ecore:EClass" name="DiceDataSpecification">
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" ordered="false"
             eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="size" ordered="false"
-            eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_DataSize"/>
+            eType="ecore:EDataType ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_DataSize"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="refModel" ordered="false"
             eType="#//Basic_DICE_Types/Basic_Enumeration_Types/RefType"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="refDataFormat" ordered="false"
@@ -25,9 +25,9 @@
       </eClassifiers>
       <eClassifiers xsi:type="ecore:EClass" name="DiceChannelSpecification">
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="rate" ordered="false"
-            eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Frequency"/>
+            eType="ecore:EDataType ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Frequency"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="size" ordered="false"
-            eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_DataSize"/>
+            eType="ecore:EDataType ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_DataSize"/>
       </eClassifiers>
       <eClassifiers xsi:type="ecore:EClass" name="RequiredAttribute">
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="referenceNode" ordered="false"
@@ -128,6 +128,7 @@
       <eClassifiers xsi:type="ecore:EEnum" name="ProviderType">
         <eLiterals name="fco"/>
         <eLiterals name="openstack" value="1"/>
+        <eLiterals name="aws" value="2"/>
       </eClassifiers>
       <eClassifiers xsi:type="ecore:EEnum" name="LifeCycleElementType">
         <eLiterals name="start"/>
@@ -146,7 +147,7 @@
         <eLiterals name="MasterNode" value="5"/>
         <eLiterals name="SlaveNode" value="6"/>
       </eClassifiers>
-      <eClassifiers xsi:type="ecore:EEnum" name="SparkReduce">
+      <eClassifiers xsi:type="ecore:EEnum" name="SparkAction">
         <eLiterals name="Reduce"/>
         <eLiterals name="Sample" value="1"/>
         <eLiterals name="Collect" value="2"/>
@@ -154,8 +155,15 @@
         <eLiterals name="SaveAs" value="4"/>
         <eLiterals name="CountByKey" value="5"/>
         <eLiterals name="ForEach" value="6"/>
+        <eLiterals name="Aggregate" value="7"/>
+        <eLiterals name="CollectAsMap" value="8"/>
+        <eLiterals name="CountByValue" value="9"/>
+        <eLiterals name="Fold" value="10"/>
+        <eLiterals name="Lookup" value="11"/>
+        <eLiterals name="Take" value="12"/>
+        <eLiterals name="Top" value="13"/>
       </eClassifiers>
-      <eClassifiers xsi:type="ecore:EEnum" name="SparkMap">
+      <eClassifiers xsi:type="ecore:EEnum" name="SparkTransformation">
         <eLiterals name="Map"/>
         <eLiterals name="Filter" value="1"/>
         <eLiterals name="Sample" value="2"/>
@@ -163,11 +171,25 @@
         <eLiterals name="Union" value="4"/>
         <eLiterals name="Intersection" value="5"/>
         <eLiterals name="Substraction" value="6"/>
-        <eLiterals name="Distinct" value="7"/>
-        <eLiterals name="ByKey" value="8"/>
-        <eLiterals name="Join" value="9"/>
-        <eLiterals name="Cartesian" value="10"/>
-        <eLiterals name="Repartition" value="11"/>
+        <eLiterals name="Subtract" value="7"/>
+        <eLiterals name="Distinct" value="8"/>
+        <eLiterals name="ByKey" value="9"/>
+        <eLiterals name="CombineByKey" value="10"/>
+        <eLiterals name="GroupByKey" value="11"/>
+        <eLiterals name="ReduceByKey" value="12"/>
+        <eLiterals name="SortByKey" value="13"/>
+        <eLiterals name="Join" value="14"/>
+        <eLiterals name="Cartesian" value="15"/>
+        <eLiterals name="Repartition" value="16"/>
+        <eLiterals name="Cogroup" value="17"/>
+        <eLiterals name="FlatMap" value="18"/>
+        <eLiterals name="GroupWith" value="19"/>
+        <eLiterals name="Keys" value="20"/>
+        <eLiterals name="MapValues" value="21"/>
+        <eLiterals name="PartitionBy" value="22"/>
+        <eLiterals name="theValues" value="23"/>
+        <eLiterals name="TextFile" value="24"/>
+        <eLiterals name="Parallelize" value="25"/>
       </eClassifiers>
       <eClassifiers xsi:type="ecore:EEnum" name="SparkOperation">
         <eLiterals name="Transformation"/>
@@ -179,6 +201,11 @@
         <eLiterals name="java" value="2"/>
         <eLiterals name="scala" value="3"/>
         <eLiterals name="R" value="4"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EEnum" name="CassandraConsistencyLevelType">
+        <eLiterals name="one"/>
+        <eLiterals name="quorum" value="1"/>
+        <eLiterals name="all" value="2"/>
       </eClassifiers>
       <eClassifiers xsi:type="ecore:EEnum" name="DataMovementType">
         <eLiterals name="OneToOne"/>

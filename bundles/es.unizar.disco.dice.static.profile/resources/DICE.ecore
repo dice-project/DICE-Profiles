@@ -2,6 +2,7 @@
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="DICE" nsURI="http://es.unizar.disco.dice/profiles/DICE/1.0"
     nsPrefix="DICE">
+  <eClassifiers xsi:type="ecore:EEnum" name="Dummy"/>
   <eSubpackages name="DICE_UML_Extensions" nsURI="http://es.unizar.disco.dice/profiles/DICE_UML_Extensions/1.0"
       nsPrefix="DICE_UML_Extensions">
     <eSubpackages name="DPIM" nsURI="http://es.unizar.disco.dice/profiles/DPIM/1.0"
@@ -272,13 +273,13 @@
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="OpType" ordered="false"
               lowerBound="1" eType="ecore:EEnum DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/SparkOperation"/>
         </eClassifiers>
-        <eClassifiers xsi:type="ecore:EClass" name="SparkReduce" eSuperTypes="#//DICE_UML_Extensions/DTSM/Spark/SparkOperation">
+        <eClassifiers xsi:type="ecore:EClass" name="SparkAction" eSuperTypes="#//DICE_UML_Extensions/DTSM/Spark/SparkOperation">
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="ReduceType" ordered="false"
-              lowerBound="1" eType="ecore:EEnum DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/SparkReduce"/>
+              lowerBound="1" eType="ecore:EEnum DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/SparkAction"/>
         </eClassifiers>
-        <eClassifiers xsi:type="ecore:EClass" name="SparkMap" eSuperTypes="#//DICE_UML_Extensions/DTSM/Spark/SparkOperation">
+        <eClassifiers xsi:type="ecore:EClass" name="SparkTransformation" eSuperTypes="#//DICE_UML_Extensions/DTSM/Spark/SparkOperation">
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="MapType" ordered="false"
-              lowerBound="1" eType="ecore:EEnum DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/SparkMap"/>
+              lowerBound="1" eType="ecore:EEnum DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/SparkTransformation"/>
         </eClassifiers>
         <eClassifiers xsi:type="ecore:EClass" name="SparkNode" eSuperTypes="#//DICE_UML_Extensions/DTSM/Core/CoreComputationNode ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE.ecore#//MARTE_AnalysisModel/GQAM/GaScenario">
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="nCores" ordered="false"
@@ -291,6 +292,17 @@
               ordered="false" lowerBound="1" eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Integer"/>
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="sparkExtDelay" ordered="false"
               lowerBound="1" eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Duration"/>
+        </eClassifiers>
+      </eSubpackages>
+      <eSubpackages name="Cassandra" nsURI="http://es.unizar.disco.dice/profiles/DTSM/Cassandra/1.0"
+          nsPrefix="Cassandra">
+        <eClassifiers xsi:type="ecore:EClass" name="CassandraDB">
+          <eStructuralFeatures xsi:type="ecore:EAttribute" name="replicationFactor"
+              ordered="false" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//Integer"/>
+          <eStructuralFeatures xsi:type="ecore:EAttribute" name="consistencyLevel"
+              ordered="false" eType="ecore:EEnum DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/CassandraConsistencyLevelType"/>
+          <eStructuralFeatures xsi:type="ecore:EReference" name="base_Node" ordered="false"
+              lowerBound="1" eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//Node"/>
         </eClassifiers>
       </eSubpackages>
       <eSubpackages name="Tez" nsURI="http://es.unizar.disco.dice/profiles/DTSM/Tez/1.0"
@@ -615,7 +627,29 @@
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="permission_validity_in_ms"
             ordered="false" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//Integer"/>
       </eClassifiers>
-      <eClassifiers xsi:type="ecore:EClass" name="DdsmSparkCluster" eSuperTypes="#//DICE_UML_Extensions/DDSM/DdsmMasterSlavePlatform"/>
+      <eClassifiers xsi:type="ecore:EClass" name="DdsmSparkCluster" eSuperTypes="#//DICE_UML_Extensions/DDSM/DdsmMasterSlavePlatform">
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="driver_memory" ordered="false"
+            lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//Integer"
+            defaultValueLiteral="5"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="driver_cores" ordered="false"
+            lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//Integer"
+            defaultValueLiteral="1"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="max_result_size" ordered="false"
+            lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//Integer"
+            defaultValueLiteral="1"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="ui_port" ordered="false"
+            lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//Integer"
+            defaultValueLiteral="4040"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="executor_memory" ordered="false"
+            lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//Integer"
+            defaultValueLiteral="1"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="executor_cores" ordered="false"
+            lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//Integer"
+            defaultValueLiteral="1"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="num_executors" ordered="false"
+            lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//Integer"
+            defaultValueLiteral="1"/>
+      </eClassifiers>
       <eClassifiers xsi:type="ecore:EClass" name="DdsmMongoDBCluster" eSuperTypes="#//DICE_UML_Extensions/DDSM/DdsmPeerToPeerPlatform">
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="shardingMode" ordered="false"
             eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//Boolean"
@@ -625,6 +659,13 @@
         <eStructuralFeatures xsi:type="ecore:EReference" name="shards" ordered="false"
             upperBound="-1" eType="ecore:EClass DICE_Library.ecore#//Complex_DICE_Types/Complex_Data_Types/MongoDBShard"
             containment="true"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" name="DdsmDockerHost" eSuperTypes="#//DICE_UML_Extensions/DDSM/DdsmInternalComponent"/>
+      <eClassifiers xsi:type="ecore:EClass" name="DdsmDockerContainer" eSuperTypes="#//DICE_UML_Extensions/DDSM/DdsmInternalComponent">
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="image" ordered="false"
+            lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="tag" ordered="false"
+            lowerBound="1" eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
       </eClassifiers>
     </eSubpackages>
   </eSubpackages>
