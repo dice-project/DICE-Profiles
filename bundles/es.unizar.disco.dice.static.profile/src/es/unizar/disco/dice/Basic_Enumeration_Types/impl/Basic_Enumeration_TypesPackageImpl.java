@@ -34,10 +34,6 @@ import es.unizar.disco.dice.Basic_Enumeration_Types.VMSize;
 import es.unizar.disco.dice.Basic_Enumeration_Types.WorkflowOperation;
 
 import es.unizar.disco.dice.Complex_Data_Types.impl.Complex_Data_TypesPackageImpl;
-
-import es.unizar.disco.dice.DDSM.DDSMPackage;
-
-import es.unizar.disco.dice.DDSM.impl.DDSMPackageImpl;
 import es.unizar.disco.dice.DICE.DICEPackage;
 import es.unizar.disco.dice.DICE.impl.DICEPackageImpl;
 import es.unizar.disco.dice.DPIM.DPIMPackage;
@@ -289,9 +285,9 @@ public class Basic_Enumeration_TypesPackageImpl extends EPackageImpl implements 
 		StormPackageImpl theStormPackage = (StormPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(StormPackage.eNS_URI) instanceof StormPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(StormPackage.eNS_URI) : StormPackage.eINSTANCE);
 		HadoopPackageImpl theHadoopPackage = (HadoopPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(HadoopPackage.eNS_URI) instanceof HadoopPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(HadoopPackage.eNS_URI) : HadoopPackage.eINSTANCE);
 		SparkPackageImpl theSparkPackage = (SparkPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(SparkPackage.eNS_URI) instanceof SparkPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(SparkPackage.eNS_URI) : SparkPackage.eINSTANCE);
-		TezPackageImpl theTezPackage = (TezPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(TezPackage.eNS_URI) instanceof TezPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(TezPackage.eNS_URI) : TezPackage.eINSTANCE);
 		CassandraPackageImpl theCassandraPackage = (CassandraPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(CassandraPackage.eNS_URI) instanceof CassandraPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(CassandraPackage.eNS_URI) : CassandraPackage.eINSTANCE);
-		DDSMPackageImpl theDDSMPackage = (DDSMPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(DDSMPackage.eNS_URI) instanceof DDSMPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(DDSMPackage.eNS_URI) : DDSMPackage.eINSTANCE);
+		TezPackageImpl theTezPackage = (TezPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(TezPackage.eNS_URI) instanceof TezPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(TezPackage.eNS_URI) : TezPackage.eINSTANCE);
+		es.unizar.disco.dice.DDSM.impl.DDSMPackageImpl theDDSMPackage = (es.unizar.disco.dice.DDSM.impl.DDSMPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(es.unizar.disco.dice.DDSM.DDSMPackage.eNS_URI) instanceof es.unizar.disco.dice.DDSM.impl.DDSMPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(es.unizar.disco.dice.DDSM.DDSMPackage.eNS_URI) : es.unizar.disco.dice.DDSM.DDSMPackage.eINSTANCE);
 		Complex_Data_TypesPackageImpl theComplex_Data_TypesPackage_1 = (Complex_Data_TypesPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(es.unizar.disco.dice.Complex_Data_Types.Complex_Data_TypesPackage.eNS_URI) instanceof Complex_Data_TypesPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(es.unizar.disco.dice.Complex_Data_Types.Complex_Data_TypesPackage.eNS_URI) : es.unizar.disco.dice.Complex_Data_Types.Complex_Data_TypesPackage.eINSTANCE);
 
 		// Create package meta-data objects
@@ -302,8 +298,8 @@ public class Basic_Enumeration_TypesPackageImpl extends EPackageImpl implements 
 		theStormPackage.createPackageContents();
 		theHadoopPackage.createPackageContents();
 		theSparkPackage.createPackageContents();
-		theTezPackage.createPackageContents();
 		theCassandraPackage.createPackageContents();
+		theTezPackage.createPackageContents();
 		theDDSMPackage.createPackageContents();
 		theComplex_Data_TypesPackage_1.createPackageContents();
 
@@ -315,8 +311,8 @@ public class Basic_Enumeration_TypesPackageImpl extends EPackageImpl implements 
 		theStormPackage.initializePackageContents();
 		theHadoopPackage.initializePackageContents();
 		theSparkPackage.initializePackageContents();
-		theTezPackage.initializePackageContents();
 		theCassandraPackage.initializePackageContents();
+		theTezPackage.initializePackageContents();
 		theDDSMPackage.initializePackageContents();
 		theComplex_Data_TypesPackage_1.initializePackageContents();
 
@@ -507,7 +503,7 @@ public class Basic_Enumeration_TypesPackageImpl extends EPackageImpl implements 
 	 */
 	public EEnum getDataMovementType() {
 		return dataMovementTypeEEnum;
-  }
+	}
   
 	/**
 	 * <!-- begin-user-doc -->
@@ -574,8 +570,8 @@ public class Basic_Enumeration_TypesPackageImpl extends EPackageImpl implements 
 		sparkTransformationEEnum = createEEnum(SPARK_TRANSFORMATION);
 		sparkOperationEEnum = createEEnum(SPARK_OPERATION);
 		languageTypeEEnum = createEEnum(LANGUAGE_TYPE);
-		dataMovementTypeEEnum = createEEnum(DATA_MOVEMENT_TYPE);
 		cassandraConsistencyLevelTypeEEnum = createEEnum(CASSANDRA_CONSISTENCY_LEVEL_TYPE);
+		dataMovementTypeEEnum = createEEnum(DATA_MOVEMENT_TYPE);
 		computationTypeEEnum = createEEnum(COMPUTATION_TYPE);
 	}
 
@@ -747,15 +743,15 @@ public class Basic_Enumeration_TypesPackageImpl extends EPackageImpl implements 
 		addEEnumLiteral(languageTypeEEnum, LanguageType.SCALA);
 		addEEnumLiteral(languageTypeEEnum, LanguageType.R);
 
-		initEEnum(dataMovementTypeEEnum, DataMovementType.class, "DataMovementType");
-		addEEnumLiteral(dataMovementTypeEEnum, DataMovementType.ONE_TO_ONE);
-		addEEnumLiteral(dataMovementTypeEEnum, DataMovementType.SCATTER_GATHER);
-		addEEnumLiteral(dataMovementTypeEEnum, DataMovementType.BROADCAST);
-
 		initEEnum(cassandraConsistencyLevelTypeEEnum, CassandraConsistencyLevelType.class, "CassandraConsistencyLevelType");
 		addEEnumLiteral(cassandraConsistencyLevelTypeEEnum, CassandraConsistencyLevelType.ONE);
 		addEEnumLiteral(cassandraConsistencyLevelTypeEEnum, CassandraConsistencyLevelType.QUORUM);
 		addEEnumLiteral(cassandraConsistencyLevelTypeEEnum, CassandraConsistencyLevelType.ALL);
+
+		initEEnum(dataMovementTypeEEnum, DataMovementType.class, "DataMovementType");
+		addEEnumLiteral(dataMovementTypeEEnum, DataMovementType.ONE_TO_ONE);
+		addEEnumLiteral(dataMovementTypeEEnum, DataMovementType.SCATTER_GATHER);
+		addEEnumLiteral(dataMovementTypeEEnum, DataMovementType.BROADCAST);
 
 		initEEnum(computationTypeEEnum, ComputationType.class, "ComputationType");
 		addEEnumLiteral(computationTypeEEnum, ComputationType.DISTRIBUTED);

@@ -295,8 +295,8 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 		StormPackageImpl theStormPackage = (StormPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(StormPackage.eNS_URI) instanceof StormPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(StormPackage.eNS_URI) : StormPackage.eINSTANCE);
 		HadoopPackageImpl theHadoopPackage = (HadoopPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(HadoopPackage.eNS_URI) instanceof HadoopPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(HadoopPackage.eNS_URI) : HadoopPackage.eINSTANCE);
 		SparkPackageImpl theSparkPackage = (SparkPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(SparkPackage.eNS_URI) instanceof SparkPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(SparkPackage.eNS_URI) : SparkPackage.eINSTANCE);
-		TezPackageImpl theTezPackage = (TezPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(TezPackage.eNS_URI) instanceof TezPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(TezPackage.eNS_URI) : TezPackage.eINSTANCE);
 		CassandraPackageImpl theCassandraPackage = (CassandraPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(CassandraPackage.eNS_URI) instanceof CassandraPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(CassandraPackage.eNS_URI) : CassandraPackage.eINSTANCE);
+		TezPackageImpl theTezPackage = (TezPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(TezPackage.eNS_URI) instanceof TezPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(TezPackage.eNS_URI) : TezPackage.eINSTANCE);
 		Complex_Data_TypesPackageImpl theComplex_Data_TypesPackage_1 = (Complex_Data_TypesPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(es.unizar.disco.dice.Complex_Data_Types.Complex_Data_TypesPackage.eNS_URI) instanceof Complex_Data_TypesPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(es.unizar.disco.dice.Complex_Data_Types.Complex_Data_TypesPackage.eNS_URI) : es.unizar.disco.dice.Complex_Data_Types.Complex_Data_TypesPackage.eINSTANCE);
 		Basic_Enumeration_TypesPackageImpl theBasic_Enumeration_TypesPackage_1 = (Basic_Enumeration_TypesPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(es.unizar.disco.dice.Basic_Enumeration_Types.Basic_Enumeration_TypesPackage.eNS_URI) instanceof Basic_Enumeration_TypesPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(es.unizar.disco.dice.Basic_Enumeration_Types.Basic_Enumeration_TypesPackage.eNS_URI) : es.unizar.disco.dice.Basic_Enumeration_Types.Basic_Enumeration_TypesPackage.eINSTANCE);
 
@@ -308,8 +308,8 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 		theStormPackage.createPackageContents();
 		theHadoopPackage.createPackageContents();
 		theSparkPackage.createPackageContents();
-		theTezPackage.createPackageContents();
 		theCassandraPackage.createPackageContents();
+		theTezPackage.createPackageContents();
 		theComplex_Data_TypesPackage_1.createPackageContents();
 		theBasic_Enumeration_TypesPackage_1.createPackageContents();
 
@@ -321,8 +321,8 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 		theStormPackage.initializePackageContents();
 		theHadoopPackage.initializePackageContents();
 		theSparkPackage.initializePackageContents();
-		theTezPackage.initializePackageContents();
 		theCassandraPackage.initializePackageContents();
+		theTezPackage.initializePackageContents();
 		theComplex_Data_TypesPackage_1.initializePackageContents();
 		theBasic_Enumeration_TypesPackage_1.initializePackageContents();
 
@@ -1946,9 +1946,6 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 		initEClass(ddsmDockerContainerEClass, DdsmDockerContainer.class, "DdsmDockerContainer", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getDdsmDockerContainer_Image(), theTypesPackage.getString(), "image", null, 1, 1, DdsmDockerContainer.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getDdsmDockerContainer_Tag(), theTypesPackage.getString(), "tag", null, 1, 1, DdsmDockerContainer.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-
-    // Create resource
-		// createResource(eNS_URI);
 	}
 
 } //DDSMPackageImpl

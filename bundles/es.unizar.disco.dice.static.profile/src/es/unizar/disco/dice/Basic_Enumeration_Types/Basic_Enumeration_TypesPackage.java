@@ -252,7 +252,7 @@ public interface Basic_Enumeration_TypesPackage extends EPackage {
 	 * @see es.unizar.disco.dice.Basic_Enumeration_Types.impl.Basic_Enumeration_TypesPackageImpl#getDataMovementType()
 	 * @generated
 	 */
-	int DATA_MOVEMENT_TYPE = 21;
+	int DATA_MOVEMENT_TYPE = 20;
 
   /**
 	 * The meta object id for the '{@link es.unizar.disco.dice.Basic_Enumeration_Types.CassandraConsistencyLevelType <em>Cassandra Consistency Level Type</em>}' enum.
@@ -272,7 +272,7 @@ public interface Basic_Enumeration_TypesPackage extends EPackage {
 	 * @see es.unizar.disco.dice.Basic_Enumeration_Types.impl.Basic_Enumeration_TypesPackageImpl#getComputationType()
 	 * @generated
 	 */
-	int COMPUTATION_TYPE = 20;
+	int COMPUTATION_TYPE = 21;
 
 
 	/**

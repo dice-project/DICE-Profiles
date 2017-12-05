@@ -3,8 +3,8 @@
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/uml2/2.2.0/GenModel"
     modelDirectory="/es.unizar.disco.dice.static.profile/src" modelPluginID="es.unizar.disco.dice.static.profile"
     modelName="DICE" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
-    importerID="org.eclipse.uml2.uml.ecore.importer" complianceLevel="8.0" copyrightFields="false"
-    usedGenPackages="../../com.masdes.dam.static.profile/resources/DAM.genmodel#//DAM ../../com.masdes.dam.static.profile/resources/DAM.genmodel#//DAM_Library ../../org.eclipse.emf.ecore/model/Ecore.genmodel#//ecore ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE.genmodel#//MARTE ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE.genmodel#//MARTE_Library ../../org.eclipse.uml2.types/model/Types.genmodel#//types ../../org.eclipse.uml2.uml/model/UML.genmodel#//uml ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE.genmodel#//MARTE_Library/BasicNFP_Types"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0" copyrightFields="false"
+    usedGenPackages="../../com.masdes.dam.static.profile/resources/DAM.genmodel#//DAM ../../com.masdes.dam.static.profile/resources/DAM.genmodel#//DAM_Library ../../org.eclipse.emf.ecore/model/Ecore.genmodel#//ecore ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE.genmodel#//MARTE ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE.genmodel#//MARTE_Library ../../org.eclipse.uml2.types/model/Types.genmodel#//types ../../org.eclipse.uml2.uml/model/UML.genmodel#//uml"
     importOrganizing="true">
   <genAnnotations source="http://www.eclipse.org/emf/2002/GenModel/importer/org.eclipse.uml2.uml.ecore.importer">
     <details key="ECORE_TAGGED_VALUES" value="PROCESS"/>
@@ -30,9 +30,11 @@
     <details key="CAMEL_CASE_NAMES" value="IGNORE"/>
     <details key="SUPER_CLASS_ORDER" value="PROCESS"/>
   </genAnnotations>
-  <foreignModel>DICE.profile.uml</foreignModel>
+  <foreignModel>DICE.ecore</foreignModel>
+  <foreignModel>DICE_Library.ecore</foreignModel>
   <genPackages xsi:type="genmodel:GenPackage" prefix="DICE" basePackage="es.unizar.disco.dice"
       disposableProviderFactory="true" ecorePackage="DICE.ecore#/">
+    <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="DICE.ecore#//Dummy"/>
     <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="DICE_UML_Extensions"
         basePackage="es.unizar.disco.dice" disposableProviderFactory="true" ecorePackage="DICE.ecore#//DICE_UML_Extensions">
       <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="DPIM" basePackage="es.unizar.disco.dice"
@@ -249,7 +251,6 @@
                 propertySortChoices="true" ecoreFeature="ecore:EReference DICE.ecore#//DICE_UML_Extensions/DTSM/Cassandra/CassandraDB/base_Node"/>
           </genClasses>
         </nestedGenPackages>
-      </nestedGenPackages>
         <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="Tez" basePackage="es.unizar.disco.dice.DTSM"
             disposableProviderFactory="true" ecorePackage="DICE.ecore#//DICE_UML_Extensions/DTSM/Tez">
           <genClasses xsi:type="genmodel:GenClass" ecoreClass="DICE.ecore#//DICE_UML_Extensions/DTSM/Tez/TezVertex">
@@ -630,15 +631,15 @@
           <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/LanguageType/scala"/>
           <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/LanguageType/R"/>
         </genEnums>
-        <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/DataMovementType">
-          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/DataMovementType/OneToOne"/>
-          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/DataMovementType/ScatterGather"/>
-          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/DataMovementType/Broadcast"/>
-        </genEnums>
         <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/CassandraConsistencyLevelType">
           <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/CassandraConsistencyLevelType/one"/>
           <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/CassandraConsistencyLevelType/quorum"/>
           <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/CassandraConsistencyLevelType/all"/>
+        </genEnums>
+        <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/DataMovementType">
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/DataMovementType/OneToOne"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/DataMovementType/ScatterGather"/>
+          <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/DataMovementType/Broadcast"/>
         </genEnums>
         <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/ComputationType">
           <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="DICE_Library.ecore#//Basic_DICE_Types/Basic_Enumeration_Types/ComputationType/distributed"/>

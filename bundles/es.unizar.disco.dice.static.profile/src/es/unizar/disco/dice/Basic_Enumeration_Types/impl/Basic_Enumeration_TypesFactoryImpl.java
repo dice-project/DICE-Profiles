@@ -108,10 +108,10 @@ public class Basic_Enumeration_TypesFactoryImpl extends EFactoryImpl implements 
 				return createSparkOperationFromString(eDataType, initialValue);
 			case Basic_Enumeration_TypesPackage.LANGUAGE_TYPE:
 				return createLanguageTypeFromString(eDataType, initialValue);
-			case Basic_Enumeration_TypesPackage.DATA_MOVEMENT_TYPE:
-				return createDataMovementTypeFromString(eDataType, initialValue);
 			case Basic_Enumeration_TypesPackage.CASSANDRA_CONSISTENCY_LEVEL_TYPE:
 				return createCassandraConsistencyLevelTypeFromString(eDataType, initialValue);
+			case Basic_Enumeration_TypesPackage.DATA_MOVEMENT_TYPE:
+				return createDataMovementTypeFromString(eDataType, initialValue);
 			case Basic_Enumeration_TypesPackage.COMPUTATION_TYPE:
 				return createComputationTypeFromString(eDataType, initialValue);
 			default:
@@ -165,10 +165,10 @@ public class Basic_Enumeration_TypesFactoryImpl extends EFactoryImpl implements 
 				return convertSparkOperationToString(eDataType, instanceValue);
 			case Basic_Enumeration_TypesPackage.LANGUAGE_TYPE:
 				return convertLanguageTypeToString(eDataType, instanceValue);
-			case Basic_Enumeration_TypesPackage.DATA_MOVEMENT_TYPE:
-				return convertDataMovementTypeToString(eDataType, instanceValue);
 			case Basic_Enumeration_TypesPackage.CASSANDRA_CONSISTENCY_LEVEL_TYPE:
 				return convertCassandraConsistencyLevelTypeToString(eDataType, instanceValue);
+			case Basic_Enumeration_TypesPackage.DATA_MOVEMENT_TYPE:
+				return convertDataMovementTypeToString(eDataType, instanceValue);
 			case Basic_Enumeration_TypesPackage.COMPUTATION_TYPE:
 				return convertComputationTypeToString(eDataType, instanceValue);
 			default:
