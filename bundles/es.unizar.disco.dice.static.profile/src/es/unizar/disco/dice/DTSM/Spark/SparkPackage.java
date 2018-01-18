@@ -2278,13 +2278,13 @@ public interface SparkPackage extends EPackage {
 	int SPARK_NODE__NCORES = es.unizar.disco.dice.DTSM.Core.CorePackage.CORE_COMPUTATION_NODE_FEATURE_COUNT + 28;
 
 	/**
-	 * The feature id for the '<em><b>Memory</b></em>' attribute.
+	 * The feature id for the '<em><b>NMemory</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SPARK_NODE__MEMORY = es.unizar.disco.dice.DTSM.Core.CorePackage.CORE_COMPUTATION_NODE_FEATURE_COUNT + 29;
+	int SPARK_NODE__NMEMORY = es.unizar.disco.dice.DTSM.Core.CorePackage.CORE_COMPUTATION_NODE_FEATURE_COUNT + 29;
 
 	/**
 	 * The number of structural features of the '<em>Node</em>' class.
@@ -2526,15 +2526,15 @@ public interface SparkPackage extends EPackage {
 	EAttribute getSparkNode_NCores();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DTSM.Spark.SparkNode#getMemory <em>Memory</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DTSM.Spark.SparkNode#getNMemory <em>NMemory</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Memory</em>'.
-	 * @see es.unizar.disco.dice.DTSM.Spark.SparkNode#getMemory()
+	 * @return the meta object for the attribute '<em>NMemory</em>'.
+	 * @see es.unizar.disco.dice.DTSM.Spark.SparkNode#getNMemory()
 	 * @see #getSparkNode()
 	 * @generated
 	 */
-	EAttribute getSparkNode_Memory();
+	EAttribute getSparkNode_NMemory();
 
 	/**
 	 * Returns the meta object for class '{@link es.unizar.disco.dice.DTSM.Spark.SparkWorkloadEvent <em>Workload Event</em>}'.
@@ -2705,12 +2705,12 @@ public interface SparkPackage extends EPackage {
 		EAttribute SPARK_NODE__NCORES = eINSTANCE.getSparkNode_NCores();
 
 		/**
-		 * The meta object literal for the '<em><b>Memory</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>NMemory</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute SPARK_NODE__MEMORY = eINSTANCE.getSparkNode_Memory();
+		EAttribute SPARK_NODE__NMEMORY = eINSTANCE.getSparkNode_NMemory();
 
 		/**
 		 * The meta object literal for the '{@link es.unizar.disco.dice.DTSM.Spark.impl.SparkWorkloadEventImpl <em>Workload Event</em>}' class.

@@ -16,7 +16,7 @@ import org.eclipse.papyrus.MARTE.MARTE_AnalysisModel.GQAM.GaScenario;
  * </p>
  * <ul>
  *   <li>{@link es.unizar.disco.dice.DTSM.Spark.SparkNode#getNCores <em>NCores</em>}</li>
- *   <li>{@link es.unizar.disco.dice.DTSM.Spark.SparkNode#getMemory <em>Memory</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Spark.SparkNode#getNMemory <em>NMemory</em>}</li>
  * </ul>
  *
  * @see es.unizar.disco.dice.DTSM.Spark.SparkPackage#getSparkNode()
@@ -51,29 +51,29 @@ public interface SparkNode extends CoreComputationNode, GaScenario {
 	void setNCores(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Memory</b></em>' attribute.
+	 * Returns the value of the '<em><b>NMemory</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Memory</em>' attribute isn't clear,
+	 * If the meaning of the '<em>NMemory</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Memory</em>' attribute.
-	 * @see #setMemory(String)
-	 * @see es.unizar.disco.dice.DTSM.Spark.SparkPackage#getSparkNode_Memory()
-	 * @model dataType="org.eclipse.papyrus.MARTE_Library.BasicNFP_Types.NFP_Boolean" required="true" ordered="false"
+	 * @return the value of the '<em>NMemory</em>' attribute.
+	 * @see #setNMemory(String)
+	 * @see es.unizar.disco.dice.DTSM.Spark.SparkPackage#getSparkNode_NMemory()
+	 * @model dataType="org.eclipse.papyrus.MARTE_Library.BasicNFP_Types.NFP_Integer" required="true" ordered="false"
 	 * @generated
 	 */
-	String getMemory();
+	String getNMemory();
 
 	/**
-	 * Sets the value of the '{@link es.unizar.disco.dice.DTSM.Spark.SparkNode#getMemory <em>Memory</em>}' attribute.
+	 * Sets the value of the '{@link es.unizar.disco.dice.DTSM.Spark.SparkNode#getNMemory <em>NMemory</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Memory</em>' attribute.
-	 * @see #getMemory()
+	 * @param value the new value of the '<em>NMemory</em>' attribute.
+	 * @see #getNMemory()
 	 * @generated
 	 */
-	void setMemory(String value);
+	void setNMemory(String value);
 
 } // SparkNode

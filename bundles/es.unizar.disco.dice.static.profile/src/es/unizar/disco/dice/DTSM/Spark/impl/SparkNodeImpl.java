@@ -83,7 +83,7 @@ import org.eclipse.uml2.uml.ValueSpecification;
  *   <li>{@link es.unizar.disco.dice.DTSM.Spark.impl.SparkNodeImpl#getParentStep <em>Parent Step</em>}</li>
  *   <li>{@link es.unizar.disco.dice.DTSM.Spark.impl.SparkNodeImpl#getTiming <em>Timing</em>}</li>
  *   <li>{@link es.unizar.disco.dice.DTSM.Spark.impl.SparkNodeImpl#getNCores <em>NCores</em>}</li>
- *   <li>{@link es.unizar.disco.dice.DTSM.Spark.impl.SparkNodeImpl#getMemory <em>Memory</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DTSM.Spark.impl.SparkNodeImpl#getNMemory <em>NMemory</em>}</li>
  * </ul>
  *
  * @generated
@@ -390,24 +390,24 @@ public class SparkNodeImpl extends CoreComputationNodeImpl implements SparkNode 
 	protected String nCores = NCORES_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getMemory() <em>Memory</em>}' attribute.
+	 * The default value of the '{@link #getNMemory() <em>NMemory</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getMemory()
+	 * @see #getNMemory()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String MEMORY_EDEFAULT = null;
+	protected static final String NMEMORY_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getMemory() <em>Memory</em>}' attribute.
+	 * The cached value of the '{@link #getNMemory() <em>NMemory</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getMemory()
+	 * @see #getNMemory()
 	 * @generated
 	 * @ordered
 	 */
-	protected String memory = MEMORY_EDEFAULT;
+	protected String nMemory = NMEMORY_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1029,8 +1029,8 @@ public class SparkNodeImpl extends CoreComputationNodeImpl implements SparkNode 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getMemory() {
-		return memory;
+	public String getNMemory() {
+		return nMemory;
 	}
 
 	/**
@@ -1038,11 +1038,11 @@ public class SparkNodeImpl extends CoreComputationNodeImpl implements SparkNode 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setMemory(String newMemory) {
-		String oldMemory = memory;
-		memory = newMemory;
+	public void setNMemory(String newNMemory) {
+		String oldNMemory = nMemory;
+		nMemory = newNMemory;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, SparkPackage.SPARK_NODE__MEMORY, oldMemory, memory));
+			eNotify(new ENotificationImpl(this, Notification.SET, SparkPackage.SPARK_NODE__NMEMORY, oldNMemory, nMemory));
 	}
 
 	/**
@@ -1154,8 +1154,8 @@ public class SparkNodeImpl extends CoreComputationNodeImpl implements SparkNode 
 				return getTiming();
 			case SparkPackage.SPARK_NODE__NCORES:
 				return getNCores();
-			case SparkPackage.SPARK_NODE__MEMORY:
-				return getMemory();
+			case SparkPackage.SPARK_NODE__NMEMORY:
+				return getNMemory();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -1275,8 +1275,8 @@ public class SparkNodeImpl extends CoreComputationNodeImpl implements SparkNode 
 			case SparkPackage.SPARK_NODE__NCORES:
 				setNCores((String)newValue);
 				return;
-			case SparkPackage.SPARK_NODE__MEMORY:
-				setMemory((String)newValue);
+			case SparkPackage.SPARK_NODE__NMEMORY:
+				setNMemory((String)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -1377,8 +1377,8 @@ public class SparkNodeImpl extends CoreComputationNodeImpl implements SparkNode 
 			case SparkPackage.SPARK_NODE__NCORES:
 				setNCores(NCORES_EDEFAULT);
 				return;
-			case SparkPackage.SPARK_NODE__MEMORY:
-				setMemory(MEMORY_EDEFAULT);
+			case SparkPackage.SPARK_NODE__NMEMORY:
+				setNMemory(NMEMORY_EDEFAULT);
 				return;
 		}
 		super.eUnset(featureID);
@@ -1450,8 +1450,8 @@ public class SparkNodeImpl extends CoreComputationNodeImpl implements SparkNode 
 				return timing != null && !timing.isEmpty();
 			case SparkPackage.SPARK_NODE__NCORES:
 				return NCORES_EDEFAULT == null ? nCores != null : !NCORES_EDEFAULT.equals(nCores);
-			case SparkPackage.SPARK_NODE__MEMORY:
-				return MEMORY_EDEFAULT == null ? memory != null : !MEMORY_EDEFAULT.equals(memory);
+			case SparkPackage.SPARK_NODE__NMEMORY:
+				return NMEMORY_EDEFAULT == null ? nMemory != null : !NMEMORY_EDEFAULT.equals(nMemory);
 		}
 		return super.eIsSet(featureID);
 	}
@@ -1610,8 +1610,8 @@ public class SparkNodeImpl extends CoreComputationNodeImpl implements SparkNode 
 		result.append(utilizationOnHost);
 		result.append(", nCores: ");
 		result.append(nCores);
-		result.append(", Memory: ");
-		result.append(memory);
+		result.append(", nMemory: ");
+		result.append(nMemory);
 		result.append(')');
 		return result.toString();
 	}

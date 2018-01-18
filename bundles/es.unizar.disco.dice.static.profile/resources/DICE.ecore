@@ -284,8 +284,8 @@
         <eClassifiers xsi:type="ecore:EClass" name="SparkNode" eSuperTypes="#//DICE_UML_Extensions/DTSM/Core/CoreComputationNode ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE.ecore#//MARTE_AnalysisModel/GQAM/GaScenario">
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="nCores" ordered="false"
               lowerBound="1" eType="ecore:EDataType ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Integer"/>
-          <eStructuralFeatures xsi:type="ecore:EAttribute" name="Memory" ordered="false"
-              lowerBound="1" eType="ecore:EDataType ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Boolean"/>
+          <eStructuralFeatures xsi:type="ecore:EAttribute" name="nMemory" ordered="false"
+              lowerBound="1" eType="ecore:EDataType ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Integer"/>
         </eClassifiers>
         <eClassifiers xsi:type="ecore:EClass" name="SparkWorkloadEvent" eSuperTypes="../../org.eclipse.papyrus.marte.static.profile/resources/MARTE.ecore#//MARTE_AnalysisModel/GQAM/GaWorkloadEvent">
           <eStructuralFeatures xsi:type="ecore:EAttribute" name="sparkPopulation"

@@ -555,8 +555,8 @@
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-78kd_j2EeacttGOxem79w" value="1"/>
               <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-78kePj2EeacttGOxem79w" value="1"/>
             </ownedAttribute>
-            <ownedAttribute xmi:type="uml:Property" xmi:id="_-78kefj2EeacttGOxem79w" name="Memory">
-              <type xmi:type="uml:DataType" href="pathmap://Papyrus_PROFILES/MARTE_Library.library.uml#_55fyMBFGEdyBd9q9NMDXUQ"/>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_-78kefj2EeacttGOxem79w" name="nMemory">
+              <type xmi:type="uml:DataType" href="pathmap://Papyrus_PROFILES/MARTE_Library.library.uml#_0KWSgBFQEdyUJeMeN__D-A"/>
             </ownedAttribute>
           </packagedElement>
           <packagedElement xmi:type="uml:Stereotype" xmi:id="_QiYn8Pj9Eea1v7Z9o7wp1g" name="SparkWorkloadEvent">
