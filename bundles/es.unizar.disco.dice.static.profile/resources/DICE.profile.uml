@@ -1346,6 +1346,30 @@
           <ownedAttribute xmi:type="uml:Property" xmi:id="_dTEFoNEIEee6_c7Jq87cFA" name="tag">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_PfF9ANjrEeeOZvjPMfCSmw" name="portMappings">
+            <type xmi:type="uml:DataType" href="DICE_Library.uml#_GpIB4NjrEeeOZvjPMfCSmw"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RhIGMNjrEeeOZvjPMfCSmw"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RhMXoNjrEeeOZvjPMfCSmw" value="*"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_gaCTcPrSEeebDdUDo6LimA" name="network">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iNBUAPrSEeebDdUDo6LimA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iNHaoPrSEeebDdUDo6LimA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_EDoo4PtyEeetsuv0UpIu6Q" name="envVariables">
+            <type xmi:type="uml:DataType" href="DICE_Library.uml#_LABo8PrSEeebDdUDo6LimA"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ha8i8PtyEeetsuv0UpIu6Q"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HbNosPtyEeetsuv0UpIu6Q" value="*"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Stereotype" xmi:id="_VRqYkNjrEeeOZvjPMfCSmw" name="DdsmOSvContainer">
+          <generalization xmi:type="uml:Generalization" xmi:id="_XpVakNjrEeeOZvjPMfCSmw" general="_4GoMgDx3EeaOH59TuV453g"/>
+          <generalization xmi:type="uml:Generalization" xmi:id="_xxmPMNkzEeeOZvjPMfCSmw" general="_VW6FIDx3EeaOH59TuV453g"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_YYzIoNjrEeeOZvjPMfCSmw" name="user_data">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_akdH4NjrEeeOZvjPMfCSmw"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_akfkINjrEeeOZvjPMfCSmw" value="1"/>
+          </ownedAttribute>
         </packagedElement>
         <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_iGZsADx2EeaOH59TuV453g">
           <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iG3mEDx2EeaOH59TuV453g" source="http://www.eclipse.org/uml2/2.0.0/UML">

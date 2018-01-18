@@ -2603,6 +2603,18 @@
           <element xmi:type="uml:Property" href="DICE.profile.uml#_dTEFoNEIEee6_c7Jq87cFA"/>
           <layoutConstraint xmi:type="notation:Location" xmi:id="_dU__UdEIEee6_c7Jq87cFA"/>
         </children>
+        <children xmi:type="notation:Shape" xmi:id="_PfvdQNjrEeeOZvjPMfCSmw" type="Property_ClassAttributeLabel">
+          <element xmi:type="uml:Property" href="DICE.profile.uml#_PfF9ANjrEeeOZvjPMfCSmw"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_PfvdQdjrEeeOZvjPMfCSmw"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_gbY-UPrSEeebDdUDo6LimA" type="Property_ClassAttributeLabel">
+          <element xmi:type="uml:Property" href="DICE.profile.uml#_gaCTcPrSEeebDdUDo6LimA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_gbY-UfrSEeebDdUDo6LimA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_EL7pQPtyEeetsuv0UpIu6Q" type="Property_ClassAttributeLabel">
+          <element xmi:type="uml:Property" href="DICE.profile.uml#_EDoo4PtyEeetsuv0UpIu6Q"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_EL7pQftyEeetsuv0UpIu6Q"/>
+        </children>
         <styles xmi:type="notation:TitleStyle" xmi:id="_Y2cwYtEIEee6_c7Jq87cFA"/>
         <styles xmi:type="notation:SortingStyle" xmi:id="_Y2cwY9EIEee6_c7Jq87cFA"/>
         <styles xmi:type="notation:FilteringStyle" xmi:id="_Y2cwZNEIEee6_c7Jq87cFA"/>
@@ -2616,6 +2628,27 @@
       </children>
       <element xmi:type="uml:Stereotype" href="DICE.profile.uml#_Y2X34NEIEee6_c7Jq87cFA"/>
       <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Y2cJUdEIEee6_c7Jq87cFA" x="820" y="418"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_VRv4INjrEeeOZvjPMfCSmw" type="Stereotype_Shape">
+      <children xmi:type="notation:DecorationNode" xmi:id="_VRy7cNjrEeeOZvjPMfCSmw" type="Stereotype_NameLabel"/>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_VRy7cdjrEeeOZvjPMfCSmw" type="Stereotype_AttributeCompartment">
+        <children xmi:type="notation:Shape" xmi:id="_YZco4NjrEeeOZvjPMfCSmw" type="Property_ClassAttributeLabel">
+          <element xmi:type="uml:Property" href="DICE.profile.uml#_YYzIoNjrEeeOZvjPMfCSmw"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_YZco4djrEeeOZvjPMfCSmw"/>
+        </children>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_VRy7ctjrEeeOZvjPMfCSmw"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_VRy7c9jrEeeOZvjPMfCSmw"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_VRy7dNjrEeeOZvjPMfCSmw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_VRy7ddjrEeeOZvjPMfCSmw"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_VRy7dtjrEeeOZvjPMfCSmw" type="Stereotype_OperationCompartment">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_VRy7d9jrEeeOZvjPMfCSmw"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_VRy7eNjrEeeOZvjPMfCSmw"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_VRy7edjrEeeOZvjPMfCSmw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_VRy7etjrEeeOZvjPMfCSmw"/>
+      </children>
+      <element xmi:type="uml:Stereotype" href="DICE.profile.uml#_VRqYkNjrEeeOZvjPMfCSmw"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_VRv4IdjrEeeOZvjPMfCSmw" x="448" y="539"/>
     </children>
     <styles xmi:type="notation:StringValueStyle" xmi:id="_MQZzoTx3EeaOH59TuV453g" name="diagram_compatibility_version" stringValue="1.2.0"/>
     <styles xmi:type="notation:DiagramStyle" xmi:id="_MQZzojx3EeaOH59TuV453g"/>
@@ -2982,6 +3015,26 @@
       <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_blz5otEIEee6_c7Jq87cFA" points="[840, 516, -643984, -643984]$[712, 712, -643984, -643984]"/>
       <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_bp2sINEIEee6_c7Jq87cFA" id="(0.2,0.99)"/>
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_bp3TMNEIEee6_c7Jq87cFA" id="(0.6330275229357798,0.0)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_Xp-TwNjrEeeOZvjPMfCSmw" type="Generalization_Edge" source="_VRv4INjrEeeOZvjPMfCSmw" target="_4GozkDx3EeaOH59TuV453g">
+      <children xmi:type="notation:DecorationNode" xmi:id="_Xp-Tw9jrEeeOZvjPMfCSmw" type="Generalization_StereotypeLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Xp-60NjrEeeOZvjPMfCSmw" y="40"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_Xp-TwdjrEeeOZvjPMfCSmw"/>
+      <element xmi:type="uml:Generalization" href="DICE.profile.uml#_XpVakNjrEeeOZvjPMfCSmw"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Xp-TwtjrEeeOZvjPMfCSmw" points="[464, 538, -643984, -643984]$[384, 492, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_XrdhgNjrEeeOZvjPMfCSmw" id="(0.16,0.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_XrdhgdjrEeeOZvjPMfCSmw" id="(0.993006993006993,0.5278688524590164)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_xzd3cNkzEeeOZvjPMfCSmw" type="Generalization_Edge" source="_VRv4INjrEeeOZvjPMfCSmw" target="_VW7TQDx3EeaOH59TuV453g">
+      <children xmi:type="notation:DecorationNode" xmi:id="_xzfsoNkzEeeOZvjPMfCSmw" type="Generalization_StereotypeLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_xzfsodkzEeeOZvjPMfCSmw" y="40"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_xzd3cdkzEeeOZvjPMfCSmw"/>
+      <element xmi:type="uml:Generalization" href="DICE.profile.uml#_xxmPMNkzEeeOZvjPMfCSmw"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_xzd3ctkzEeeOZvjPMfCSmw" points="[564, 637, -643984, -643984]$[600, 712, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_x1PZENkzEeeOZvjPMfCSmw" id="(0.9133858267716536,0.99)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_x1PZEdkzEeeOZvjPMfCSmw" id="(0.12385321100917432,0.0)"/>
     </edges>
   </notation:Diagram>
   <notation:Diagram xmi:id="_uVyx4PjzEeaT8NXWw3z-XA" type="PapyrusUMLProfileDiagram" name="DTSM::Spark" measurementUnit="Pixel">

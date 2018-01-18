@@ -239,6 +239,10 @@
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KzPLoBQLEeerG-qiQF7PAA" value="1"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KzS2ABQLEeerG-qiQF7PAA" value="1"/>
           </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_sYlHsPqTEeeIOMsGuknvYg" name="protocol">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_VZP0oPrUEeebDdUDo6LimA" value="tcp"/>
+          </ownedAttribute>
         </packagedElement>
         <packagedElement xmi:type="uml:DataType" xmi:id="_QJiE0C88EeeKwIxvoTP_kA" name="MongoDBShard">
           <ownedAttribute xmi:type="uml:Property" xmi:id="_SwjxcC88EeeKwIxvoTP_kA" name="nInstances">
@@ -251,6 +255,30 @@
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mEp4UC88EeeKwIxvoTP_kA"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mEsUkC88EeeKwIxvoTP_kA" value="1"/>
             <defaultValue xmi:type="uml:InstanceValue" xmi:id="_k8D4kC88EeeKwIxvoTP_kA" type="_HOIsID4CEeahGZm0A1o1gg" instance="_MfkJgD4CEeahGZm0A1o1gg"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_GpIB4NjrEeeOZvjPMfCSmw" name="PortMapping">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_H8SS4NjrEeeOZvjPMfCSmw" name="inPort">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_JEROoNjrEeeOZvjPMfCSmw" name="outPort">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Js5C8NjtEeeOZvjPMfCSmw"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Js8GQNjtEeeOZvjPMfCSmw" value="1"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_LABo8PrSEeebDdUDo6LimA" name="EnvironmentVariable">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_O0mGwPrSEeebDdUDo6LimA" name="variableName">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_PzGWYPrSEeebDdUDo6LimA" name="variableDefinition" type="_mT3EgBQKEeerG-qiQF7PAA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Z5KncPrSEeebDdUDo6LimA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Z5RVIPrSEeebDdUDo6LimA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_RcFtcPrSEeebDdUDo6LimA" name="defaultValue">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bJtCQPrSEeebDdUDo6LimA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bJwFkPrSEeebDdUDo6LimA" value="1"/>
           </ownedAttribute>
         </packagedElement>
       </packagedElement>
