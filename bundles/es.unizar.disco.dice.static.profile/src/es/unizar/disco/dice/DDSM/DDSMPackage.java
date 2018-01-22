@@ -3535,13 +3535,393 @@ public interface DDSMPackage extends EPackage {
 	int DDSM_DOCKER_CONTAINER__TAG = DDSM_INTERNAL_COMPONENT_FEATURE_COUNT + 1;
 
 	/**
+	 * The feature id for the '<em><b>Port Mappings</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_DOCKER_CONTAINER__PORT_MAPPINGS = DDSM_INTERNAL_COMPONENT_FEATURE_COUNT + 2;
+
+	/**
+	 * The feature id for the '<em><b>Network</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_DOCKER_CONTAINER__NETWORK = DDSM_INTERNAL_COMPONENT_FEATURE_COUNT + 3;
+
+	/**
+	 * The feature id for the '<em><b>Env Variables</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_DOCKER_CONTAINER__ENV_VARIABLES = DDSM_INTERNAL_COMPONENT_FEATURE_COUNT + 4;
+
+	/**
 	 * The number of structural features of the '<em>Ddsm Docker Container</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_DOCKER_CONTAINER_FEATURE_COUNT = DDSM_INTERNAL_COMPONENT_FEATURE_COUNT + 2;
+	int DDSM_DOCKER_CONTAINER_FEATURE_COUNT = DDSM_INTERNAL_COMPONENT_FEATURE_COUNT + 5;
+
+
+	/**
+	 * The meta object id for the '{@link es.unizar.disco.dice.DDSM.impl.DdsmOSvContainerImpl <em>Ddsm OSv Container</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see es.unizar.disco.dice.DDSM.impl.DdsmOSvContainerImpl
+	 * @see es.unizar.disco.dice.DDSM.impl.DDSMPackageImpl#getDdsmOSvContainer()
+	 * @generated
+	 */
+	int DDSM_OSV_CONTAINER = 22;
+
+	/**
+	 * The feature id for the '<em><b>Description</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_OSV_CONTAINER__DESCRIPTION = DDSM_VMS_CLUSTER__DESCRIPTION;
+
+	/**
+	 * The feature id for the '<em><b>Properties List</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_OSV_CONTAINER__PROPERTIES_LIST = DDSM_VMS_CLUSTER__PROPERTIES_LIST;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_OSV_CONTAINER__ID = DDSM_VMS_CLUSTER__ID;
+
+	/**
+	 * The feature id for the '<em><b>Provided Ports List</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_OSV_CONTAINER__PROVIDED_PORTS_LIST = DDSM_VMS_CLUSTER__PROVIDED_PORTS_LIST;
+
+	/**
+	 * The feature id for the '<em><b>Monitored</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_OSV_CONTAINER__MONITORED = DDSM_VMS_CLUSTER__MONITORED;
+
+	/**
+	 * The feature id for the '<em><b>Monitoring Roles</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_OSV_CONTAINER__MONITORING_ROLES = DDSM_VMS_CLUSTER__MONITORING_ROLES;
+
+	/**
+	 * The feature id for the '<em><b>Location</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_OSV_CONTAINER__LOCATION = DDSM_VMS_CLUSTER__LOCATION;
+
+	/**
+	 * The feature id for the '<em><b>Provider</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_OSV_CONTAINER__PROVIDER = DDSM_VMS_CLUSTER__PROVIDER;
+
+	/**
+	 * The feature id for the '<em><b>Service Type</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_OSV_CONTAINER__SERVICE_TYPE = DDSM_VMS_CLUSTER__SERVICE_TYPE;
+
+	/**
+	 * The feature id for the '<em><b>Region</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_OSV_CONTAINER__REGION = DDSM_VMS_CLUSTER__REGION;
+
+	/**
+	 * The feature id for the '<em><b>Login</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_OSV_CONTAINER__LOGIN = DDSM_VMS_CLUSTER__LOGIN;
+
+	/**
+	 * The feature id for the '<em><b>Password</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_OSV_CONTAINER__PASSWORD = DDSM_VMS_CLUSTER__PASSWORD;
+
+	/**
+	 * The feature id for the '<em><b>Base Device</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_OSV_CONTAINER__BASE_DEVICE = DDSM_VMS_CLUSTER__BASE_DEVICE;
+
+	/**
+	 * The feature id for the '<em><b>Is64os</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_OSV_CONTAINER__IS64OS = DDSM_VMS_CLUSTER__IS64OS;
+
+	/**
+	 * The feature id for the '<em><b>Image Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_OSV_CONTAINER__IMAGE_ID = DDSM_VMS_CLUSTER__IMAGE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Max Cores</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_OSV_CONTAINER__MAX_CORES = DDSM_VMS_CLUSTER__MAX_CORES;
+
+	/**
+	 * The feature id for the '<em><b>Max Ram</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_OSV_CONTAINER__MAX_RAM = DDSM_VMS_CLUSTER__MAX_RAM;
+
+	/**
+	 * The feature id for the '<em><b>Max Storage</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_OSV_CONTAINER__MAX_STORAGE = DDSM_VMS_CLUSTER__MAX_STORAGE;
+
+	/**
+	 * The feature id for the '<em><b>Min Cores</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_OSV_CONTAINER__MIN_CORES = DDSM_VMS_CLUSTER__MIN_CORES;
+
+	/**
+	 * The feature id for the '<em><b>Min Ram</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_OSV_CONTAINER__MIN_RAM = DDSM_VMS_CLUSTER__MIN_RAM;
+
+	/**
+	 * The feature id for the '<em><b>Min Storage</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_OSV_CONTAINER__MIN_STORAGE = DDSM_VMS_CLUSTER__MIN_STORAGE;
+
+	/**
+	 * The feature id for the '<em><b>Os</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_OSV_CONTAINER__OS = DDSM_VMS_CLUSTER__OS;
+
+	/**
+	 * The feature id for the '<em><b>Private Key</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_OSV_CONTAINER__PRIVATE_KEY = DDSM_VMS_CLUSTER__PRIVATE_KEY;
+
+	/**
+	 * The feature id for the '<em><b>Ssh Key</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_OSV_CONTAINER__SSH_KEY = DDSM_VMS_CLUSTER__SSH_KEY;
+
+	/**
+	 * The feature id for the '<em><b>Public Address</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_OSV_CONTAINER__PUBLIC_ADDRESS = DDSM_VMS_CLUSTER__PUBLIC_ADDRESS;
+
+	/**
+	 * The feature id for the '<em><b>Instances</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_OSV_CONTAINER__INSTANCES = DDSM_VMS_CLUSTER__INSTANCES;
+
+	/**
+	 * The feature id for the '<em><b>Generic Size</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_OSV_CONTAINER__GENERIC_SIZE = DDSM_VMS_CLUSTER__GENERIC_SIZE;
+
+	/**
+	 * The feature id for the '<em><b>Required Port</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_OSV_CONTAINER__REQUIRED_PORT = DDSM_VMS_CLUSTER_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Is Front End</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_OSV_CONTAINER__IS_FRONT_END = DDSM_VMS_CLUSTER_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Component Type</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_OSV_CONTAINER__COMPONENT_TYPE = DDSM_VMS_CLUSTER_FEATURE_COUNT + 2;
+
+	/**
+	 * The feature id for the '<em><b>Base Node</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_OSV_CONTAINER__BASE_NODE = DDSM_VMS_CLUSTER_FEATURE_COUNT + 3;
+
+	/**
+	 * The feature id for the '<em><b>Protected</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_OSV_CONTAINER__PROTECTED = DDSM_VMS_CLUSTER_FEATURE_COUNT + 4;
+
+	/**
+	 * The feature id for the '<em><b>Launch script</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_OSV_CONTAINER__LAUNCH_SCRIPT = DDSM_VMS_CLUSTER_FEATURE_COUNT + 5;
+
+	/**
+	 * The feature id for the '<em><b>Language</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_OSV_CONTAINER__LANGUAGE = DDSM_VMS_CLUSTER_FEATURE_COUNT + 6;
+
+	/**
+	 * The feature id for the '<em><b>Firewall Rules</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_OSV_CONTAINER__FIREWALL_RULES = DDSM_VMS_CLUSTER_FEATURE_COUNT + 7;
+
+	/**
+	 * The feature id for the '<em><b>Required Attributes</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_OSV_CONTAINER__REQUIRED_ATTRIBUTES = DDSM_VMS_CLUSTER_FEATURE_COUNT + 8;
+
+	/**
+	 * The feature id for the '<em><b>User data</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_OSV_CONTAINER__USER_DATA = DDSM_VMS_CLUSTER_FEATURE_COUNT + 9;
+
+	/**
+	 * The number of structural features of the '<em>Ddsm OSv Container</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_OSV_CONTAINER_FEATURE_COUNT = DDSM_VMS_CLUSTER_FEATURE_COUNT + 10;
 
 
 	/**
@@ -5008,6 +5388,60 @@ public interface DDSMPackage extends EPackage {
 	EAttribute getDdsmDockerContainer_Tag();
 
 	/**
+	 * Returns the meta object for the containment reference list '{@link es.unizar.disco.dice.DDSM.DdsmDockerContainer#getPortMappings <em>Port Mappings</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Port Mappings</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmDockerContainer#getPortMappings()
+	 * @see #getDdsmDockerContainer()
+	 * @generated
+	 */
+	EReference getDdsmDockerContainer_PortMappings();
+
+	/**
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmDockerContainer#getNetwork <em>Network</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Network</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmDockerContainer#getNetwork()
+	 * @see #getDdsmDockerContainer()
+	 * @generated
+	 */
+	EAttribute getDdsmDockerContainer_Network();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link es.unizar.disco.dice.DDSM.DdsmDockerContainer#getEnvVariables <em>Env Variables</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Env Variables</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmDockerContainer#getEnvVariables()
+	 * @see #getDdsmDockerContainer()
+	 * @generated
+	 */
+	EReference getDdsmDockerContainer_EnvVariables();
+
+	/**
+	 * Returns the meta object for class '{@link es.unizar.disco.dice.DDSM.DdsmOSvContainer <em>Ddsm OSv Container</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Ddsm OSv Container</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmOSvContainer
+	 * @generated
+	 */
+	EClass getDdsmOSvContainer();
+
+	/**
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmOSvContainer#getUser_data <em>User data</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>User data</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmOSvContainer#getUser_data()
+	 * @see #getDdsmOSvContainer()
+	 * @generated
+	 */
+	EAttribute getDdsmOSvContainer_User_data();
+
+	/**
 	 * Returns the factory that creates the instances of the model.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -6152,6 +6586,48 @@ public interface DDSMPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute DDSM_DOCKER_CONTAINER__TAG = eINSTANCE.getDdsmDockerContainer_Tag();
+
+		/**
+		 * The meta object literal for the '<em><b>Port Mappings</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DDSM_DOCKER_CONTAINER__PORT_MAPPINGS = eINSTANCE.getDdsmDockerContainer_PortMappings();
+
+		/**
+		 * The meta object literal for the '<em><b>Network</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DDSM_DOCKER_CONTAINER__NETWORK = eINSTANCE.getDdsmDockerContainer_Network();
+
+		/**
+		 * The meta object literal for the '<em><b>Env Variables</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DDSM_DOCKER_CONTAINER__ENV_VARIABLES = eINSTANCE.getDdsmDockerContainer_EnvVariables();
+
+		/**
+		 * The meta object literal for the '{@link es.unizar.disco.dice.DDSM.impl.DdsmOSvContainerImpl <em>Ddsm OSv Container</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see es.unizar.disco.dice.DDSM.impl.DdsmOSvContainerImpl
+		 * @see es.unizar.disco.dice.DDSM.impl.DDSMPackageImpl#getDdsmOSvContainer()
+		 * @generated
+		 */
+		EClass DDSM_OSV_CONTAINER = eINSTANCE.getDdsmOSvContainer();
+
+		/**
+		 * The meta object literal for the '<em><b>User data</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DDSM_OSV_CONTAINER__USER_DATA = eINSTANCE.getDdsmOSvContainer_User_data();
 
 	}
 

@@ -92,6 +92,14 @@ public class Complex_Data_TypesAdapterFactory extends AdapterFactoryImpl {
 				return createMongoDBShardAdapter();
 			}
 			@Override
+			public Adapter casePortMapping(PortMapping object) {
+				return createPortMappingAdapter();
+			}
+			@Override
+			public Adapter caseEnvironmentVariable(EnvironmentVariable object) {
+				return createEnvironmentVariableAdapter();
+			}
+			@Override
 			public Adapter defaultCase(EObject object) {
 				return createEObjectAdapter();
 			}
@@ -192,6 +200,34 @@ public class Complex_Data_TypesAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createMongoDBShardAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.Complex_Data_Types.PortMapping <em>Port Mapping</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see es.unizar.disco.dice.Complex_Data_Types.PortMapping
+	 * @generated
+	 */
+	public Adapter createPortMappingAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.Complex_Data_Types.EnvironmentVariable <em>Environment Variable</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see es.unizar.disco.dice.Complex_Data_Types.EnvironmentVariable
+	 * @generated
+	 */
+	public Adapter createEnvironmentVariableAdapter() {
 		return null;
 	}
 

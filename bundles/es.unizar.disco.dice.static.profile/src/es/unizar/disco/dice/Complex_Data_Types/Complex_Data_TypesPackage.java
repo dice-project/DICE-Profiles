@@ -5,6 +5,7 @@ package es.unizar.disco.dice.Complex_Data_Types;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
+import org.eclipse.emf.ecore.EReference;
 
 /**
  * <!-- begin-user-doc -->
@@ -241,13 +242,22 @@ public interface Complex_Data_TypesPackage extends EPackage {
 	int FIREWALL_RULE__PORT = 1;
 
 	/**
+	 * The feature id for the '<em><b>Protocol</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FIREWALL_RULE__PROTOCOL = 2;
+
+	/**
 	 * The number of structural features of the '<em>Firewall Rule</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FIREWALL_RULE_FEATURE_COUNT = 2;
+	int FIREWALL_RULE_FEATURE_COUNT = 3;
 
 	/**
 	 * The meta object id for the '{@link es.unizar.disco.dice.Complex_Data_Types.impl.MongoDBShardImpl <em>Mongo DB Shard</em>}' class.
@@ -285,6 +295,90 @@ public interface Complex_Data_TypesPackage extends EPackage {
 	 * @ordered
 	 */
 	int MONGO_DB_SHARD_FEATURE_COUNT = 2;
+
+
+	/**
+	 * The meta object id for the '{@link es.unizar.disco.dice.Complex_Data_Types.impl.PortMappingImpl <em>Port Mapping</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see es.unizar.disco.dice.Complex_Data_Types.impl.PortMappingImpl
+	 * @see es.unizar.disco.dice.Complex_Data_Types.impl.Complex_Data_TypesPackageImpl#getPortMapping()
+	 * @generated
+	 */
+	int PORT_MAPPING = 6;
+
+	/**
+	 * The feature id for the '<em><b>In Port</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PORT_MAPPING__IN_PORT = 0;
+
+	/**
+	 * The feature id for the '<em><b>Out Port</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PORT_MAPPING__OUT_PORT = 1;
+
+	/**
+	 * The number of structural features of the '<em>Port Mapping</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PORT_MAPPING_FEATURE_COUNT = 2;
+
+	/**
+	 * The meta object id for the '{@link es.unizar.disco.dice.Complex_Data_Types.impl.EnvironmentVariableImpl <em>Environment Variable</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see es.unizar.disco.dice.Complex_Data_Types.impl.EnvironmentVariableImpl
+	 * @see es.unizar.disco.dice.Complex_Data_Types.impl.Complex_Data_TypesPackageImpl#getEnvironmentVariable()
+	 * @generated
+	 */
+	int ENVIRONMENT_VARIABLE = 7;
+
+	/**
+	 * The feature id for the '<em><b>Variable Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ENVIRONMENT_VARIABLE__VARIABLE_NAME = 0;
+
+	/**
+	 * The feature id for the '<em><b>Variable Definition</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ENVIRONMENT_VARIABLE__VARIABLE_DEFINITION = 1;
+
+	/**
+	 * The feature id for the '<em><b>Default Value</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ENVIRONMENT_VARIABLE__DEFAULT_VALUE = 2;
+
+	/**
+	 * The number of structural features of the '<em>Environment Variable</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ENVIRONMENT_VARIABLE_FEATURE_COUNT = 3;
 
 
 	/**
@@ -459,6 +553,17 @@ public interface Complex_Data_TypesPackage extends EPackage {
 	EAttribute getFirewallRule_Port();
 
 	/**
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.Complex_Data_Types.FirewallRule#getProtocol <em>Protocol</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Protocol</em>'.
+	 * @see es.unizar.disco.dice.Complex_Data_Types.FirewallRule#getProtocol()
+	 * @see #getFirewallRule()
+	 * @generated
+	 */
+	EAttribute getFirewallRule_Protocol();
+
+	/**
 	 * Returns the meta object for class '{@link es.unizar.disco.dice.Complex_Data_Types.MongoDBShard <em>Mongo DB Shard</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -489,6 +594,81 @@ public interface Complex_Data_TypesPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getMongoDBShard_HostSize();
+
+	/**
+	 * Returns the meta object for class '{@link es.unizar.disco.dice.Complex_Data_Types.PortMapping <em>Port Mapping</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Port Mapping</em>'.
+	 * @see es.unizar.disco.dice.Complex_Data_Types.PortMapping
+	 * @generated
+	 */
+	EClass getPortMapping();
+
+	/**
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.Complex_Data_Types.PortMapping#getInPort <em>In Port</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>In Port</em>'.
+	 * @see es.unizar.disco.dice.Complex_Data_Types.PortMapping#getInPort()
+	 * @see #getPortMapping()
+	 * @generated
+	 */
+	EAttribute getPortMapping_InPort();
+
+	/**
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.Complex_Data_Types.PortMapping#getOutPort <em>Out Port</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Out Port</em>'.
+	 * @see es.unizar.disco.dice.Complex_Data_Types.PortMapping#getOutPort()
+	 * @see #getPortMapping()
+	 * @generated
+	 */
+	EAttribute getPortMapping_OutPort();
+
+	/**
+	 * Returns the meta object for class '{@link es.unizar.disco.dice.Complex_Data_Types.EnvironmentVariable <em>Environment Variable</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Environment Variable</em>'.
+	 * @see es.unizar.disco.dice.Complex_Data_Types.EnvironmentVariable
+	 * @generated
+	 */
+	EClass getEnvironmentVariable();
+
+	/**
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.Complex_Data_Types.EnvironmentVariable#getVariableName <em>Variable Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Variable Name</em>'.
+	 * @see es.unizar.disco.dice.Complex_Data_Types.EnvironmentVariable#getVariableName()
+	 * @see #getEnvironmentVariable()
+	 * @generated
+	 */
+	EAttribute getEnvironmentVariable_VariableName();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link es.unizar.disco.dice.Complex_Data_Types.EnvironmentVariable#getVariableDefinition <em>Variable Definition</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Variable Definition</em>'.
+	 * @see es.unizar.disco.dice.Complex_Data_Types.EnvironmentVariable#getVariableDefinition()
+	 * @see #getEnvironmentVariable()
+	 * @generated
+	 */
+	EReference getEnvironmentVariable_VariableDefinition();
+
+	/**
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.Complex_Data_Types.EnvironmentVariable#getDefaultValue <em>Default Value</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Default Value</em>'.
+	 * @see es.unizar.disco.dice.Complex_Data_Types.EnvironmentVariable#getDefaultValue()
+	 * @see #getEnvironmentVariable()
+	 * @generated
+	 */
+	EAttribute getEnvironmentVariable_DefaultValue();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -651,6 +831,14 @@ public interface Complex_Data_TypesPackage extends EPackage {
 		EAttribute FIREWALL_RULE__PORT = eINSTANCE.getFirewallRule_Port();
 
 		/**
+		 * The meta object literal for the '<em><b>Protocol</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FIREWALL_RULE__PROTOCOL = eINSTANCE.getFirewallRule_Protocol();
+
+		/**
 		 * The meta object literal for the '{@link es.unizar.disco.dice.Complex_Data_Types.impl.MongoDBShardImpl <em>Mongo DB Shard</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -675,6 +863,66 @@ public interface Complex_Data_TypesPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute MONGO_DB_SHARD__HOST_SIZE = eINSTANCE.getMongoDBShard_HostSize();
+
+		/**
+		 * The meta object literal for the '{@link es.unizar.disco.dice.Complex_Data_Types.impl.PortMappingImpl <em>Port Mapping</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see es.unizar.disco.dice.Complex_Data_Types.impl.PortMappingImpl
+		 * @see es.unizar.disco.dice.Complex_Data_Types.impl.Complex_Data_TypesPackageImpl#getPortMapping()
+		 * @generated
+		 */
+		EClass PORT_MAPPING = eINSTANCE.getPortMapping();
+
+		/**
+		 * The meta object literal for the '<em><b>In Port</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PORT_MAPPING__IN_PORT = eINSTANCE.getPortMapping_InPort();
+
+		/**
+		 * The meta object literal for the '<em><b>Out Port</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PORT_MAPPING__OUT_PORT = eINSTANCE.getPortMapping_OutPort();
+
+		/**
+		 * The meta object literal for the '{@link es.unizar.disco.dice.Complex_Data_Types.impl.EnvironmentVariableImpl <em>Environment Variable</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see es.unizar.disco.dice.Complex_Data_Types.impl.EnvironmentVariableImpl
+		 * @see es.unizar.disco.dice.Complex_Data_Types.impl.Complex_Data_TypesPackageImpl#getEnvironmentVariable()
+		 * @generated
+		 */
+		EClass ENVIRONMENT_VARIABLE = eINSTANCE.getEnvironmentVariable();
+
+		/**
+		 * The meta object literal for the '<em><b>Variable Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ENVIRONMENT_VARIABLE__VARIABLE_NAME = eINSTANCE.getEnvironmentVariable_VariableName();
+
+		/**
+		 * The meta object literal for the '<em><b>Variable Definition</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ENVIRONMENT_VARIABLE__VARIABLE_DEFINITION = eINSTANCE.getEnvironmentVariable_VariableDefinition();
+
+		/**
+		 * The meta object literal for the '<em><b>Default Value</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ENVIRONMENT_VARIABLE__DEFAULT_VALUE = eINSTANCE.getEnvironmentVariable_DefaultValue();
 
 	}
 

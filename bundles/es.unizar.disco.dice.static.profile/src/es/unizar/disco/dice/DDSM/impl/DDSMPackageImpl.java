@@ -31,6 +31,7 @@ import es.unizar.disco.dice.DDSM.DdsmJobSubmission;
 import es.unizar.disco.dice.DDSM.DdsmKafkaCluster;
 import es.unizar.disco.dice.DDSM.DdsmMasterSlavePlatform;
 import es.unizar.disco.dice.DDSM.DdsmMongoDBCluster;
+import es.unizar.disco.dice.DDSM.DdsmOSvContainer;
 import es.unizar.disco.dice.DDSM.DdsmPeerToPeerPlatform;
 import es.unizar.disco.dice.DDSM.DdsmPort;
 import es.unizar.disco.dice.DDSM.DdsmSparkCluster;
@@ -235,6 +236,13 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 	 * @generated
 	 */
 	private EClass ddsmDockerContainerEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass ddsmOSvContainerEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -1555,6 +1563,51 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EReference getDdsmDockerContainer_PortMappings() {
+		return (EReference)ddsmDockerContainerEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getDdsmDockerContainer_Network() {
+		return (EAttribute)ddsmDockerContainerEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getDdsmDockerContainer_EnvVariables() {
+		return (EReference)ddsmDockerContainerEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getDdsmOSvContainer() {
+		return ddsmOSvContainerEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getDdsmOSvContainer_User_data() {
+		return (EAttribute)ddsmOSvContainerEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public DDSMFactory getDDSMFactory() {
 		return (DDSMFactory)getEFactoryInstance();
 	}
@@ -1734,6 +1787,12 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 		ddsmDockerContainerEClass = createEClass(DDSM_DOCKER_CONTAINER);
 		createEAttribute(ddsmDockerContainerEClass, DDSM_DOCKER_CONTAINER__IMAGE);
 		createEAttribute(ddsmDockerContainerEClass, DDSM_DOCKER_CONTAINER__TAG);
+		createEReference(ddsmDockerContainerEClass, DDSM_DOCKER_CONTAINER__PORT_MAPPINGS);
+		createEAttribute(ddsmDockerContainerEClass, DDSM_DOCKER_CONTAINER__NETWORK);
+		createEReference(ddsmDockerContainerEClass, DDSM_DOCKER_CONTAINER__ENV_VARIABLES);
+
+		ddsmOSvContainerEClass = createEClass(DDSM_OSV_CONTAINER);
+		createEAttribute(ddsmOSvContainerEClass, DDSM_OSV_CONTAINER__USER_DATA);
 	}
 
 	/**
@@ -1788,6 +1847,8 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 		ddsmMongoDBClusterEClass.getESuperTypes().add(this.getDdsmPeerToPeerPlatform());
 		ddsmDockerHostEClass.getESuperTypes().add(this.getDdsmInternalComponent());
 		ddsmDockerContainerEClass.getESuperTypes().add(this.getDdsmInternalComponent());
+		ddsmOSvContainerEClass.getESuperTypes().add(this.getDdsmVMsCluster());
+		ddsmOSvContainerEClass.getESuperTypes().add(this.getDdsmInternalComponent());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(ddsmExternalComponentEClass, DdsmExternalComponent.class, "DdsmExternalComponent", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -1946,6 +2007,12 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 		initEClass(ddsmDockerContainerEClass, DdsmDockerContainer.class, "DdsmDockerContainer", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getDdsmDockerContainer_Image(), theTypesPackage.getString(), "image", null, 1, 1, DdsmDockerContainer.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getDdsmDockerContainer_Tag(), theTypesPackage.getString(), "tag", null, 1, 1, DdsmDockerContainer.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getDdsmDockerContainer_PortMappings(), theComplex_Data_TypesPackage_1.getPortMapping(), null, "portMappings", null, 0, -1, DdsmDockerContainer.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmDockerContainer_Network(), theTypesPackage.getString(), "network", null, 0, 1, DdsmDockerContainer.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getDdsmDockerContainer_EnvVariables(), theComplex_Data_TypesPackage_1.getEnvironmentVariable(), null, "envVariables", null, 0, -1, DdsmDockerContainer.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+
+		initEClass(ddsmOSvContainerEClass, DdsmOSvContainer.class, "DdsmOSvContainer", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getDdsmOSvContainer_User_data(), theTypesPackage.getString(), "user_data", null, 0, 1, DdsmOSvContainer.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 	}
 
 } //DDSMPackageImpl

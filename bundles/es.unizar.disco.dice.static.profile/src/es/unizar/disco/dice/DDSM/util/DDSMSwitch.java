@@ -254,6 +254,17 @@ public class DDSMSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case DDSMPackage.DDSM_OSV_CONTAINER: {
+				DdsmOSvContainer ddsmOSvContainer = (DdsmOSvContainer)theEObject;
+				T result = caseDdsmOSvContainer(ddsmOSvContainer);
+				if (result == null) result = caseDdsmVMsCluster(ddsmOSvContainer);
+				if (result == null) result = caseDdsmInternalComponent(ddsmOSvContainer);
+				if (result == null) result = caseDdsmExternalComponent(ddsmOSvContainer);
+				if (result == null) result = caseDdsmComponent(ddsmOSvContainer);
+				if (result == null) result = caseDdsmCloudElement(ddsmOSvContainer);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			default: return defaultCase(theEObject);
 		}
 	}
@@ -585,6 +596,21 @@ public class DDSMSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseDdsmDockerContainer(DdsmDockerContainer object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Ddsm OSv Container</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Ddsm OSv Container</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseDdsmOSvContainer(DdsmOSvContainer object) {
 		return null;
 	}
 

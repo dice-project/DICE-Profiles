@@ -15,8 +15,10 @@ import es.unizar.disco.dice.Complex_Data_Types.Complex_Data_TypesPackage;
 import es.unizar.disco.dice.Complex_Data_Types.DiceChannelSpecification;
 import es.unizar.disco.dice.Complex_Data_Types.DiceDataSpecification;
 import es.unizar.disco.dice.Complex_Data_Types.DiceDataVolume;
+import es.unizar.disco.dice.Complex_Data_Types.EnvironmentVariable;
 import es.unizar.disco.dice.Complex_Data_Types.FirewallRule;
 import es.unizar.disco.dice.Complex_Data_Types.MongoDBShard;
+import es.unizar.disco.dice.Complex_Data_Types.PortMapping;
 import es.unizar.disco.dice.Complex_Data_Types.RequiredAttribute;
 import es.unizar.disco.dice.DDSM.DDSMPackage;
 import es.unizar.disco.dice.DDSM.impl.DDSMPackageImpl;
@@ -50,6 +52,7 @@ import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
 
+import org.eclipse.emf.ecore.EReference;
 import org.eclipse.emf.ecore.impl.EPackageImpl;
 
 import org.eclipse.papyrus.MARTE_Library.BasicNFP_Types.BasicNFP_TypesPackage;
@@ -104,6 +107,20 @@ public class Complex_Data_TypesPackageImpl extends EPackageImpl implements Compl
 	 * @generated
 	 */
 	private EClass mongoDBShardEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass portMappingEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass environmentVariableEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -353,6 +370,15 @@ public class Complex_Data_TypesPackageImpl extends EPackageImpl implements Compl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EAttribute getFirewallRule_Protocol() {
+		return (EAttribute)firewallRuleEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getMongoDBShard() {
 		return mongoDBShardEClass;
 	}
@@ -373,6 +399,69 @@ public class Complex_Data_TypesPackageImpl extends EPackageImpl implements Compl
 	 */
 	public EAttribute getMongoDBShard_HostSize() {
 		return (EAttribute)mongoDBShardEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getPortMapping() {
+		return portMappingEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getPortMapping_InPort() {
+		return (EAttribute)portMappingEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getPortMapping_OutPort() {
+		return (EAttribute)portMappingEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getEnvironmentVariable() {
+		return environmentVariableEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getEnvironmentVariable_VariableName() {
+		return (EAttribute)environmentVariableEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getEnvironmentVariable_VariableDefinition() {
+		return (EReference)environmentVariableEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getEnvironmentVariable_DefaultValue() {
+		return (EAttribute)environmentVariableEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -423,10 +512,20 @@ public class Complex_Data_TypesPackageImpl extends EPackageImpl implements Compl
 		firewallRuleEClass = createEClass(FIREWALL_RULE);
 		createEAttribute(firewallRuleEClass, FIREWALL_RULE__ALLOWED_IP_PREFIX);
 		createEAttribute(firewallRuleEClass, FIREWALL_RULE__PORT);
+		createEAttribute(firewallRuleEClass, FIREWALL_RULE__PROTOCOL);
 
 		mongoDBShardEClass = createEClass(MONGO_DB_SHARD);
 		createEAttribute(mongoDBShardEClass, MONGO_DB_SHARD__NINSTANCES);
 		createEAttribute(mongoDBShardEClass, MONGO_DB_SHARD__HOST_SIZE);
+
+		portMappingEClass = createEClass(PORT_MAPPING);
+		createEAttribute(portMappingEClass, PORT_MAPPING__IN_PORT);
+		createEAttribute(portMappingEClass, PORT_MAPPING__OUT_PORT);
+
+		environmentVariableEClass = createEClass(ENVIRONMENT_VARIABLE);
+		createEAttribute(environmentVariableEClass, ENVIRONMENT_VARIABLE__VARIABLE_NAME);
+		createEReference(environmentVariableEClass, ENVIRONMENT_VARIABLE__VARIABLE_DEFINITION);
+		createEAttribute(environmentVariableEClass, ENVIRONMENT_VARIABLE__DEFAULT_VALUE);
 	}
 
 	/**
@@ -484,10 +583,20 @@ public class Complex_Data_TypesPackageImpl extends EPackageImpl implements Compl
 		initEClass(firewallRuleEClass, FirewallRule.class, "FirewallRule", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getFirewallRule_AllowedIpPrefix(), theTypesPackage.getString(), "allowedIpPrefix", "0.0.0.0/0", 1, 1, FirewallRule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getFirewallRule_Port(), theTypesPackage.getInteger(), "port", null, 1, 1, FirewallRule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getFirewallRule_Protocol(), theTypesPackage.getString(), "protocol", "tcp", 1, 1, FirewallRule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(mongoDBShardEClass, MongoDBShard.class, "MongoDBShard", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getMongoDBShard_NInstances(), theTypesPackage.getInteger(), "nInstances", "1", 0, 1, MongoDBShard.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getMongoDBShard_HostSize(), theBasic_Enumeration_TypesPackage_1.getVMSize(), "hostSize", "Small", 0, 1, MongoDBShard.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+
+		initEClass(portMappingEClass, PortMapping.class, "PortMapping", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getPortMapping_InPort(), theTypesPackage.getInteger(), "inPort", null, 1, 1, PortMapping.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getPortMapping_OutPort(), theTypesPackage.getInteger(), "outPort", null, 0, 1, PortMapping.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+
+		initEClass(environmentVariableEClass, EnvironmentVariable.class, "EnvironmentVariable", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getEnvironmentVariable_VariableName(), theTypesPackage.getString(), "variableName", null, 1, 1, EnvironmentVariable.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getEnvironmentVariable_VariableDefinition(), this.getRequiredAttribute(), null, "variableDefinition", null, 0, 1, EnvironmentVariable.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getEnvironmentVariable_DefaultValue(), theTypesPackage.getString(), "defaultValue", null, 0, 1, EnvironmentVariable.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		// Create resource
 		createResource(eNS_URI);

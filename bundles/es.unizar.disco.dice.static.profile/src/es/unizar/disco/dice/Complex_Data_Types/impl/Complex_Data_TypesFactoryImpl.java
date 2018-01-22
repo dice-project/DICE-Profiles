@@ -62,6 +62,8 @@ public class Complex_Data_TypesFactoryImpl extends EFactoryImpl implements Compl
 			case Complex_Data_TypesPackage.REQUIRED_ATTRIBUTE: return createRequiredAttribute();
 			case Complex_Data_TypesPackage.FIREWALL_RULE: return createFirewallRule();
 			case Complex_Data_TypesPackage.MONGO_DB_SHARD: return createMongoDBShard();
+			case Complex_Data_TypesPackage.PORT_MAPPING: return createPortMapping();
+			case Complex_Data_TypesPackage.ENVIRONMENT_VARIABLE: return createEnvironmentVariable();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -125,6 +127,26 @@ public class Complex_Data_TypesFactoryImpl extends EFactoryImpl implements Compl
 	public MongoDBShard createMongoDBShard() {
 		MongoDBShardImpl mongoDBShard = new MongoDBShardImpl();
 		return mongoDBShard;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PortMapping createPortMapping() {
+		PortMappingImpl portMapping = new PortMappingImpl();
+		return portMapping;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EnvironmentVariable createEnvironmentVariable() {
+		EnvironmentVariableImpl environmentVariable = new EnvironmentVariableImpl();
+		return environmentVariable;
 	}
 
 	/**

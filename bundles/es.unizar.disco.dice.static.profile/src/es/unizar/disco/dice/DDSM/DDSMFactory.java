@@ -202,6 +202,15 @@ public interface DDSMFactory extends EFactory {
 	DdsmDockerContainer createDdsmDockerContainer();
 
 	/**
+	 * Returns a new object of class '<em>Ddsm OSv Container</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Ddsm OSv Container</em>'.
+	 * @generated
+	 */
+	DdsmOSvContainer createDdsmOSvContainer();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

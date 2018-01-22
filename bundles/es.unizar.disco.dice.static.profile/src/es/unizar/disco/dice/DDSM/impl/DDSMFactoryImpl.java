@@ -76,6 +76,7 @@ public class DDSMFactoryImpl extends EFactoryImpl implements DDSMFactory {
 			case DDSMPackage.DDSM_MONGO_DB_CLUSTER: return createDdsmMongoDBCluster();
 			case DDSMPackage.DDSM_DOCKER_HOST: return createDdsmDockerHost();
 			case DDSMPackage.DDSM_DOCKER_CONTAINER: return createDdsmDockerContainer();
+			case DDSMPackage.DDSM_OSV_CONTAINER: return createDdsmOSvContainer();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -279,6 +280,16 @@ public class DDSMFactoryImpl extends EFactoryImpl implements DDSMFactory {
 	public DdsmDockerContainer createDdsmDockerContainer() {
 		DdsmDockerContainerImpl ddsmDockerContainer = new DdsmDockerContainerImpl();
 		return ddsmDockerContainer;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public DdsmOSvContainer createDdsmOSvContainer() {
+		DdsmOSvContainerImpl ddsmOSvContainer = new DdsmOSvContainerImpl();
+		return ddsmOSvContainer;
 	}
 
 	/**

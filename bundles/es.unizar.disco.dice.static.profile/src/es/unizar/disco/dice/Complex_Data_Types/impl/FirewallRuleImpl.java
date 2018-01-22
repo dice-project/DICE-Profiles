@@ -22,6 +22,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  * <ul>
  *   <li>{@link es.unizar.disco.dice.Complex_Data_Types.impl.FirewallRuleImpl#getAllowedIpPrefix <em>Allowed Ip Prefix</em>}</li>
  *   <li>{@link es.unizar.disco.dice.Complex_Data_Types.impl.FirewallRuleImpl#getPort <em>Port</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.Complex_Data_Types.impl.FirewallRuleImpl#getProtocol <em>Protocol</em>}</li>
  * </ul>
  *
  * @generated
@@ -66,6 +67,26 @@ public class FirewallRuleImpl extends MinimalEObjectImpl.Container implements Fi
 	 * @ordered
 	 */
 	protected int port = PORT_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getProtocol() <em>Protocol</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getProtocol()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String PROTOCOL_EDEFAULT = "tcp";
+
+	/**
+	 * The cached value of the '{@link #getProtocol() <em>Protocol</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getProtocol()
+	 * @generated
+	 * @ordered
+	 */
+	protected String protocol = PROTOCOL_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -133,6 +154,27 @@ public class FirewallRuleImpl extends MinimalEObjectImpl.Container implements Fi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public String getProtocol() {
+		return protocol;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setProtocol(String newProtocol) {
+		String oldProtocol = protocol;
+		protocol = newProtocol;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, Complex_Data_TypesPackage.FIREWALL_RULE__PROTOCOL, oldProtocol, protocol));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
@@ -140,6 +182,8 @@ public class FirewallRuleImpl extends MinimalEObjectImpl.Container implements Fi
 				return getAllowedIpPrefix();
 			case Complex_Data_TypesPackage.FIREWALL_RULE__PORT:
 				return getPort();
+			case Complex_Data_TypesPackage.FIREWALL_RULE__PROTOCOL:
+				return getProtocol();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -157,6 +201,9 @@ public class FirewallRuleImpl extends MinimalEObjectImpl.Container implements Fi
 				return;
 			case Complex_Data_TypesPackage.FIREWALL_RULE__PORT:
 				setPort((Integer)newValue);
+				return;
+			case Complex_Data_TypesPackage.FIREWALL_RULE__PROTOCOL:
+				setProtocol((String)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -176,6 +223,9 @@ public class FirewallRuleImpl extends MinimalEObjectImpl.Container implements Fi
 			case Complex_Data_TypesPackage.FIREWALL_RULE__PORT:
 				setPort(PORT_EDEFAULT);
 				return;
+			case Complex_Data_TypesPackage.FIREWALL_RULE__PROTOCOL:
+				setProtocol(PROTOCOL_EDEFAULT);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -192,6 +242,8 @@ public class FirewallRuleImpl extends MinimalEObjectImpl.Container implements Fi
 				return ALLOWED_IP_PREFIX_EDEFAULT == null ? allowedIpPrefix != null : !ALLOWED_IP_PREFIX_EDEFAULT.equals(allowedIpPrefix);
 			case Complex_Data_TypesPackage.FIREWALL_RULE__PORT:
 				return port != PORT_EDEFAULT;
+			case Complex_Data_TypesPackage.FIREWALL_RULE__PROTOCOL:
+				return PROTOCOL_EDEFAULT == null ? protocol != null : !PROTOCOL_EDEFAULT.equals(protocol);
 		}
 		return super.eIsSet(featureID);
 	}
@@ -210,6 +262,8 @@ public class FirewallRuleImpl extends MinimalEObjectImpl.Container implements Fi
 		result.append(allowedIpPrefix);
 		result.append(", port: ");
 		result.append(port);
+		result.append(", protocol: ");
+		result.append(protocol);
 		result.append(')');
 		return result.toString();
 	}

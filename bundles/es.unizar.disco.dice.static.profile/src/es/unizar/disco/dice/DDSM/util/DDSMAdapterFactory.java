@@ -156,6 +156,10 @@ public class DDSMAdapterFactory extends AdapterFactoryImpl {
 				return createDdsmDockerContainerAdapter();
 			}
 			@Override
+			public Adapter caseDdsmOSvContainer(DdsmOSvContainer object) {
+				return createDdsmOSvContainerAdapter();
+			}
+			@Override
 			public Adapter defaultCase(EObject object) {
 				return createEObjectAdapter();
 			}
@@ -480,6 +484,20 @@ public class DDSMAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createDdsmDockerContainerAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link es.unizar.disco.dice.DDSM.DdsmOSvContainer <em>Ddsm OSv Container</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see es.unizar.disco.dice.DDSM.DdsmOSvContainer
+	 * @generated
+	 */
+	public Adapter createDdsmOSvContainerAdapter() {
 		return null;
 	}
 
