@@ -34,6 +34,8 @@ import es.unizar.disco.dice.Basic_Enumeration_Types.VMSize;
 import es.unizar.disco.dice.Basic_Enumeration_Types.WorkflowOperation;
 
 import es.unizar.disco.dice.Complex_Data_Types.impl.Complex_Data_TypesPackageImpl;
+import es.unizar.disco.dice.DDSM.DDSMPackage;
+import es.unizar.disco.dice.DDSM.impl.DDSMPackageImpl;
 import es.unizar.disco.dice.DICE.DICEPackage;
 import es.unizar.disco.dice.DICE.impl.DICEPackageImpl;
 import es.unizar.disco.dice.DPIM.DPIMPackage;
@@ -287,7 +289,7 @@ public class Basic_Enumeration_TypesPackageImpl extends EPackageImpl implements 
 		SparkPackageImpl theSparkPackage = (SparkPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(SparkPackage.eNS_URI) instanceof SparkPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(SparkPackage.eNS_URI) : SparkPackage.eINSTANCE);
 		CassandraPackageImpl theCassandraPackage = (CassandraPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(CassandraPackage.eNS_URI) instanceof CassandraPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(CassandraPackage.eNS_URI) : CassandraPackage.eINSTANCE);
 		TezPackageImpl theTezPackage = (TezPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(TezPackage.eNS_URI) instanceof TezPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(TezPackage.eNS_URI) : TezPackage.eINSTANCE);
-		es.unizar.disco.dice.DDSM.impl.DDSMPackageImpl theDDSMPackage = (es.unizar.disco.dice.DDSM.impl.DDSMPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(es.unizar.disco.dice.DDSM.DDSMPackage.eNS_URI) instanceof es.unizar.disco.dice.DDSM.impl.DDSMPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(es.unizar.disco.dice.DDSM.DDSMPackage.eNS_URI) : es.unizar.disco.dice.DDSM.DDSMPackage.eINSTANCE);
+		DDSMPackageImpl theDDSMPackage = (DDSMPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(DDSMPackage.eNS_URI) instanceof DDSMPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(DDSMPackage.eNS_URI) : DDSMPackage.eINSTANCE);
 		Complex_Data_TypesPackageImpl theComplex_Data_TypesPackage_1 = (Complex_Data_TypesPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(es.unizar.disco.dice.Complex_Data_Types.Complex_Data_TypesPackage.eNS_URI) instanceof Complex_Data_TypesPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(es.unizar.disco.dice.Complex_Data_Types.Complex_Data_TypesPackage.eNS_URI) : es.unizar.disco.dice.Complex_Data_Types.Complex_Data_TypesPackage.eINSTANCE);
 
 		// Create package meta-data objects
