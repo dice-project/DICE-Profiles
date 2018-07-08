@@ -261,17 +261,6 @@
               <element xmi:type="uml:JoinNode" href="model.uml#_ULGWUPDpEeWtuqq0TURTfw"/>
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ULRVcvDpEeWtuqq0TURTfw" x="613" y="97" width="8" height="48"/>
             </children>
-            <children xmi:type="notation:Shape" xmi:id="_wNxW4PDpEeWtuqq0TURTfw" type="ActivityFinalNode_Shape">
-              <children xmi:type="notation:DecorationNode" xmi:id="_wNx98PDpEeWtuqq0TURTfw" type="ActivityFinalNode_FloatingNameLabel">
-                <layoutConstraint xmi:type="notation:Location" xmi:id="_wNx98fDpEeWtuqq0TURTfw" x="-39" y="33"/>
-              </children>
-              <children xmi:type="notation:DecorationNode" xmi:id="_wNx98vDpEeWtuqq0TURTfw" type="ActivityFinalNode_StereotypeLabel">
-                <layoutConstraint xmi:type="notation:Location" xmi:id="_wNx98_DpEeWtuqq0TURTfw" y="16"/>
-              </children>
-              <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_wNxW4fDpEeWtuqq0TURTfw"/>
-              <element xmi:type="uml:ActivityFinalNode" href="model.uml#_wNhfQPDpEeWtuqq0TURTfw"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wNxW4vDpEeWtuqq0TURTfw" x="672" y="112"/>
-            </children>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TeKpwvDnEeWtuqq0TURTfw"/>
           </children>
           <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_TeJbofDnEeWtuqq0TURTfw"/>
@@ -306,6 +295,17 @@
           <children xmi:type="notation:DecorationNode" xmi:id="_TV70cDyOEeaDlarzRM0iyw" type="Comment_BodyLabel"/>
           <element xmi:type="uml:Comment" href="model.uml#_TVXMsDyOEeaDlarzRM0iyw"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TV7NYTyOEeaDlarzRM0iyw" x="870" y="44"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_wNxW4PDpEeWtuqq0TURTfw" type="ActivityFinalNode_Shape">
+          <children xmi:type="notation:DecorationNode" xmi:id="_wNx98PDpEeWtuqq0TURTfw" type="ActivityFinalNode_FloatingNameLabel">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_wNx98fDpEeWtuqq0TURTfw" x="-39" y="33"/>
+          </children>
+          <children xmi:type="notation:DecorationNode" xmi:id="_wNx98vDpEeWtuqq0TURTfw" type="ActivityFinalNode_StereotypeLabel">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_wNx98_DpEeWtuqq0TURTfw" y="16"/>
+          </children>
+          <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_wNxW4fDpEeWtuqq0TURTfw"/>
+          <element xmi:type="uml:ActivityFinalNode" href="model.uml#_wNhfQPDpEeWtuqq0TURTfw"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wNxW4vDpEeWtuqq0TURTfw" x="880" y="165"/>
         </children>
         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_YjrnkfDmEeWtuqq0TURTfw"/>
       </children>

@@ -23,7 +23,7 @@ source=calc)</body>
       <edge xmi:type="uml:ControlFlow" xmi:id="_dgjp0PDpEeWtuqq0TURTfw" target="_ULGWUPDpEeWtuqq0TURTfw" source="_XXsDkPDoEeWtuqq0TURTfw"/>
       <edge xmi:type="uml:ControlFlow" xmi:id="_Ea3qMPveEeWClPFAtVY9ng" target="_wNhfQPDpEeWtuqq0TURTfw" source="_ULGWUPDpEeWtuqq0TURTfw"/>
       <edge xmi:type="uml:ControlFlow" xmi:id="_34caADyMEeaDlarzRM0iyw" target="_ULGWUPDpEeWtuqq0TURTfw" source="_8xYd4PDoEeWtuqq0TURTfw"/>
-      <group xmi:type="uml:ActivityPartition" xmi:id="_TeA4wPDnEeWtuqq0TURTfw" name="Partition Component" node="_GLmyEPDoEeWtuqq0TURTfw _ULGWUPDpEeWtuqq0TURTfw _wNhfQPDpEeWtuqq0TURTfw" represents="_bmnpgPDlEeWtuqq0TURTfw">
+      <group xmi:type="uml:ActivityPartition" xmi:id="_TeA4wPDnEeWtuqq0TURTfw" name="Partition Component" node="_GLmyEPDoEeWtuqq0TURTfw _ULGWUPDpEeWtuqq0TURTfw" represents="_bmnpgPDlEeWtuqq0TURTfw">
         <subpartition xmi:type="uml:ActivityPartition" xmi:id="_fIFTMPDnEeWtuqq0TURTfw" name="Partition A1" node="_oWSIIPDnEeWtuqq0TURTfw" represents="_nQZJAPDlEeWtuqq0TURTfw">
           <ownedComment xmi:type="uml:Comment" xmi:id="_mdEMwPRVEeWjOZc1J1pNnQ" annotatedElement="_oWSIIPDnEeWtuqq0TURTfw">
             <body>hostDemand=&#xD;
@@ -58,7 +58,7 @@ source=est)</body>
       <node xmi:type="uml:OpaqueAction" xmi:id="_XXsDkPDoEeWtuqq0TURTfw" name="A2" incoming="_eWYUAPDoEeWtuqq0TURTfw" outgoing="_dgjp0PDpEeWtuqq0TURTfw" inPartition="_AHHgEPDoEeWtuqq0TURTfw"/>
       <node xmi:type="uml:OpaqueAction" xmi:id="_8xYd4PDoEeWtuqq0TURTfw" name="A3" incoming="_-UHb8PDoEeWtuqq0TURTfw" outgoing="_34caADyMEeaDlarzRM0iyw" inPartition="_4P2zcPDoEeWtuqq0TURTfw"/>
       <node xmi:type="uml:JoinNode" xmi:id="_ULGWUPDpEeWtuqq0TURTfw" incoming="_dgjp0PDpEeWtuqq0TURTfw _34caADyMEeaDlarzRM0iyw" outgoing="_Ea3qMPveEeWClPFAtVY9ng" inPartition="_TeA4wPDnEeWtuqq0TURTfw"/>
-      <node xmi:type="uml:ActivityFinalNode" xmi:id="_wNhfQPDpEeWtuqq0TURTfw" name="End" incoming="_Ea3qMPveEeWClPFAtVY9ng" inPartition="_TeA4wPDnEeWtuqq0TURTfw"/>
+      <node xmi:type="uml:ActivityFinalNode" xmi:id="_wNhfQPDpEeWtuqq0TURTfw" name="End" incoming="_Ea3qMPveEeWClPFAtVY9ng"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Model" xmi:id="_0AR-wP2YEeW8wrjGqxDBPg" name="PosidoniaDeployment">
       <packagedElement xmi:type="uml:Node" xmi:id="_Q7bSIPDlEeWtuqq0TURTfw" name="192.0.2.1">
@@ -101,7 +101,7 @@ source=est)</body>
     <hostDemand>(expr=$a2,unit=s,statQ=mean,source=est)</hostDemand>
   </GQAM:GaStep>
   <GQAM:GaWorkloadEvent xmi:id="_dXwnYPRQEeWjOZc1J1pNnQ" pattern="open=(arrivalRate=(expr=$rate, unit=Hz, statQ=mean, source=est))" base_NamedElement="_Z24fUPDnEeWtuqq0TURTfw"/>
-  <DPIM:DpimScenario xmi:id="_FD1hsDl2EeaSQIuawXa71A" base_NamedElement="_UWw7IPDmEeWtuqq0TURTfw" base_Behavior="_UWw7IPDmEeWtuqq0TURTfw">
+  <DPIM:DpimScenario xmi:id="_FD1hsDl2EeaSQIuawXa71A" base_NamedElement="_UWw7IPDmEeWtuqq0TURTfw" usedResources="_mOtb0DyPEeaDlarzRM0iyw" base_Behavior="_UWw7IPDmEeWtuqq0TURTfw">
     <throughput>(expr=$throughput, statQ=mean, source=calc)</throughput>
   </DPIM:DpimScenario>
   <GQAM:GaAnalysisContext xmi:id="_PJRgoDl2EeaSQIuawXa71A" base_StructuredClassifier="_UWw7IPDmEeWtuqq0TURTfw" base_NamedElement="_UWw7IPDmEeWtuqq0TURTfw">
