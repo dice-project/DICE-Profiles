@@ -13,5 +13,5 @@ DAM provides the following top-level components:
 
 # About this implementation of the DAM Profile
 
-This plugin reimplements the DAM profile available at https://bitbucket.org/mberenguer/masdes-downloads/wiki/Home, and unifies the type system, solving problems with the redefinition of MARTE datatypes.
+This plugin reimplements the DAM profile available at https://bitbucket.org/masdesgroup/masdes/wiki/DAM, and unifies the type system, solving problems with the redefinition of MARTE datatypes.
 
